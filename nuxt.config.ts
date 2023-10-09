@@ -2,5 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro',
-  modules: ['@nuxt/ui']
+  modules: ['@nuxt/ui'],
+
+  ui: {
+    icons: ['heroicons', 'simple-icons']
+  }
 })

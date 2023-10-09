@@ -12,6 +12,7 @@
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
+    "@iconify-json/simple-icons": "^1.1.73",
     "@nuxt/devtools": "^0.8.5",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/ui-pro": "^0.2.1",
