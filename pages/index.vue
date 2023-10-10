@@ -72,7 +72,7 @@ const faqItems = [
         Welcome to Nuxt UI Pro <br>Landing template!
       </template>
       <template #links>
-        <UButton to="/features" icon="i-heroicons-rocket-launch" size="xl">
+        <UButton to="#features" icon="i-heroicons-rocket-launch" size="xl">
           Features
         </UButton>
         <UButton
@@ -88,7 +88,7 @@ const faqItems = [
       </template>
     </ULandingHero>
 
-    <ULandingSection>
+    <ULandingSection id="features">
       <template #title>
         Amazing <span class="text-primary">Features</span>
       </template>
