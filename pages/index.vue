@@ -14,6 +14,29 @@ const logos = [
   'i-simple-icons-html5'
 ]
 
+const featuresFree = [
+  'Access all components',
+  'Community Starters',
+  'Unlimited updates',
+  'Upgrade when ready to deploy'
+]
+const featuresSolo = [
+  'One developer',
+  'Unlimited projects',
+  'Advanced Starters',
+  'Access to the GitHub repository',
+  'Unlimited minor & patch updates',
+  'Lifetime access'
+]
+const featuresTeam = [
+  'Up to 20 developers',
+  'Unlimited projects',
+  'Everything in Pro',
+  'Prioritized feature requests',
+  'Unlimited minor & patch updates',
+  'Lifetime access'
+]
+
 const faqItems = [
   {
     label: 'What colors does your product come in?',
@@ -111,7 +134,7 @@ const faqItems = [
       </UPageGrid>
     </ULandingSection>
 
-    <ULandingSection align="left">
+    <ULandingSection align="left" :ui="{ title: 'text-center lg:text-left', description: 'text-center lg:text-left' }">
       <template #title>
         Expressing <span class="text-primary">Gratitude</span>
       </template>
@@ -129,6 +152,43 @@ const faqItems = [
       </ULandingLogos>
     </ULandingSection>
 
+    <ULandingSection>
+      <template #title>
+        Pricing plans for teams of <br><span class="text-primary">all sizes</span>
+      </template>
+      <template #description>
+        Pricing plans designed to accommodate teams of any size,ensuring flexibility and scalability for your
+        business needs.
+      </template>
+      <UPricingGrid class="p-4" :ui="{ wrapper: 'grid grid-cols-1 md:grid-cols-3' }">
+        <UPricingCard
+          title="Free"
+          description="Get started for free in development."
+          :features="featuresFree"
+          :button="{ label: 'Get Started for Free', color: 'white' }"
+        />
+        <UPricingCard
+          title="Solo"
+          description="For bootstrappers and indie hackers."
+          :features="featuresSolo"
+          scale
+          highlight
+          price="$199"
+          :button="{ label: 'Buy now', to: 'https://ui.nuxt.com/pro/purchase/solo' }"
+          :badge="{ label: 'Most popular' }"
+          cycle="/year"
+        />
+        <UPricingCard
+          price="$699"
+          title="Team"
+          description="Unlimited license for growing teams."
+          :features="featuresTeam"
+          cycle="/year"
+          :button="{ label: 'Buy now', to: 'https://ui.nuxt.com/pro/purchase/team' }"
+        />
+      </UPricingGrid>
+    </ULandingSection>
+
     <ULandingSection title="Frequently asked questions">
       <ULandingFAQ :items="faqItems" />
     </ULandingSection>
@@ -139,10 +199,7 @@ const faqItems = [
         :links="[{ label: 'I want try', color: 'black', size: 'md' }, { label: 'Learn more', color: 'black', variant: 'link', size: 'md', trailingIcon: 'i-heroicons-arrow-right-20-solid' }]"
         :ui="{
           background: 'dark:bg-gradient-to-b from-gray-800 to-gray-900',
-          shadow: 'dark:shadow-2xl',
-          body: {
-            background: 'bg-gray-50/50 dark:bg-gray-900/50'
-          }, title: '!text-3xl', description: 'text-base'
+          links: 'flex-col gap-y-4 sm:flex-row'
         }"
         class="w-full h-full rounded-md"
       >
