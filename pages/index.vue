@@ -2,11 +2,11 @@
   <UMain>
     <ULandingHero title="Welcome to Nuxt UI Pro!" description="This is your starter, make something unique!">
       <template #links>
-        <UButton to="/features" icon="i-heroicons-rocket-launch">Features</UButton>
+        <UButton to="#features" icon="i-heroicons-rocket-launch">Features</UButton>
         <UButton to="https://ui.nuxt.com/pro" target="_blank" color="gray" icon="i-heroicons-book-open" trailing-icon="i-heroicons-arrow-top-right-on-square-solid">UI Pro Documentation</UButton>
       </template>
     </ULandingHero>
-    <ULandingSection>
+    <ULandingSection id="features">
       <template #title>
         Amazing <span class="text-primary">Features</span>
       </template>
