@@ -7,12 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.8.5",
+    "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/ui-pro": "^0.2.1",
+    "eslint": "^8.51.0",
     "nuxt": "^3.7.4",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vue-tsc": "^1.8.19"
   }
 }
