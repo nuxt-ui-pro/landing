@@ -12,10 +12,10 @@
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
-    "@iconify-json/simple-icons": "^1.1.73",
-    "@nuxt/devtools": "^0.8.5",
+    "@iconify-json/simple-icons": "^1.1.75",
+    "@nuxt/devtools": "^1.0.0",
     "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/ui-pro": "^0.2.1",
+    "@nuxt/ui-pro": "^0.3.1",
     "eslint": "^8.51.0",
     "nuxt": "^3.7.4",
     "typescript": "^5.2.2",
