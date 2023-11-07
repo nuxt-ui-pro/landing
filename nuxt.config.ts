@@ -1,10 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  extends: process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro',
-  modules: ['@nuxt/ui'],
-
+  extends: ['@nuxt/ui-pro'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
+    '@nuxt/ui'
+  ],
   ui: {
     icons: ['heroicons', 'simple-icons']
-  }
+  },
+  // Fonts
+  fontMetrics: {
+    fonts: ['Noto Sans']
+  },
+  googleFonts: {
+    display: 'swap',
+    download: true,
+    families: {
+      'Noto+Sans': [400, 500, 600, 700]
+    }
+  },
+  // Devtools / Typescript
+  devtools: { enabled: true },
+  typescript: { strict: false }
 })

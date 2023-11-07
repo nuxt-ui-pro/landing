@@ -1,0 +1,79 @@
+title: ZenTech
+description: ZenTech is a technology company that provides software solutions to businesses and individuals.
+hero:
+  title: Discover <span class="text-primary italic">tranquility</span> with our<br> cloud-based services
+  description: Embark on a Serene Digital Journey with Our Cloud-Based Services.
+testimonials:
+  title: Testimonials
+  description: What our customers are saying.
+pricing:
+  title: A plan for every need
+  description: ZenTech offers a variety of plans to suit your needs.
+  plans:
+    - title: Basic
+      description: A basic plan for individuals.
+      price: $9.99
+      align: top
+      button:
+        label: Get Started
+        color: white
+      features:
+        - 1 GB Storage
+        - 1 Email Account
+        - 1 Domain
+        - 1 Website
+        - 1 Database
+        - 1 SSL Certificate
+        - 1 Support Ticket
+    - title: Standard
+      description: A standard plan for small businesses.
+      price: $19.99
+      highlight: true
+      scale: true
+      align: top
+      button:
+        label: Get Started
+      features:
+        - 10 GB Storage
+        - 10 Email Accounts
+        - 10 Domains
+        - 10 Websites
+        - 10 Databases
+        - 10 SSL Certificates
+        - 10 Support Tickets
+    - title: Premium
+      description: A premium plan for large businesses.
+      price: $29.99
+      align: top
+      button:
+        label: Get Started
+        color: white
+      features:
+        - 100 GB Storage
+        - 100 Email Accounts
+        - 100 Domains
+        - 100 Websites
+        - 100 Databases
+        - 100 SSL Certificates
+        - 100 Support Tickets
+faq:
+  title: Frequently asked questions
+  description: Here are some of our most frequently asked questions.
+  items:
+    - label: What is ZenTech?
+      content: ZenTech is a technology company that provides software solutions to businesses and individuals.
+    - label: What services does ZenTech offer?
+      content: ZenTech offers a variety of cloud-based services, including web hosting, email hosting, and domain registration.
+    - label: How do I get started?
+      content: To get started, simply sign up for an account and select the services you would like to use.
+    - label: How much does it cost?
+      content: ZenTech offers a variety of plans to suit your needs. Please visit our pricing page for more information.
+    - label: How do I contact support?
+      content: You can contact support by emailing.
+cta:
+  title: Join the ZenTech Community
+  description: Experience the tranquility of cloud services. Join ZenTech today and elevate your digital experience.
+  links:
+    - label: Get started now
+      color: white
+      size: lg

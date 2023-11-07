@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt-ui-pro-landing",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,14 +11,21 @@
     "lint": "eslint .",
     "typecheck": "nuxt typecheck"
   },
+  "dependencies": {
+    "@iconify-json/heroicons": "^1.1.13",
+    "@iconify-json/simple-icons": "^1.1.77",
+    "@nuxt/content": "^2.9.0",
+    "@nuxt/ui": "^2.10.0",
+    "@nuxt/ui-pro": "^0.4.2",
+    "@nuxtjs/fontaine": "^0.4.1",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "nuxt": "^3.8.1"
+  },
   "devDependencies": {
-    "@iconify-json/simple-icons": "^1.1.75",
     "@nuxt/devtools": "^1.0.0",
     "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/ui-pro": "^0.3.1",
-    "eslint": "^8.51.0",
-    "nuxt": "^3.7.4",
+    "eslint": "^8.53.0",
     "typescript": "^5.2.2",
-    "vue-tsc": "^1.8.19"
+    "vue-tsc": "^1.8.22"
   }
 }

@@ -1,6 +1,12 @@
-# Nuxt UI Pro: Landing
+# Nuxt UI Pro Landing
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI Pro docs](https://ui.nuxt.com/pro) to learn more.
+This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
+
+[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
+
+- [Live demo](https://nuxt-ui-pro-landing.vercel.app)
+- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
+- [Documentation](https://ui.nuxt.com/pro/guide)
 
 ## Setup
 
