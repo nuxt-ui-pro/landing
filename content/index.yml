@@ -1,14 +1,44 @@
-title: ZenTech
-description: ZenTech is a technology company that provides software solutions to businesses and individuals.
+title: Nuxt UI Pro Landing
+description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: Discover <span class="text-primary italic">tranquility</span> with our<br> cloud-based services
-  description: Embark on a Serene Digital Journey with Our Cloud-Based Services.
-testimonials:
-  title: Testimonials
-  description: What our customers are saying.
+  title: Build your app in seconds
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  links:
+    - label: Get started
+      size: xl
+logos:
+  title: Trusted by the world's best
+  icons:
+    - i-logos-azure
+    - i-logos-heroku
+    - i-logos-netlify
+    - i-logos-vercel
+    - i-logos-cloudflare
+features:
+  title: Why choose our service?
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  items:
+    - title: Easy to use
+      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      icon: i-heroicons-cog
+    - title: Reliable
+      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+      icon: i-heroicons-check
+    - title: Secure
+      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      icon: i-heroicons-lock-closed
+    - title: Fast
+      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+      icon: i-heroicons-rocket-launch
+    - title: Affordable
+      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      icon: i-heroicons-currency-dollar
+    - title: Scalable
+      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+      icon: i-heroicons-chart-bar
 pricing:
   title: A plan for every need
-  description: ZenTech offers a variety of plans to suit your needs.
+  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
   plans:
     - title: Basic
       description: A basic plan for individuals.
@@ -16,7 +46,6 @@ pricing:
       align: top
       button:
         label: Get Started
-        color: white
       features:
         - 1 GB Storage
         - 1 Email Account
@@ -26,13 +55,13 @@ pricing:
         - 1 SSL Certificate
         - 1 Support Ticket
     - title: Standard
-      description: A standard plan for small businesses.
+      description: A standard plan for small teams.
       price: $19.99
       highlight: true
-      scale: true
       align: top
       button:
         label: Get Started
+        color: primary
       features:
         - 10 GB Storage
         - 10 Email Accounts
@@ -42,12 +71,11 @@ pricing:
         - 10 SSL Certificates
         - 10 Support Tickets
     - title: Premium
-      description: A premium plan for large businesses.
+      description: A premium plan for large teams.
       price: $29.99
       align: top
       button:
         label: Get Started
-        color: white
       features:
         - 100 GB Storage
         - 100 Email Accounts
@@ -56,24 +84,56 @@ pricing:
         - 100 Databases
         - 100 SSL Certificates
         - 100 Support Tickets
+testimonials:
+  headline: Testimonials
+  title: What our customers are saying.
+  description: Proident sunt exercitation minim laborum enim laboris labore esse.
+  items:
+    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
+      author:
+        name: Rose Roberson
+        title: CEO at Company
+        avatar: https://i.pravatar.cc/100?img=1
+    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
+      author:
+        name: Chace Rodgers
+        title: CEO at Company
+        avatar: https://i.pravatar.cc/100?img=7
+    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
+      author:
+        name: Cornelius Sheppard
+        title: CEO at Company
+        avatar: https://i.pravatar.cc/100?img=3
+    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
+      author:
+        name: Destinee Woods
+        title: CEO at Company
+        avatar: https://i.pravatar.cc/100?img=5
+    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
+      author:
+        name: Kaleb Mccormick
+        title: CEO at Company
+        avatar: https://i.pravatar.cc/100?img=8
+cta:
+  title: Get started today
+  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  links:
+    - label: Sign up for free
+      size: lg
 faq:
   title: Frequently asked questions
-  description: Here are some of our most frequently asked questions.
+  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
   items:
-    - label: What is ZenTech?
-      content: ZenTech is a technology company that provides software solutions to businesses and individuals.
-    - label: What services does ZenTech offer?
-      content: ZenTech offers a variety of cloud-based services, including web hosting, email hosting, and domain registration.
-    - label: How do I get started?
-      content: To get started, simply sign up for an account and select the services you would like to use.
-    - label: How much does it cost?
-      content: ZenTech offers a variety of plans to suit your needs. Please visit our pricing page for more information.
-    - label: How do I contact support?
-      content: You can contact support by emailing.
-cta:
-  title: Join the ZenTech Community
-  description: Experience the tranquility of cloud services. Join ZenTech today and elevate your digital experience.
-  links:
-    - label: Get started now
-      color: white
-      size: lg
+    - label: Is this a secure service?
+      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+      defaultOpen: true
+    - label: How can I cancel my subscription?
+      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
+    - label: How does the free trial work?
+      content: Quis officia commodo magna eu qui aliquip duis.
+    - label: Can I switch plans later?
+      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
+    - label: Do you offer refunds?
+      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
+    - label: Do you offer support?
+      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.

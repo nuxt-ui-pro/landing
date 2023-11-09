@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
   ui: {
-    icons: ['heroicons', 'simple-icons']
+    icons: ['heroicons', 'logos', 'simple-icons']
   },
   // Fonts
   fontMetrics: {

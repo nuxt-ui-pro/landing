@@ -1,47 +1,29 @@
 <script setup lang="ts">
-const links = [{
-  label: 'Features',
-  to: '#features',
-  exactHash: true
-}, {
-  label: 'Testimonials',
-  to: '#testimonials',
-  exactHash: true
-}, {
-  label: 'Pricing',
-  to: '#pricing',
-  exactHash: true
-}]
+useHead({
+  title: 'Nuxt UI Pro Starter',
+  meta: [
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { key: 'theme-color', name: 'theme-color', content: '#6366f1' }
+  ],
+  link: [
+    { rel: 'icon', href: '/favicon.ico' }
+  ],
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
+
+useSeoMeta({
+  description: 'Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.'
+})
 </script>
 
 <template>
-  <UHeader :links="links">
-    <template #logo>
-      <Logo class="w-auto h-6 text-primary" />
-    </template>
-
-    <template #right>
-      <UButton label="Sign in" color="white" variant="ghost" />
-
-      <UButton label="Get started" color="black" />
-    </template>
-  </UHeader>
+  <Header />
 
   <UMain>
     <NuxtPage />
   </UMain>
 
-  <UFooter>
-    <template #left>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }} ZenTech - Cloud Solutions
-      </p>
-    </template>
-
-    <template #right>
-      <UColorModeButton size="sm" />
-
-      <UButton to="https://github.com/nuxt-ui-pro/starter" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" size="sm" />
-    </template>
-  </UFooter>
+  <Footer />
 </template>
