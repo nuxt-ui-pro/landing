@@ -7,6 +7,9 @@ export default defineAppConfig({
         background: 'var(--color-primary-DEFAULT)'
       }
     },
+    badge: {
+      rounded: 'rounded-full'
+    },
     button: {
       rounded: 'rounded-full',
       default: {

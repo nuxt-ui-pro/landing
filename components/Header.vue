@@ -21,7 +21,7 @@ const links = [{
 <template>
   <UHeader :links="links">
     <template #logo>
-      <Logo class="w-auto h-6 text-primary" />
+      Nuxt UI Pro <UBadge label="Landing" variant="solid" class="mb-0.5" />
     </template>
 
     <template #right>

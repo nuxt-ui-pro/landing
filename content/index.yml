@@ -1,11 +1,23 @@
-title: Nuxt UI Pro Landing
+title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
   title: Build your app in seconds
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  screenshot:
+    src: https://volta.net/home/screenshot.png
+    alt: App screenshot
+    width: 1216
+    height: 674
   links:
     - label: Get started
+      to: '#features'
       size: xl
+    - label: Documentation
+      size: xl
+      color: primary
+      variant: soft
+      to: https://ui.nuxt.com/pro
+      target: _blank
 logos:
   title: Trusted by the world's best
   icons:
