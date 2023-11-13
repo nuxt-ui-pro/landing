@@ -1,4 +1,4 @@
-# Nuxt UI Pro Landing
+# Nuxt UI Pro - Landing template
 
 This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
 

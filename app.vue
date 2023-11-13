@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Nuxt UI Pro Starter',
+  title: 'Nuxt UI Pro - Landing template',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: '#6366f1' }

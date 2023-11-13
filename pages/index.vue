@@ -17,7 +17,7 @@ useSeoMeta({
   <div>
     <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links">
       <div class="bg-white/10 ring-1 ring-white/20 rounded-2xl -m-4 p-4">
-        <img src="https://tailwindui.com/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow">
+        <img src="https://volta.s3.fr-par.scw.cloud/Clean_Shot_2023_11_10_at_12_43_47_2x_4d1e1fe9ff.png" alt="App screenshot" width="1216" height="674" class="rounded-md shadow">
       </div>
 
       <ULandingLogos :title="page.logos.title" align="center">

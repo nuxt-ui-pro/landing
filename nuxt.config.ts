@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
   modules: [
     '@nuxt/content',
+    '@nuxt/ui',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
-    '@nuxt/ui'
   ],
   ui: {
     icons: ['heroicons', 'logos', 'simple-icons']
