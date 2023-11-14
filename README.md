@@ -1,3 +1,5 @@
+![nuxt-ui-pro-landing](https://github.com/nuxt-ui-pro/landing/assets/904724/d062357f-9ab8-42e9-91b2-09ca5b92deec)
+
 # Nuxt UI Pro - Landing template
 
 This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
