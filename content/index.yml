@@ -7,7 +7,7 @@ hero:
     src: https://volta.net/home/screenshot.png
     alt: App screenshot
     width: 1216
-    height: 674
+    height: 684
   links:
     - label: Get started
       to: '#features'
