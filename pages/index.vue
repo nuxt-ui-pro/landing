@@ -22,8 +22,8 @@ useSeoMeta({
       :description="page.hero.description"
       :links="page.hero.links"
       :ui="{
-        title: 'text-white',
-        description: 'text-primary-100'
+        title: 'text-white selection:bg-primary-800',
+        description: 'text-primary-100 selection:bg-primary-800'
       }"
     >
       <div v-if="page.hero.screenshot" class="bg-white/10 ring-1 ring-white/20 rounded-2xl lg:-m-4 p-4">
@@ -46,8 +46,8 @@ useSeoMeta({
       :title="page.pricing.title"
       :description="page.pricing.description"
       :ui="{
-        title: 'text-white',
-        description: 'text-primary-100'
+        title: 'text-white selection:bg-primary-800',
+        description: 'text-primary-100 selection:bg-primary-800'
       }"
       class="bg-primary-500"
     >
@@ -93,7 +93,19 @@ useSeoMeta({
     </ULandingSection>
 
     <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="bg-gray-50">
-      <ULandingFAQ :items="page.faq.items" multiple class="max-w-4xl mx-auto" />
+      <ULandingFAQ
+        :items="page.faq.items"
+        :ui="{
+          button: {
+            label: 'font-semibold',
+            trailingIcon: {
+              base: 'w-6 h-6'
+            }
+          }
+        }"
+        multiple
+        class="max-w-4xl mx-auto"
+      />
     </ULandingSection>
   </div>
 </template>
