@@ -15,32 +15,41 @@ useSeoMeta({
 
 <template>
   <div>
-    <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links">
-      <div v-if="page.hero.screenshot" class="bg-white/10 ring-1 ring-white/20 rounded-2xl -m-4 p-4">
+    <div class="bg-primary-500 absolute top-0 h-[625px] sm:h-[755px] lg:h-[895px] inset-x-0" />
+
+    <ULandingHero
+      :title="page.hero.title"
+      :description="page.hero.description"
+      :links="page.hero.links"
+      :ui="{
+        title: 'text-white',
+        description: 'text-primary-100'
+      }"
+    >
+      <div v-if="page.hero.screenshot" class="bg-white/10 ring-1 ring-white/20 rounded-2xl lg:-m-4 p-4">
         <img v-bind="page.hero.screenshot" :src="page.hero.screenshot.src" class="rounded-md shadow">
       </div>
 
       <ULandingLogos :title="page.logos.title" align="center">
-        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 flex-shrink-0 text-gray-900" />
+        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
       </ULandingLogos>
     </ULandingHero>
 
-    <div class="bg-white -mt-[800px] pt-[800px]">
-      <ULandingSection id="features" :title="page.features.title" :description="page.features.description">
-        <UPageGrid v-bind="page.pricing.grid">
-          <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
-        </UPageGrid>
-      </ULandingSection>
-    </div>
+    <ULandingSection id="features" :title="page.features.title" :description="page.features.description">
+      <UPageGrid v-bind="page.pricing.grid">
+        <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
+      </UPageGrid>
+    </ULandingSection>
 
     <ULandingSection
       id="pricing"
       :title="page.pricing.title"
       :description="page.pricing.description"
       :ui="{
-        title: 'text-white selection:bg-primary-600',
-        description: 'text-primary-100 selection:bg-primary-600'
+        title: 'text-white',
+        description: 'text-primary-100'
       }"
+      class="bg-primary-500"
     >
       <UPricingGrid v-bind="page.pricing.grid">
         <UPricingCard v-for="(plan, index) in page.pricing.plans" :key="index" v-bind="plan" />
@@ -79,12 +88,12 @@ useSeoMeta({
       </UPageColumns>
     </ULandingSection>
 
-    <ULandingSection class="bg-white">
+    <ULandingSection class="bg-primary-500">
       <ULandingCTA v-bind="page.cta" />
     </ULandingSection>
 
     <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="bg-gray-50">
-      <ULandingFAQ :items="page.faq.items" multiple class="max-w-3xl mx-auto" />
+      <ULandingFAQ :items="page.faq.items" multiple class="max-w-4xl mx-auto" />
     </ULandingSection>
   </div>
 </template>

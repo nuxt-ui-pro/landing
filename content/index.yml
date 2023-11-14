@@ -131,7 +131,9 @@ cta:
   description: Nisi mollit id aliquip sunt est laborum sit sit.
   links:
     - label: Sign up for free
-      size: lg
+      color: primary
+      variant: soft
+      size: xl
 faq:
   title: Frequently asked questions
   description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.

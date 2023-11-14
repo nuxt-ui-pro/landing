@@ -1,6 +1,5 @@
 <script setup lang="ts">
 useHead({
-  title: 'Nuxt UI Pro - Landing template',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: '#6366f1' }
@@ -14,7 +13,8 @@ useHead({
 })
 
 useSeoMeta({
-  description: 'Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.'
+  ogSiteName: 'Nuxt UI Pro - Landing template',
+  twitterCard: 'summary_large_image'
 })
 </script>
 
