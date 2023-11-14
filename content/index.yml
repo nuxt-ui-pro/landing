@@ -21,11 +21,11 @@ hero:
 logos:
   title: Trusted by the world's best
   icons:
-    - i-logos-azure
-    - i-logos-heroku
-    - i-logos-netlify
-    - i-logos-vercel
-    - i-logos-cloudflare
+    - i-simple-icons-amazonaws
+    - i-simple-icons-heroku
+    - i-simple-icons-netlify
+    - i-simple-icons-vercel
+    - i-simple-icons-cloudflare
 features:
   title: Why choose our service?
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

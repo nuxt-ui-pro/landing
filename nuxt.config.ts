@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
   ui: {
-    icons: ['heroicons', 'logos', 'simple-icons']
+    icons: ['heroicons', 'simple-icons']
   },
   // Fonts
   fontMetrics: {

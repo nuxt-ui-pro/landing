@@ -21,7 +21,7 @@ useSeoMeta({
       </div>
 
       <ULandingLogos :title="page.logos.title" align="center">
-        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-24 h-24 flex-shrink-0" />
+        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 flex-shrink-0 text-gray-900" />
       </ULandingLogos>
     </ULandingHero>
 
