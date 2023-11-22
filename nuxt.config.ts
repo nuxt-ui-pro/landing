@@ -13,13 +13,13 @@ export default defineNuxtConfig({
   },
   // Fonts
   fontMetrics: {
-    fonts: ['Noto Sans']
+    fonts: ['DM Sans']
   },
   googleFonts: {
     display: 'swap',
     download: true,
     families: {
-      'Noto+Sans': [400, 500, 600, 700]
+      'DM+Sans': [400, 500, 600, 700]
     }
   },
   // Devtools / Typescript

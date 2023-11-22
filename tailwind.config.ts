@@ -5,7 +5,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Noto Sans', 'Noto Sans fallback', ...defaultTheme.fontFamily.sans]
+        sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans]
       }
     }
   }
