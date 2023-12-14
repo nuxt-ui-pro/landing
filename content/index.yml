@@ -1,22 +1,23 @@
 title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: Build your app in seconds
+  title: Build your landing in seconds
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-  screenshot:
-    src: https://volta.net/home/screenshot.png
-    alt: App screenshot
-    width: 1216
-    height: 684
+  headline:
+    label: Made with Nuxt UI Pro
+    to: https://ui.nuxt.com/pro
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
       to: '#features'
       size: xl
-    - label: Documentation
+    - label: Use this template
+      icon: i-simple-icons-github
       size: xl
-      color: primary
-      variant: soft
-      to: https://ui.nuxt.com/pro
+      color: gray
+      to: https://github.com/nuxt-ui-pro/landing
       target: _blank
 logos:
   title: Trusted by the world's best
@@ -27,6 +28,7 @@ logos:
     - i-simple-icons-vercel
     - i-simple-icons-cloudflare
 features:
+  headline: Features
   title: Why choose our service?
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   items:
@@ -49,6 +51,7 @@ features:
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
       icon: i-heroicons-chart-bar
 pricing:
+  headline: Pricing
   title: A plan for every need
   description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
   plans:
@@ -58,6 +61,7 @@ pricing:
       align: top
       button:
         label: Get Started
+        color: gray
       features:
         - 1 GB Storage
         - 1 Email Account
@@ -70,10 +74,10 @@ pricing:
       description: A standard plan for small teams.
       price: $19.99
       highlight: true
+      scale: true
       align: top
       button:
         label: Get Started
-        color: primary
       features:
         - 10 GB Storage
         - 10 Email Accounts
@@ -88,6 +92,7 @@ pricing:
       align: top
       button:
         label: Get Started
+        color: gray
       features:
         - 100 GB Storage
         - 100 Email Accounts
@@ -104,35 +109,50 @@ testimonials:
     - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
       author:
         name: Rose Roberson
-        title: CEO at Company
-        avatar: https://i.pravatar.cc/100?img=1
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=1
+          loading: lazy
     - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
       author:
         name: Chace Rodgers
-        title: CEO at Company
-        avatar: https://i.pravatar.cc/100?img=7
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=7
+          loading: lazy
     - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
       author:
         name: Cornelius Sheppard
-        title: CEO at Company
-        avatar: https://i.pravatar.cc/100?img=3
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=3
+          loading: lazy
     - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
       author:
         name: Destinee Woods
-        title: CEO at Company
-        avatar: https://i.pravatar.cc/100?img=5
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+          loading: lazy
     - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
       author:
         name: Kaleb Mccormick
-        title: CEO at Company
-        avatar: https://i.pravatar.cc/100?img=8
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=8
+          loading: lazy
+    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
+      author:
+        name: Jazmin Mccall
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=9
+          loading: lazy
 cta:
   title: Get started today
   description: Nisi mollit id aliquip sunt est laborum sit sit.
   links:
     - label: Sign up for free
-      color: primary
-      variant: soft
       size: xl
 faq:
   title: Frequently asked questions

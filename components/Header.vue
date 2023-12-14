@@ -25,12 +25,11 @@ const links = [{
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge label="Landing" class="mb-0.5" />
+      Nuxt UI Pro <UBadge label="Landing" variant="subtle" class="mb-0.5" />
     </template>
 
     <template #right>
-      <UButton label="Sign in" color="gray" variant="ghost" class="hidden lg:flex" />
-      <UButton label="Get started" color="black" class="hidden lg:flex" />
+      <UButton label="Log in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
     </template>
 
     <template #panel>
@@ -38,7 +37,7 @@ const links = [{
 
       <UDivider class="my-6" />
 
-      <UButton label="Sign in" color="gray" block class="mb-3" />
+      <UButton label="Sign in" color="white" block class="mb-3" />
       <UButton label="Get started" block />
     </template>
   </UHeader>
