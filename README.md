@@ -1,5 +1,3 @@
-![nuxt-ui-pro-landing](https://github.com/nuxt-ui-pro/landing/assets/904724/d062357f-9ab8-42e9-91b2-09ca5b92deec)
-
 # Nuxt UI Pro - Landing template
 
 This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
@@ -9,6 +7,8 @@ This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) qu
 - [Live demo](https://nuxt-ui-pro-template-landing.vercel.app)
 - [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
 - [Documentation](https://ui.nuxt.com/pro/guide)
+
+https://github.com/nuxt-ui-pro/landing/assets/904724/c7dd64a4-a09c-4cab-9572-92a02a5e06f9
 
 ## Setup
 
