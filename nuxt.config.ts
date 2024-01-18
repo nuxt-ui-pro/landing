@@ -22,7 +22,10 @@ export default defineNuxtConfig({
       'DM+Sans': [400, 500, 600, 700]
     }
   },
-  // Devtools / Typescript
-  devtools: { enabled: true },
-  typescript: { strict: false }
+  devtools: {
+    enabled: true
+  },
+  typescript: {
+    strict: false
+  }
 })
