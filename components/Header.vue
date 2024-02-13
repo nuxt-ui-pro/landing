@@ -41,7 +41,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     </template>
 
     <template #right>
-      <UButton label="Log in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
+      <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
     </template>
 
     <template #panel>
