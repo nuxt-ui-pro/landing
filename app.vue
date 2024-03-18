@@ -26,5 +26,6 @@ useSeoMeta({
   </UMain>
 
   <Footer />
+
   <UNotifications />
 </template>
