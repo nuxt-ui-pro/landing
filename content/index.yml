@@ -27,7 +27,7 @@ logos:
     - i-simple-icons-redbull
     - i-simple-icons-contactlesspayment # For software solutions representation
     - i-simple-icons-visa  # Imaginary partner for modern tech touch
-    - i-simple-icons-mastercard  # For payment solutions representation
+    # - i-simple-icons-mastercard  # For payment solutions representation
 features:
   headline: Features
   title: Why Choose Great Vending?
