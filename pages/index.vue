@@ -24,7 +24,11 @@ useSeoMeta({
         </UBadge>
       </template>
 
-      <Placeholder />
+      <!-- <Placeholder /> -->
+      <img
+        src="/hero.png"
+        class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
+      >
 
       <ULandingLogos :title="page.logos.title" align="center">
         <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
@@ -37,11 +41,11 @@ useSeoMeta({
       </UPageGrid>
     </ULandingSection>
 
-    <ULandingSection :title="page.pricing.title" :description="page.pricing.description" :headline="page.pricing.headline">
+    <!-- <ULandingSection :title="page.pricing.title" :description="page.pricing.description" :headline="page.pricing.headline">
       <UPricingGrid id="pricing" compact class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
         <UPricingCard v-for="(plan, index) in page.pricing.plans" :key="index" v-bind="plan" />
       </UPricingGrid>
-    </ULandingSection>
+    </ULandingSection> -->
 
     <ULandingSection :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
       <UPageColumns id="testimonials" class="xl:columns-4 scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">

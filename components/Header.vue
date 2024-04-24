@@ -7,11 +7,11 @@ const links = computed(() => [{
   to: '#features',
   icon: 'i-heroicons-cube-transparent',
   active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
-}, {
-  label: 'Pricing',
-  to: '#pricing',
-  icon: 'i-heroicons-credit-card',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
+// }, {
+//   label: 'Pricing',
+//   to: '#pricing',
+//   icon: 'i-heroicons-credit-card',
+//   active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
 }, {
   label: 'Testimonials',
   to: '#testimonials',
@@ -37,12 +37,14 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge label="Landing" variant="subtle" class="mb-0.5" />
+      <UIcon name="i-heroicons-building-office" class="w-8 h-8 text-primary-500" />
+      <span class="text-primary-500">Great</span>
+      Vending
     </template>
 
-    <template #right>
+    <!-- <template #right>
       <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
-    </template>
+    </template> -->
 
     <template #panel>
       <UAsideLinks :links="links" />

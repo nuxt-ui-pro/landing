@@ -1,38 +1,39 @@
 <script setup lang="ts">
-const links = [{
-  label: 'Resources',
-  children: [{
-    label: 'Help center'
-  }, {
-    label: 'Docs'
-  }, {
-    label: 'Roadmap'
-  }, {
-    label: 'Changelog'
-  }]
-}, {
-  label: 'Features',
-  children: [{
-    label: 'Affiliates'
-  }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
-  }]
-}, {
-  label: 'Company',
-  children: [{
-    label: 'About'
-  }, {
-    label: 'Pricing'
-  }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
-  }]
-}]
+const links = [//{
+//   label: 'Resources',
+//   children: [{
+//     label: 'Help center'
+//   }, {
+//     label: 'Docs'
+//   }, {
+//     label: 'Roadmap'
+//   }, {
+//     label: 'Changelog'
+//   }]
+// }, {
+//   label: 'Features',
+//   children: [{
+//     label: 'Affiliates'
+//   }, {
+//     label: 'Portal'
+//   }, {
+//     label: 'Jobs'
+//   }, {
+//     label: 'Sponsors'
+//   }]
+// }, {
+  // label: 'Company',
+  // children: [{
+  //   label: 'About'
+  // }, {
+  //   label: 'Pricing'
+  // }, {
+  //   label: 'Careers'
+  // }, {
+  //   label: 'Blog'
+  // }]
+// }
+]
 
 const toast = useToast()
 
@@ -80,7 +81,7 @@ function onSubmit () {
     <template #right>
       <UColorModeButton size="sm" />
 
-      <UButton to="https://github.com/nuxt-ui-pro/landing" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
+      <UButton to="#threefoldventures" target="_blank" icon="i-heroicons-building-office-2" aria-label="Parent Company" color="gray" variant="ghost" />
     </template>
   </UFooter>
 </template>

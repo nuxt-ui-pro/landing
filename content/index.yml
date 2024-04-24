@@ -1,173 +1,113 @@
-title: Nuxt UI Pro - Landing template
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: Great Vending - Refreshing On-the-Go
+description: Great Vending offers state-of-the-art Coca-Cola vending machines with an extensive selection of beverages. Providing modern, reliable, and easy-to-use vending solutions with multiple payment options and constant uptime.
 hero:
-  title: Build your landing in seconds
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  title: Refresh Your Day with Great Vending
+  description: Experience the convenience of modern vending machines at your fingertips. Scan, sip, and go!
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
-    icon: i-heroicons-arrow-top-right-on-square-20-solid
+    label: Scan for Feedback
+    to: "#feedback"
+    icon: i-heroicons-qr-code
   links:
-    - label: Get started
-      icon: i-heroicons-arrow-right-20-solid
+    - label: Contact Us
+      icon: i-heroicons-envelope
       trailing: true
-      to: '#features'
+      color: primary
+      to: '#contact'
       size: xl
-    - label: Use this template
-      icon: i-simple-icons-github
+    - label: Propose a Location
+      icon: i-heroicons-map-pin
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/landing
+      to: '#location'
       target: _blank
 logos:
-  title: Trusted by the world's best
+  title: Trusted by Businesses You Already Know
   icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
+    - i-simple-icons-cocacola
+    - i-simple-icons-redbull
+    - i-simple-icons-contactlesspayment # For software solutions representation
+    - i-simple-icons-visa  # Imaginary partner for modern tech touch
+    - i-simple-icons-mastercard  # For payment solutions representation
 features:
   headline: Features
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Why Choose Great Vending?
+  description: Our machines come with cutting-edge technology ensuring high product availability, a wide range of payment methods, and consistent machine uptime. Perfect for every setting.
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
+    - title: 24/7 Availability
+      description: Our machines are always stocked, ready to dispense your favorite drinks at any time of the day.
+      icon: i-heroicons-clock
+    - title: Multiple Payment Options
+      description: Pay using cash, card, or digital wallets – we support them all for your convenience.
+      icon: i-heroicons-credit-card
+    - title: Modern Technology
+      description: Equipped with the latest hardware and software to ensure seamless transactions and immediate product dispensing.
+      icon: i-heroicons-device-phone-mobile
     - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+      description: Designed to deliver without downtime, thanks to our expert technical team's continuous monitoring.
       icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
-pricing:
-  headline: Pricing
-  title: A plan for every need
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
-  plans:
-    - title: Basic
-      description: A basic plan for individuals.
-      price: $9.99
-      align: top
-      button:
-        label: Get Started
-        color: gray
-      features:
-        - 1 GB Storage
-        - 1 Email Account
-        - 1 Domain
-        - 1 Website
-        - 1 Database
-        - 1 SSL Certificate
-        - 1 Support Ticket
-    - title: Standard
-      description: A standard plan for small teams.
-      price: $19.99
-      highlight: true
-      scale: true
-      align: top
-      button:
-        label: Get Started
-      features:
-        - 10 GB Storage
-        - 10 Email Accounts
-        - 10 Domains
-        - 10 Websites
-        - 10 Databases
-        - 10 SSL Certificates
-        - 10 Support Tickets
-    - title: Premium
-      description: A premium plan for large teams.
-      price: $29.99
-      align: top
-      button:
-        label: Get Started
-        color: gray
-      features:
-        - 100 GB Storage
-        - 100 Email Accounts
-        - 100 Domains
-        - 100 Websites
-        - 100 Databases
-        - 100 SSL Certificates
-        - 100 Support Tickets
+    - title: Easy Feedback
+      description: Scan the QR code on our machines to quickly submit your feedback or product requests.
+      icon: i-heroicons-qr-code
+# pricing:
+#   headline: Pricing
+#   title: Simple & Transparent Pricing
+#   description: Enjoy our services without any hidden costs – clear, straightforward pricing at all times.
+#   plans:
+#     - title: Pay Per Use
+#       description: No subscription required. Pay only for what you consume.
+#       price: Variable
+#       align: top
+#       button:
+#         label: Learn More
+#         color: gray
 testimonials:
   headline: Testimonials
-  title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
+  title: Hear from Our Founders
+  description: While we're gathering real customer testimonials, here’s a little fictional humor from our founders.
   items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
+    - quote: "I've never seen a machine refuse to take a break. Our machines even refuse to take a night off!"
       author:
-        name: Rose Roberson
-        description: CEO at Company
+        name: Francisco Sousa
+        description: Co-Founder, Sales Genius
         avatar:
-          src: https://i.pravatar.cc/120?img=1
+          src: https://i.pravatar.cc/120?img=67
           loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
+    - quote: "These machines are so reliable, they even dispense happiness!"
       author:
-        name: Chace Rodgers
-        description: CEO at Company
+        name: Tom Van Severen
+        description: Co-Founder, Hardware Guru
         avatar:
-          src: https://i.pravatar.cc/120?img=7
+          src: https://i.pravatar.cc/120?img=69
           loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
+    - quote: "Software so advanced, it might just start chatting with you while you choose your drink!"
       author:
-        name: Cornelius Sheppard
-        description: CEO at Company
+        name: Manuel Sousa
+        description: Co-Founder, Software Wizard
         avatar:
           src: https://i.pravatar.cc/120?img=3
           loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
-      author:
-        name: Destinee Woods
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=5
-          loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
-      author:
-        name: Kaleb Mccormick
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=8
-          loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
-      author:
-        name: Jazmin Mccall
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=9
-          loading: lazy
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Get Started Today
+  description: Ready for a modern vending experience? Contact us or propose a location now!
   links:
-    - label: Sign up for free
+    - label: Contact Us
       size: xl
+      to: '#contact'
+    - label: Propose a Location
+      size: xl
+      to: '#location'
 faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  title: Frequently Asked Questions
+  description: Here are some answers to common queries about our vending services.
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+    - label: How can I submit feedback?
+      content: Simply scan the QR code on our machines to quickly submit your feedback or request new products.
       defaultOpen: true
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+    - label: How can I propose a new location?
+      content: Visit our website and fill out the location proposal form. We’re always looking for new spots!
+    - label: What payment methods are accepted?
+      content: Our machines accept cash, credit cards, and various digital wallets for your convenience.
+    - label: What products are available?
+      content: Currently offering Coca-Cola, Red Bull, water, and more to come based on your suggestions!
+    - label: What do I do if a machine is not working?
+      content: Contact our 24/7 support team through the website or the number provided on the machine.
