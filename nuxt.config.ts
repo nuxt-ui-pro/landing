@@ -14,5 +14,6 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: false
-  }
+  },
+  ssr: false
 })
