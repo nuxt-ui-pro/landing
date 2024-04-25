@@ -19,13 +19,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <Header />
+  <AppHeader />
 
   <UMain>
     <NuxtPage />
   </UMain>
 
-  <Footer />
+  <AppFooter />
 
   <UNotifications />
 </template>
