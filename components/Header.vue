@@ -27,7 +27,7 @@ const links = computed(() => [{
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
     document.querySelector('#features'),
-    document.querySelector('#pricing'),
+    // document.querySelector('#pricing'),
     document.querySelector('#testimonials'),
     document.querySelector('#faq')
   ])
@@ -42,9 +42,19 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       Vending
     </template>
 
-    <!-- <template #right>
-      <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
-    </template> -->
+    <template #right>
+      <!-- <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" /> -->
+      <LocaleSelect />
+      <!-- <div>
+        <button @click="setLocale('en')">
+          en
+        </button>
+        <button @click="setLocale('fr')">
+          fr
+        </button>
+        <p>{{ $t('welcome') }}</p>
+      </div> -->
+    </template>
 
     <template #panel>
       <UAsideLinks :links="links" />
