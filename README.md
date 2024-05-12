@@ -12,6 +12,12 @@ This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) qu
 
 https://github.com/nuxt-ui-pro/landing/assets/904724/c7dd64a4-a09c-4cab-9572-92a02a5e06f9
 
+## Quick Start
+
+```bash [Terminal]
+npx nuxi init -t github:nuxt-ui-pro/landing
+```
+
 ## Setup
 
 Make sure to install the dependencies:
