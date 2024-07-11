@@ -4,8 +4,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxt/image',
+    '@nuxt/ui'
   ],
   ui: {
     icons: ['heroicons', 'simple-icons']
