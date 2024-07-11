@@ -24,5 +24,8 @@
     "@nuxt/eslint": "^0.3.13",
     "eslint": "^9.6.0",
     "vue-tsc": "^2.0.26"
+  },
+  "resolutions": {
+    "@nuxtjs/tailwindcss": "npm:@nuxtjs/tailwindcss@6.12.2-1720701009.60a4bba"
   }
 }
