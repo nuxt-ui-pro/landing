@@ -10,10 +10,6 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
 
-  ui: {
-    icons: ['heroicons', 'simple-icons']
-  },
-
   routeRules: {
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true }
