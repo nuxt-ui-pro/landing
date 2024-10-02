@@ -10,6 +10,8 @@ This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) qu
 - [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
 - [Documentation](https://ui.nuxt.com/pro/getting-started)
 
+[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?repo=nuxt-ui-pro/landing)
+
 https://github.com/nuxt-ui-pro/landing/assets/904724/c7dd64a4-a09c-4cab-9572-92a02a5e06f9
 
 ## Quick Start
