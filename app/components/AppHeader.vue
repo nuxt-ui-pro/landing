@@ -57,11 +57,11 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     <template #panel>
       <UAsideLinks :links="links" />
 
-      <UDivider class="my-6" />
+      <USeparator class="my-6" />
 
       <UButton
         label="Sign in"
-        color="white"
+        color="neutral"
         block
         class="mb-3"
       />

@@ -59,7 +59,7 @@ function onSubmit() {
       <UFooterColumns :links="links">
         <template #right>
           <form @submit.prevent="onSubmit">
-            <UFormGroup
+            <UFormField
               label="Subscribe to our newsletter"
               :ui="{ container: 'mt-3' }"
             >
@@ -82,7 +82,7 @@ function onSubmit() {
                   />
                 </template>
               </UInput>
-            </UFormGroup>
+            </UFormField>
           </form>
         </template>
       </UFooterColumns>
