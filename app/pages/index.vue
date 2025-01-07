@@ -1,20 +1,17 @@
 <script setup lang="ts">
-const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('content').path(route.path).first()
-)
+const page = await queryCollection('content').first()
 
 useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
+  title: page.title,
+  ogTitle: page.title,
+  description: page.description,
+  ogDescription: page.description
 })
 </script>
 
 <template>
   <div>
-    <ULandingHero
+    <UPageHero
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
@@ -50,7 +47,7 @@ useSeoMeta({
 
       <ImagePlaceholder />
 
-      <ULandingLogos
+      <!--      <ULandingLogos
         :title="page.logos.title"
         align="center"
       >
@@ -60,10 +57,10 @@ useSeoMeta({
           :name="icon"
           class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
         />
-      </ULandingLogos>
-    </ULandingHero>
+      </ULandingLogos> -->
+    </UPageHero>
 
-    <ULandingSection
+    <UPageSection
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
@@ -72,33 +69,33 @@ useSeoMeta({
         id="features"
         class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
       >
-        <ULandingCard
+        <UPageCard
           v-for="(item, index) in page.features.items"
           :key="index"
           v-bind="item"
         />
       </UPageGrid>
-    </ULandingSection>
+    </UPageSection>
 
-    <ULandingSection
+    <UPageSection
       :title="page.pricing.title"
       :description="page.pricing.description"
       :headline="page.pricing.headline"
     >
-      <UPricingGrid
+      <!--      <UPricingGrid
         id="pricing"
         compact
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
+        class="scroll-mt-[calc(var(&#45;&#45;header-height)+140px+128px+96px)]"
       >
         <UPricingCard
           v-for="(plan, index) in page.pricing.plans"
           :key="index"
           v-bind="plan"
         />
-      </UPricingGrid>
-    </ULandingSection>
+      </UPricingGrid> -->
+    </UPageSection>
 
-    <ULandingSection
+    <UPageSection
       :headline="page.testimonials.headline"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
@@ -112,25 +109,25 @@ useSeoMeta({
           :key="index"
           class="break-inside-avoid"
         >
-          <ULandingTestimonial v-bind="testimonial" />
+          <!--          <ULandingTestimonial v-bind="testimonial" /> -->
         </div>
       </UPageColumns>
-    </ULandingSection>
+    </UPageSection>
 
-    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
-      <ULandingCTA
+    <UPageSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
+      <!--      <ULandingCTA
         v-bind="page.cta"
         :card="false"
-      />
-    </ULandingSection>
+      /> -->
+    </UPageSection>
 
-    <ULandingSection
+    <UPageSection
       id="faq"
       :title="page.faq.title"
       :description="page.faq.description"
       class="scroll-mt-[var(--header-height)]"
     >
-      <ULandingFAQ
+      <UPageAccordion
         multiple
         :items="page.faq.items"
         :ui="{
@@ -143,6 +140,6 @@ useSeoMeta({
         }"
         class="max-w-4xl mx-auto"
       />
-    </ULandingSection>
+    </UPageSection>
   </div>
 </template>

@@ -56,7 +56,7 @@ function onSubmit() {
 <template>
   <UFooter>
     <template #top>
-      <UFooterColumns :links="links">
+      <!--      <UFooterColumns :links="links">
         <template #right>
           <form @submit.prevent="onSubmit">
             <UFormField
@@ -85,7 +85,7 @@ function onSubmit() {
             </UFormField>
           </form>
         </template>
-      </UFooterColumns>
+      </UFooterColumns> -->
     </template>
 
     <template #left>
@@ -102,7 +102,7 @@ function onSubmit() {
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="GitHub"
-        color="gray"
+        color="neutral"
         variant="ghost"
       />
     </template>
