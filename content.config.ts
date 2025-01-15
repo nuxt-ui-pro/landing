@@ -52,14 +52,15 @@ export const collections = {
             title: z.string().nonempty(),
             description: z.string().nonempty(),
             price: z.string().nonempty(),
-            align: z.string().nonempty(),
+            billing_period: z.string().nonempty(),
+            billing_cycle: z.string().nonempty(),
             button: z.object({
-              label: z.string().nonempty(),
-              color: z.string().nonempty()
+              label: z.string().nonempty()
             }),
             features: z.array(
               z.string().nonempty()
-            )
+            ),
+            highlight: z.boolean().optional()
           })
         )
       }),
@@ -70,12 +71,12 @@ export const collections = {
         items: z.array(
           z.object({
             quote: z.string().nonempty(),
-            author: z.object({
+            user: z.object({
               name: z.string().nonempty(),
               description: z.string().nonempty(),
               avatar: z.object({
                 src: z.string().nonempty(),
-                loading: z.string().nonempty()
+                alt: z.string().nonempty()
               })
             })
           })

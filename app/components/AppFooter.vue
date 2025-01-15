@@ -42,46 +42,50 @@ const loading = ref(false)
 function onSubmit() {
   loading.value = true
 
-  setTimeout(() => {
-    toast.add({
-      title: 'Subscribed!',
-      description: 'You\'ve been subscribed to our newsletter.'
-    })
-
-    loading.value = false
-  }, 1000)
+  toast.add({
+    title: 'Subscribed!',
+    description: 'You\'ve been subscribed to our newsletter.'
+  })
 }
 </script>
 
 <template>
-  <UFooter>
+  <USeparator
+    icon="i-simple-icons-nuxtdotjs"
+    type="dashed"
+    class="h-px"
+  />
+  <UFooter :ui="{ container: 'border-t border-[var(--ui-border)]' }">
     <template #top>
-      <UFooterColumns :links="links">
-        <template #right>
-          <form @submit.prevent="onSubmit">
-            <UFormField
-              name="email"
-              label="Subscribe to our newsletter"
-              size="lg"
-            >
-              <UInput
-                type="email"
-                class="w-full"
-                placeholder="Enter your email"
+      <UContainer>
+        <UFooterColumns :links="links">
+          <template #right>
+            <form @submit.prevent="onSubmit">
+              <UFormField
+                name="email"
+                label="Subscribe to our newsletter"
+                size="lg"
               >
-                <template #trailing>
-                  <UButton
-                    type="submit"
-                    size="xs"
-                    color="neutral"
-                    label="Subscribe"
-                  />
-                </template>
-              </UInput>
-            </UFormField>
-          </form>
-        </template>
-      </UFooterColumns>
+                <UInput
+                  v-model="email"
+                  type="email"
+                  class="w-full"
+                  placeholder="Enter your email"
+                >
+                  <template #trailing>
+                    <UButton
+                      type="submit"
+                      size="xs"
+                      color="neutral"
+                      label="Subscribe"
+                    />
+                  </template>
+                </UInput>
+              </UFormField>
+            </form>
+          </template>
+        </UFooterColumns>
+      </UContainer>
     </template>
 
     <template #left>

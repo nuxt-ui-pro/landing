@@ -1,40 +1,38 @@
 <template>
   <div class="relative">
     <div class="bg-background border-gradient rounded-xl p-4">
-      <div class="aspect-w-16 aspect-h-9 rounded-lg relative overflow-hidden border border-dashed border-gray-950/10 dark:border-white/10">
-        <svg
-          class="absolute inset-0 h-full w-full stroke-gray-950/10 dark:stroke-white/10"
-          fill="none"
-        >
-          <defs>
-            <pattern
-              id="pattern-5c1e4f0e-62d5-498b-8ff0-cf77bb448c8e"
-              x="0"
-              y="0"
-              width="10"
-              height="10"
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3" />
-            </pattern>
-          </defs>
-          <rect
-            stroke="none"
-            fill="url(#pattern-5c1e4f0e-62d5-498b-8ff0-cf77bb448c8e)"
-            width="100%"
-            height="100%"
-          />
-        </svg>
+      <div class="aspect-w-16 aspect-h-9 p-2 rounded-lg relative overflow-hidden border border-neutral-950 dark:border-white/10">
+        <video
+          data-v-baf90ddd=""
+          preload="none"
+          poster="https://res.cloudinary.com/nuxt/video/upload/so_3.3/v1708511800/ui-pro/video-nuxt-ui-pro_kwfbdh.jpg"
+          :controls="true"
+          class="rounded-lg"
+        ><source
+          data-v-baf90ddd=""
+          src="https://res.cloudinary.com/nuxt/video/upload/v1708511800/ui-pro/video-nuxt-ui-pro_kwfbdh.webm"
+          type="video/webm"
+        ><source
+          data-v-baf90ddd=""
+          src="https://res.cloudinary.com/nuxt/video/upload/v1708511800/ui-pro/video-nuxt-ui-pro_kwfbdh.mp4"
+          type="video/mp4"
+        ><source
+          data-v-baf90ddd=""
+          src="https://res.cloudinary.com/nuxt/video/upload/v1708511800/ui-pro/video-nuxt-ui-pro_kwfbdh.ogg"
+          type="video/ogg"
+        ></video>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+@import "@nuxt/ui-pro";
+
 .border-gradient:after {
   --angle: 0deg;
-  --border-color: rgb(var(--color-gray-300));
-  --highlight-color: rgb(var(--color-primary-500));
+  --border-color: rgb(var(--ui-color-neutral-300));
+  --highlight-color: rgb(var(--ui-color-primary-500));
 
   content: '';
   position: absolute;
@@ -46,17 +44,17 @@
   opacity: 0.5;
   border-radius: 0.8rem;
   z-index: -1;
-  background: var(--border-color);
+  background: var(--ui-border);
 
   @supports (background: paint(houdini)) {
-    background: linear-gradient(var(--angle), var(--border-color), var(--border-color), var(--border-color), var(--border-color), var(--highlight-color));
+    background: linear-gradient(var(--angle), var(--ui-border), var(--ui-border), var(--ui-border), var(--ui-border), var(--highlight-color));
     animation: 10s rotate linear infinite;
   }
 }
 
 .dark .border-gradient:after {
-  --border-color: rgb(var(--color-gray-700));
-  --highlight-color: rgb(var(--color-gray-400));
+  --border-color: rgb(var(--ui-color-neutral-700));
+  --highlight-color: rgb(var(--ui-color-neutral-400));
 }
 
 @keyframes rotate {

@@ -19,7 +19,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp>
+  <UApp :toaster="{ expand: false }">
     <AppHeader />
 
     <UMain>

@@ -38,6 +38,7 @@ const items = computed(() => [{
     <UNavigationMenu :items="items" />
 
     <template #right>
+      <UColorModeButton />
       <UButton
         label="Sign in"
         color="neutral"

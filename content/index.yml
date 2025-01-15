@@ -1,8 +1,8 @@
 title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: Build your landing in seconds
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  title: The ultimate Nuxt and Vue UI library
+  description: A comprehensive, Nuxt-integrated UI library providing a rich set of fully-styled, accessible and highly customizable components for building modern web applications.
   headline:
     label: Made with Nuxt UI Pro
     to: https://ui.nuxt.com/pro
@@ -16,7 +16,8 @@ hero:
     - label: Use this template
       icon: i-simple-icons-github
       size: xl
-      color: gray
+      color: neutral
+      variant: ghost
       to: https://github.com/nuxt-ui-pro/landing
       target: _blank
 logos:
@@ -29,125 +30,154 @@ logos:
     - i-simple-icons-cloudflare
 features:
   headline: Features
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Kickstart with Nuxt UI in seconds
+  description: Nuxt UI is designed to be used with Nuxt and Vue. It comes with a set of components that are fully styled and accessible out of the box.
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+    - title: Integrations
+      description: Nuxt UI is designed to be used with Nuxt and Vue. It comes with a set of components that are fully styled and accessible out of the box.
       icon: i-heroicons-cog
     - title: Reliable
       description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
       icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
 pricing:
   headline: Pricing
   title: A plan for every need
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
+  description: On top of 40+ open source components from Nuxt UI, Pro gives you access to 50+ premium Vue components to create beautiful & responsive Nuxt applications in minutes. It includes all primitives to build landing pages, documentations, blogs, dashboards or entire SaaS products.
   plans:
-    - title: Basic
-      description: A basic plan for individuals.
-      price: $9.99
-      align: top
-      button:
-        label: Get Started
-        color: gray
+    - title: Solo
+      description: Tailored for indie hackers, freelancers and solo founders.
+      price: $249
+      billing_period: one-time payment
+      billing_cycle: plus local taxes
       features:
-        - 1 GB Storage
-        - 1 Email Account
-        - 1 Domain
-        - 1 Website
-        - 1 Database
-        - 1 SSL Certificate
-        - 1 Support Ticket
-    - title: Standard
-      description: A standard plan for small teams.
-      price: $19.99
+        - One developer
+        - Unlimited projects
+        - Access to the GitHub repository
+        - Unlimited minor & patch updates
+        - Lifetime access
+      button:
+        label: Buy now
+    - title: Startup
+      description: Best suited for small teams, startups and agencies.
+      price: $499
+      billing_period: one-time payment
+      billing_cycle: plus local taxes
+      features:
+        - Up to 5 developers
+        - Unlimited projects
+        - Access to the GitHub repository
+        - Unlimited minor & patch updates
+        - Lifetime access
+      button:
+        label: Buy now
       highlight: true
-      scale: true
-      align: top
-      button:
-        label: Get Started
+    - title: Organization
+      description: Ideal for larger teams and organizations.
+      price: $999
+      billing_period: one-time payment
+      billing_cycle: plus local taxes
       features:
-        - 10 GB Storage
-        - 10 Email Accounts
-        - 10 Domains
-        - 10 Websites
-        - 10 Databases
-        - 10 SSL Certificates
-        - 10 Support Tickets
-    - title: Premium
-      description: A premium plan for large teams.
-      price: $29.99
-      align: top
+        - Up to 20 developers
+        - Unlimited projects
+        - Everything in Startup
+        - Prioritized feature requests
+        - Unlimited minor & patch updates
+        - Lifetime access
       button:
-        label: Get Started
-        color: gray
-      features:
-        - 100 GB Storage
-        - 100 Email Accounts
-        - 100 Domains
-        - 100 Websites
-        - 100 Databases
-        - 100 SSL Certificates
-        - 100 Support Tickets
+        label: Buy now
 testimonials:
   headline: Testimonials
-  title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
+  title: What our customers are saying
+  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
   items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
-      author:
-        name: Rose Roberson
-        description: CEO at Company
+    - user:
+        name: Evan You
+        description: Author of Vue.js and Vite
         avatar:
-          src: https://i.pravatar.cc/120?img=1
-          loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
-      author:
-        name: Chace Rodgers
-        description: CEO at Company
+          src: https://i.pravatar.cc/150?u=evan-you
+          alt: Evan You
+        to: /docs
+      quote: Nuxt on Cloudflare infra with minimal effort - this is huge!
+
+    - user:
+        name: Igor Minar
+        description: Software Engineer at Cloudflare
         avatar:
-          src: https://i.pravatar.cc/120?img=7
-          loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
-      author:
-        name: Cornelius Sheppard
-        description: CEO at Company
+          src: https://i.pravatar.cc/150?u=igor-minar
+          alt: Igor Minar
+      quote: I love the polish and the batteries-included approach. NuxtHub takes web framework and hosting integration to a new level!
+
+    - user:
+        name: Charlie Hield
+        description: Senior Creative Technologist
         avatar:
-          src: https://i.pravatar.cc/120?img=3
-          loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
-      author:
-        name: Destinee Woods
-        description: CEO at Company
+          src: https://i.pravatar.cc/150?u=charlie-hield
+          alt: Charlie Hield
+      quote: NuxtHub is hands down the easiest way to get a project from zero to production on the Cloudflare stack!
+
+    - user:
+        name: Israel Ortuño
+        description: Co-founder of VueJobs
         avatar:
-          src: https://i.pravatar.cc/120?img=5
-          loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
-      author:
-        name: Kaleb Mccormick
-        description: CEO at Company
+          src: https://i.pravatar.cc/150?u=israel-ortuno
+          alt: Israel Ortuño
+      quote: I can't find an excuse to not go full-stack with Nuxt from now on. Ship fast the Nuxt way, zero config. Just plug & deploy.
+
+    - user:
+        name: Fayaz Ahmed
+        description: Indie Hacker
         avatar:
-          src: https://i.pravatar.cc/120?img=8
-          loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
-      author:
-        name: Jazmin Mccall
-        description: CEO at Company
+          src: https://i.pravatar.cc/150?u=fayaz-ahmed
+          alt: Fayaz Ahmed
+      quote: Took me less than 90 seconds to deploy an app with DB, KV, File storage and Caching, all on the edge with just a single command.
+
+    - user:
+        name: Tommy J. Vedvik
+        description: UX Developer
         avatar:
-          src: https://i.pravatar.cc/120?img=9
-          loading: lazy
+          src: https://i.pravatar.cc/150?u=tommy-vedvik
+          alt: Tommy J. Vedvik
+      quote: Nuxt is becoming the best framework for bootstrappers imo. NuxtHub is a layer on top of Cloudflare services for cheap & fast full-stack edge hosting.
+
+    - user:
+        name: Dario Piotrowicz
+        description: Web Developer at Cloudflare
+        avatar:
+          src: https://i.pravatar.cc/150?u=dario-piotrowicz
+          alt: Dario Piotrowicz
+      quote: I love how NuxtHub combines, amplifies and simplifies the Cloudflare tooling with the wide and mature Nuxt ecosystem. I cannot wait to see how it will evolve and expand in the future!
+
+    - user:
+        name: Markus Oberlehner
+        description: Web Developer
+        avatar:
+          src: https://i.pravatar.cc/150?u=markus-oberlehner
+          alt: Markus Oberlehner
+      quote: Just deployed my first site to Cloudflare using NuxtHub. Very sleek experience!
+
+    - user:
+        name: Anthony Fu
+        description: Core team Vue.js, Vite & Nuxt
+        avatar:
+          src: https://i.pravatar.cc/150?u=anthony-fu
+          alt: Anthony Fu
+      quote: It's amazing to be able to run a single command and get existing Nuxt project deployed on edge within minutes! It felt like unlocking the missing infrastructure and UI for Cloudflare, enhancing the developer experience in such an extraordinary way.
+
+    - user:
+        name: Jonathan Beckman
+        description: Founder of GuaranTee Time
+        avatar:
+          src: https://i.pravatar.cc/150?u=jonathan-beckman
+          alt: Jonathan Beckman
+      quote: NuxtHub and Cloudflare are my go to for full stack apps. The DX is joyous and far superior to any other platform I've used. My team is able to iterate quickly, and build beautiful, performant apps with ease.
+
+    - user:
+        name: Eckhardt Dreyer
+        description: Lead Developer at YG
+        avatar:
+          src: https://i.pravatar.cc/150?u=eckhardt-dreyer
+          alt: Eckhardt Dreyer
+      quote: At YG, our team recently grew and that meant more seats on all the tools we use. Migrating our hosting workflow to NuxtHub not only took just a few minutes but saved us money from our previous provider. NuxtHub provides an excellent management layer on top of our infrastructure and we're super happy about the move!
 cta:
   title: Get started today
   description: Nisi mollit id aliquip sunt est laborum sit sit.
@@ -156,18 +186,17 @@ cta:
       size: xl
 faq:
   title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  description: Have a question? Check out our FAQs to find answers to common inquiries about Nuxt UI.
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
-      defaultOpen: true
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+    - label: What is Nuxt UI?
+      content: Nuxt UI is a comprehensive UI library built specifically for Nuxt applications. It provides a rich set of fully-styled, accessible components that follow modern design principles and best practices. The library seamlessly integrates with Nuxt and includes features like dark mode support, customization options, and TypeScript compatibility.
+    - label: How do I install and set up Nuxt UI?
+      content: Getting started with Nuxt UI is simple. First, install it via npm with `npm install @nuxt/ui` or yarn with `yarn add @nuxt/ui`. Then, add it to your nuxt.config.ts modules array. The library includes auto-imports for components and composables, so you can start using them immediately in your templates.
+    - label: What components are included?
+      content: Nuxt UI provides an extensive collection of components including buttons, forms, navigation elements, data display components, and more. Each component is built with accessibility in mind and supports customization through props and slots. The library also includes layout components to help structure your applications.
+    - label: Is Nuxt UI customizable?
+      content: Yes, Nuxt UI is highly customizable. You can modify components using Tailwind CSS classes, override default themes, create custom variants, and extend components through slots and props. The library also supports creating your own component presets for consistent styling across your application.
+    - label: What are the browser compatibility requirements?
+      content: Nuxt UI supports all modern browsers including Chrome, Firefox, Safari, and Edge. It requires browsers that support modern JavaScript features and CSS properties. The library is built with progressive enhancement in mind, ensuring a good experience across different browsers and devices.
+    - label: Is there documentation and support available?
+      content: Yes, Nuxt UI has comprehensive documentation with examples, API references, and guides. The library is actively maintained by the Nuxt team and community. You can find support through GitHub issues, Discord community, and Stack Overflow.
