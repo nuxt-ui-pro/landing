@@ -86,98 +86,93 @@ pricing:
       button:
         label: Buy now
 testimonials:
-  headline: Testimonials
-  title: What our customers are saying
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  title: What people are saying
+  description: Nuxt UI Pro is already trusted by 1,500+ users and teams around the world.
   items:
-    - user:
-        name: Evan You
-        description: Author of Vue.js and Vite
+    - quote: "We were using a SaaS service for the docs site, but were left unfulfilled. We put in the effort to do it in house, with UI Pro and not only did we get complimented by a prospect on our site, but they wanted to know our platform."
+      user:
+        name: 'Anthony Bettini'
+        description: 'CEO and founder of VulnCheck'
+        to: 'https://www.linkedin.com/in/anthonybettini/'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=evan-you
-          alt: Evan You
-        to: /docs
-      quote: Nuxt on Cloudflare infra with minimal effort - this is huge!
-
-    - user:
-        name: Igor Minar
-        description: Software Engineer at Cloudflare
+          src: 'https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1519741249442?e=1734566400&v=beta&t=mLV1GAL0RopSlgVP1jLGY2Gt2_pkTu6kcl2mG-Ljg5w'
+          loading: lazy
+    - quote: "Wow, Nuxt UI Pro is a total game-changer! I'm seriously impressed with the quality, attention to detail, and the insane variety of components you get. It's like hitting the jackpot for any developer. I've saved countless hours that I would've spent stressing over making my apps look good, with amazing accessible UX,  and instead, I've been able to focus on the real deal – building the app itself. It's an instant buy for me, every single time. No second thoughts!"
+      user:
+        name: 'Yaz Jallad'
+        description:  'Founder Ninjaparade Digital'
+        to: 'https://twitter.com/ninjaparade/'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=igor-minar
-          alt: Igor Minar
-      quote: I love the polish and the batteries-included approach. NuxtHub takes web framework and hosting integration to a new level!
-
-    - user:
-        name: Charlie Hield
-        description: Senior Creative Technologist
+          src: 'https://pbs.twimg.com/profile_images/1824690890222485504/lQ7v1AGt_400x400.jpg'
+          loading: lazy
+    - quote: "Nuxt UI Pro saves 100s of hours of dev and design time while delivering a clean professional look on any device."
+      user:
+        name: 'Kevin Olson'
+        description:  'Founder of Fume.app'
+        to: 'https://github.com/acidjazz'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=charlie-hield
-          alt: Charlie Hield
-      quote: NuxtHub is hands down the easiest way to get a project from zero to production on the Cloudflare stack!
-
-    - user:
-        name: Israel Ortuño
-        description: Co-founder of VueJobs
+          src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/acidjazz'
+          srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/acidjazz 2x'
+          loading: lazy
+    - quote: "I decided to replace my custom-built components with a component library and chose Nuxt UI Pro. It only took me a few hours, and the new UI looks more professional. Integrating the library is easy; the components are well-documented and highly customizable. I can only recommend it; this library is my new choice for new SaaS products."
+      user:
+        name: 'Michael Hoffmann'
+        description:  'Senior Frontend Developer'
+        to: 'https://mokkapps.de/'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=israel-ortuno
-          alt: Israel Ortuño
-      quote: I can't find an excuse to not go full-stack with Nuxt from now on. Ship fast the Nuxt way, zero config. Just plug & deploy.
-
-    - user:
-        name: Fayaz Ahmed
-        description: Indie Hacker
+          src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/mokkapps'
+          srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/mokkapps 2x'
+          loading: lazy
+    - quote: "Nuxt UI Pro is my go to component library. Out-of-the-box it handles all of the UI demands I throw at it while looking great. The customisation is really worth thought out, allowing you to override components in a breeze. Always amazed at the improvements dropped in each update as well, the team is doing an amazing job."
+      user:
+        name: 'Harlan Wilton'
+        description:  'Nuxt core team member'
+        to: 'https://github.com/harlan-zw'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=fayaz-ahmed
-          alt: Fayaz Ahmed
-      quote: Took me less than 90 seconds to deploy an app with DB, KV, File storage and Caching, all on the edge with just a single command.
-
-    - user:
-        name: Tommy J. Vedvik
-        description: UX Developer
+          src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/harlan-zw'
+          srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/harlan-zw 2x'
+          loading: lazy
+    - quote: "I jumped at the chance to buy the Nuxt team's new UI kit as soon as I saw it. While I'm already a fan of Nuxt UI, the pro version takes it to a whole new level and lets me paste entire blocks into all my projects, saving me a ton of time."
+      user:
+        name: 'Thomas Sanlis'
+        description:  'Freelance developer and designer'
+        to: 'https://twitter.com/T_Zahil'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=tommy-vedvik
-          alt: Tommy J. Vedvik
-      quote: Nuxt is becoming the best framework for bootstrappers imo. NuxtHub is a layer on top of Cloudflare services for cheap & fast full-stack edge hosting.
-
-    - user:
-        name: Dario Piotrowicz
-        description: Web Developer at Cloudflare
+          src: 'https://pbs.twimg.com/profile_images/1374040164180299791/ACw4G3nZ_400x400.jpg'
+          loading: lazy
+    - quote: "Nuxt UI has allowed me to develop my SaaS without any prior mockups. The design quality of their components and the intelligence of the DX meant that I was able to try many different layouts for my application until I found the perfect UX for my users. Nuxt UI is the ui-kit I would have dreamed of building myself, and Nuxt UI Pro makes things even easier when you want to go further with your SaaS. Kudos to the team."
+      user:
+        name: 'Benjamin Code'
+        description:  'YouTuber and SaaS builder'
+        to: 'https://twitter.com/benjamincode'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=dario-piotrowicz
-          alt: Dario Piotrowicz
-      quote: I love how NuxtHub combines, amplifies and simplifies the Cloudflare tooling with the wide and mature Nuxt ecosystem. I cannot wait to see how it will evolve and expand in the future!
-
-    - user:
-        name: Markus Oberlehner
-        description: Web Developer
+          src: 'https://pbs.twimg.com/profile_images/1607353032420769793/I8qQSUfQ_400x400.jpg'
+          loading: lazy
+    - quote: "Nuxt UI Pro is my preferred choice for everything, from a POC to a web platform. It's ready to use out-of-the-box and assists me in crafting pixel-perfect UIs. It saves me a significant amount of time while remaining highly customizable. Give it a try, and you won't be let down."
+      user:
+        name: 'Estéban Soubiran'
+        description:  'Web developer and UnJS member'
+        to: 'https://twitter.com/soubiran_'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=markus-oberlehner
-          alt: Markus Oberlehner
-      quote: Just deployed my first site to Cloudflare using NuxtHub. Very sleek experience!
-
-    - user:
-        name: Anthony Fu
-        description: Core team Vue.js, Vite & Nuxt
+          src: 'https://pbs.twimg.com/profile_images/1801649350319218689/aS_X_iTm_400x400.jpg'
+          loading: lazy
+    - quote: "As someone who builds a lot of open-source projects, Nuxt UI Pro has completely changed my development workflow. The components are not just beautiful, they're thoughtfully designed with developer experience in mind. From dashboards to documentation sites, everything just feels right."
+      user:
+        name: 'Hugo Richard'
+        description:  'Frontend Engineer at NuxtLabs'
+        to: 'https://twitter.com/hugorcd__'
+        target: _blank
         avatar:
-          src: https://i.pravatar.cc/150?u=anthony-fu
-          alt: Anthony Fu
-      quote: It's amazing to be able to run a single command and get existing Nuxt project deployed on edge within minutes! It felt like unlocking the missing infrastructure and UI for Cloudflare, enhancing the developer experience in such an extraordinary way.
-
-    - user:
-        name: Jonathan Beckman
-        description: Founder of GuaranTee Time
-        avatar:
-          src: https://i.pravatar.cc/150?u=jonathan-beckman
-          alt: Jonathan Beckman
-      quote: NuxtHub and Cloudflare are my go to for full stack apps. The DX is joyous and far superior to any other platform I've used. My team is able to iterate quickly, and build beautiful, performant apps with ease.
-
-    - user:
-        name: Eckhardt Dreyer
-        description: Lead Developer at YG
-        avatar:
-          src: https://i.pravatar.cc/150?u=eckhardt-dreyer
-          alt: Eckhardt Dreyer
-      quote: At YG, our team recently grew and that meant more seats on all the tools we use. Migrating our hosting workflow to NuxtHub not only took just a few minutes but saved us money from our previous provider. NuxtHub provides an excellent management layer on top of our infrastructure and we're super happy about the move!
+          src: 'https://avatars.githubusercontent.com/u/71938701?v=4'
+          loading: lazy
 cta:
   title: Get started today
   description: Nisi mollit id aliquip sunt est laborum sit sit.
@@ -185,18 +180,21 @@ cta:
     - label: Sign up for free
       size: xl
 faq:
-  title: Frequently asked questions
-  description: Have a question? Check out our FAQs to find answers to common inquiries about Nuxt UI.
+  title: Frequently Asked Questions
+  description: If you can't find what you're looking for, email our support team and if you're lucky someone will get back to you.
   items:
-    - label: What is Nuxt UI?
-      content: Nuxt UI is a comprehensive UI library built specifically for Nuxt applications. It provides a rich set of fully-styled, accessible components that follow modern design principles and best practices. The library seamlessly integrates with Nuxt and includes features like dark mode support, customization options, and TypeScript compatibility.
-    - label: How do I install and set up Nuxt UI?
-      content: Getting started with Nuxt UI is simple. First, install it via npm with `npm install @nuxt/ui` or yarn with `yarn add @nuxt/ui`. Then, add it to your nuxt.config.ts modules array. The library includes auto-imports for components and composables, so you can start using them immediately in your templates.
-    - label: What components are included?
-      content: Nuxt UI provides an extensive collection of components including buttons, forms, navigation elements, data display components, and more. Each component is built with accessibility in mind and supports customization through props and slots. The library also includes layout components to help structure your applications.
-    - label: Is Nuxt UI customizable?
-      content: Yes, Nuxt UI is highly customizable. You can modify components using Tailwind CSS classes, override default themes, create custom variants, and extend components through slots and props. The library also supports creating your own component presets for consistent styling across your application.
-    - label: What are the browser compatibility requirements?
-      content: Nuxt UI supports all modern browsers including Chrome, Firefox, Safari, and Edge. It requires browsers that support modern JavaScript features and CSS properties. The library is built with progressive enhancement in mind, ensuring a good experience across different browsers and devices.
-    - label: Is there documentation and support available?
-      content: Yes, Nuxt UI has comprehensive documentation with examples, API references, and guides. The library is actively maintained by the Nuxt team and community. You can find support through GitHub issues, Discord community, and Stack Overflow.
+    - label: Do you have a free trial?
+      content: We have much better than a free trial, you can use Nuxt UI Pro for free in development mode. Once you are ready to deploy your application, you can purchase a license.
+      defaultOpen: true
+    - label: Can I use Nuxt UI Pro for Open Source projects?
+      content: Yes, you can use Nuxt UI Pro for your open source projects as well as your commercial projects as long as you don't sell Nuxt UI Pro as a product and that you don't share your license key.
+    - label: What does “Unlimited minor & patch updates” include?
+      content: We add new components and improvements to Nuxt UI Pro as we get new ideas and feedback, you will receive these updates for the major version you purchased. :br **Your license key will work forever for the major version.** We may release a major version including more advanced components and features in the future, you will be able to upgrade to this version with a generous discount.
+    - label: What does “lifetime access” means?
+      content: Nuxt UI Pro is a one-time purchase, with no recurring subscription. You will have access to all assets of Nuxt UI Pro forever.
+    - label: Do you have discounts for students or non-profits?
+      content: Yes, we offer a 50% discount for students using Nuxt UI Pro purely for educational purposes. Contact us at ui-pro@nuxt.com with your details and we'll send you a discount code.
+    - label: Do you offer technical support?
+      content: Once you sign up you get access to our private GitHub repository, where you can ask questions, report bugs or feature requests and get help from other customers. If you require more specialised support or consultancy, contact us at ui-pro@nuxt.com.
+    - label: What is your refund policy?
+      content: If you are not satisfied with Nuxt UI Pro, let us know within 14 days of your purchase at ui-pro@nuxt.com and we'll refund your money.

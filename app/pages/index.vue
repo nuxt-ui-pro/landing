@@ -43,6 +43,7 @@ useSeoMeta({
     </UPageHero>
 
     <UPageSection
+      id="features"
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
@@ -69,14 +70,14 @@ useSeoMeta({
       </div>
     </UPageSection>
 
-    <UPageSection
+    <!--    <UPageSection
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
     >
       <UPageGrid
         id="features"
-        class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]"
+        class="scroll-mt-[calc(var(&#45;&#45;header-height)+140px+128px+96px)]"
       >
         <UPageCard
           v-for="(item, index) in page.features.items"
@@ -84,7 +85,7 @@ useSeoMeta({
           v-bind="item"
         />
       </UPageGrid>
-    </UPageSection>
+    </UPageSection> -->
 
     <UPageSection
       id="pricing"
@@ -183,22 +184,24 @@ useSeoMeta({
       :title="page.testimonials.title"
       :description="page.testimonials.description"
     >
-      <UPageColumns class="xl:columns-4">
-        <UPageCard
-          v-for="(testimonial, index) in page.testimonials.items"
-          :key="index"
-          variant="subtle"
-          :description="testimonial.quote"
-          :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
-        >
-          <template #footer>
-            <UUser
-              v-bind="testimonial.user"
-              size="xl"
-            />
-          </template>
-        </UPageCard>
-      </UPageColumns>
+      <UContainer>
+        <UPageColumns class="xl:columns-4">
+          <UPageCard
+            v-for="(testimonial, index) in page.testimonials.items"
+            :key="index"
+            variant="subtle"
+            :description="testimonial.quote"
+            :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
+          >
+            <template #footer>
+              <UUser
+                v-bind="testimonial.user"
+                size="xl"
+              />
+            </template>
+          </UPageCard>
+        </UPageColumns>
+      </UContainer>
     </UPageSection>
 
     <UPageSection>
