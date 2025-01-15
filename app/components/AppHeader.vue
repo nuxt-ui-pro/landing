@@ -1,24 +1,26 @@
 <script setup lang="ts">
+const route = useRoute()
+
 const items = computed(() => [{
   label: 'Features',
   to: '#features',
   icon: 'i-heroicons-cube-transparent',
-  exactHash: true
+  active: route.hash === '#features'
 }, {
   label: 'Pricing',
   to: '#pricing',
   icon: 'i-heroicons-credit-card',
-  exactHash: true
+  active: route.hash === '#pricing'
 }, {
   label: 'Testimonials',
   to: '#testimonials',
   icon: 'i-heroicons-academic-cap',
-  exactHash: true
+  active: route.hash === '#testimonials'
 }, {
   label: 'FAQ',
   to: '#faq',
   icon: 'i-heroicons-question-mark-circle',
-  exactHash: true
+  active: route.hash === '#faq'
 }])
 </script>
 

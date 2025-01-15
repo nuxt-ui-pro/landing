@@ -56,36 +56,32 @@ function onSubmit() {
 <template>
   <UFooter>
     <template #top>
-      <!--      <UFooterColumns :links="links">
+      <UFooterColumns :links="links">
         <template #right>
           <form @submit.prevent="onSubmit">
             <UFormField
+              name="email"
               label="Subscribe to our newsletter"
-              :ui="{ container: 'mt-3' }"
+              size="lg"
             >
               <UInput
-                v-model="email"
                 type="email"
+                class="w-full"
                 placeholder="Enter your email"
-                :ui="{ icon: { trailing: { pointer: '' } } }"
-                required
-                size="xl"
-                autocomplete="off"
-                class="max-w-sm"
               >
                 <template #trailing>
                   <UButton
                     type="submit"
                     size="xs"
-                    :label="loading ? 'Subscribing' : 'Subscribe'"
-                    :loading="loading"
+                    color="neutral"
+                    label="Subscribe"
                   />
                 </template>
               </UInput>
             </UFormField>
           </form>
         </template>
-      </UFooterColumns> -->
+      </UFooterColumns>
     </template>
 
     <template #left>

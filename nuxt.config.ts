@@ -16,7 +16,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   routeRules: {
-    // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true }
   },
 
@@ -24,7 +23,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
-  compatibilityDate: '2024-07-11',
+  compatibilityDate: '2025-01-15',
 
   typescript: {
     strict: false
