@@ -4,28 +4,28 @@ const route = useRoute()
 const items = computed(() => [{
   label: 'Features',
   to: '#features',
-  icon: 'i-heroicons-cube-transparent',
   active: route.hash === '#features'
+}, {
+  label: 'Templates',
+  to: '#templates',
+  active: route.hash === '#templates'
 }, {
   label: 'Pricing',
   to: '#pricing',
-  icon: 'i-heroicons-credit-card',
   active: route.hash === '#pricing'
 }, {
   label: 'Testimonials',
   to: '#testimonials',
-  icon: 'i-heroicons-academic-cap',
   active: route.hash === '#testimonials'
 }, {
   label: 'FAQ',
   to: '#faq',
-  icon: 'i-heroicons-question-mark-circle',
   active: route.hash === '#faq'
 }])
 </script>
 
 <template>
-  <UHeader>
+  <UHeader mode="drawer">
     <template #title>
       Nuxt UI Pro
       <UBadge
@@ -48,8 +48,12 @@ const items = computed(() => [{
       />
     </template>
 
-    <!--    <template #panel>
-      <UAsideLinks :links="links" />
+    <template #content>
+      <UNavigationMenu
+        :items="items"
+        orientation="vertical"
+        class="-mx-2.5"
+      />
 
       <USeparator class="my-6" />
 
@@ -59,10 +63,6 @@ const items = computed(() => [{
         block
         class="mb-3"
       />
-      <UButton
-        label="Get started"
-        block
-      />
-    </template> -->
+    </template>
   </UHeader>
 </template>

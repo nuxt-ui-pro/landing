@@ -175,9 +175,9 @@ testimonials:
           loading: lazy
 cta:
   title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  description: Start building beautiful and responsive Nuxt applications in minutes with Nuxt UI Pro.
   links:
-    - label: Sign up for free
+    - label: Get started
       size: xl
 faq:
   title: Frequently Asked Questions

@@ -7,10 +7,63 @@ useSeoMeta({
   description: page.description,
   ogDescription: page.description
 })
+
+const cards = [{
+  title: 'Color Palette',
+  description: 'Choose a primary and a gray color from your Tailwind CSS color palette. Components will be styled accordingly.',
+  variant: 'subtle' as const,
+  icon: 'i-lucide-palette',
+  class: 'col-span-2',
+  image: {
+    path: 'https://ui.nuxt.com/illustrations/color-palette',
+    width: 363,
+    height: 152
+  },
+  orientation: 'horizontal' as const
+}, {
+  title: 'Fully Customizable',
+  description: 'Change the style of any component in your App Config or customize them specifically through the ui prop.',
+  variant: 'subtle' as const,
+  icon: 'i-lucide-wrench',
+  image: {
+    path: 'https://ui.nuxt.com/illustrations/fully-customizable',
+    width: 444,
+    height: 160
+  },
+  class: 'row-span-1.5',
+  orientation: 'vertical' as const
+}, {
+  title: 'Light & Dark',
+  description: 'Every component is designed with dark mode in mind. Works out of the box with @nuxtjs/color-mode.',
+  icon: 'i-lucide-moon',
+  variant: 'subtle' as const,
+  image: {
+    path: 'https://ui.nuxt.com/illustrations/dark-mode',
+    width: 444,
+    height: 160
+  },
+  class: '',
+  orientation: 'vertical' as const
+}, {
+  title: 'Icons',
+  description: 'Choose any of the 100k+ icons from the most popular icon libraries with the Icon component or the icon prop.',
+  variant: 'subtle' as const,
+  icon: 'i-lucide-smile',
+  image: {
+    path: 'https://ui.nuxt.com/illustrations/icon-library',
+    width: 362,
+    height: 184
+  },
+  class: 'col-span-2',
+  orientation: 'horizontal' as const
+}]
 </script>
 
 <template>
-  <div>
+  <div class="relative">
+    <div
+      class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80"
+    />
     <UPageHero
       :description="page.hero.description"
       :links="page.hero.links"
@@ -44,33 +97,30 @@ useSeoMeta({
 
     <UPageSection
       id="features"
-      :title="page.features.title"
-      :description="page.features.description"
-      :headline="page.features.headline"
-      orientation="horizontal"
-      reverse
-      class="overflow-hidden"
-      :features="page.features.items"
-      :links="[{
-        label: 'Explore',
-        to: '/docs',
-        color: 'neutral',
-        variant: 'subtle',
-        trailingIcon: 'i-lucide-arrow-right'
-      }]"
+      headline="Features"
+      title="Everything you expect from a UI component library"
     >
-      <div class="flex items-start justify-end">
-        <img
-          src="https://ui.nuxt.com/templates/dashboard3.png"
-          alt="Product screenshot"
-          class="w-[48rem] max-w-none rounded-xl shadow-xl sm:w-[57rem] ring ring-[var(--ui-border)]"
-          width="4804"
-          height="3000"
+      <UPageGrid>
+        <UPageCard
+          v-for="(card, index) in cards"
+          :key="index"
+          v-bind="card"
         >
-      </div>
+          <UColorModeImage
+            :light="`${card.image.path}-light.svg`"
+            :dark="`${card.image.path}-dark.svg`"
+            :width="card.image.width"
+            :height="card.image.height"
+            :alt="card.title"
+            loading="lazy"
+            class="object-cover w-full"
+          />
+        </UPageCard>
+      </UPageGrid>
     </UPageSection>
 
     <!--    <UPageSection
+      id="features"
       :title="page.features.title"
       :description="page.features.description"
       :headline="page.features.headline"
@@ -86,6 +136,34 @@ useSeoMeta({
         />
       </UPageGrid>
     </UPageSection> -->
+
+    <UPageSection
+      id="templates"
+      :title="page.features.title"
+      :description="page.features.description"
+      :headline="page.features.headline"
+      orientation="horizontal"
+      class="overflow-hidden"
+      :features="page.features.items"
+      :links="[{
+        label: 'Explore',
+        to: '/docs',
+        color: 'neutral',
+        variant: 'subtle',
+        trailingIcon: 'i-lucide-arrow-right'
+      }]"
+    >
+      <div class="flex items-start justify-start">
+        <UColorModeImage
+          light="https://ui.nuxt.com/templates/dashboard3.png"
+          dark="https://ui.nuxt.com/templates/dashboard2.png"
+          alt="Product screenshot"
+          class="w-[48rem] max-w-none rounded-xl shadow-xl sm:w-[57rem] ring ring-[var(--ui-border)]"
+          width="4804"
+          height="3000"
+        />
+      </div>
+    </UPageSection>
 
     <UPageSection
       id="pricing"
@@ -106,6 +184,8 @@ useSeoMeta({
                 color="neutral"
                 variant="subtle"
                 label="Get started for Free"
+                to="https://ui3.nuxt.dev/getting-started"
+                target="_blank"
                 size="lg"
                 block
               />
@@ -203,6 +283,22 @@ useSeoMeta({
         </UPageColumns>
       </UContainer>
     </UPageSection>
+
+    <UPageCTA
+      description="“Nuxt UI, born from a desire to improve Vue component development, is the go-to library for building modern web interfaces. We aim to provide you with a comprehensive set of tools to create and customize your next UI while maintaining the best developer experience.”"
+      variant="soft"
+      class="rounded-none"
+      :ui="{ container: 'lg:py-12' }"
+    >
+      <UUser
+        name="Benjamin Canac"
+        description="Author of Nuxt UI"
+        to="https://github.com/benjamincanac"
+        :avatar="{ src: 'https://github.com/benjamincanac.png' }"
+        size="xl"
+        class="justify-center"
+      />
+    </UPageCTA>
 
     <UPageSection>
       <UPageCTA

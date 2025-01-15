@@ -3,8 +3,10 @@
 
 :root {
   --ui-primary: black;
+  --ui-bg: white;
 }
 
 .dark {
   --ui-primary: white;
+  --ui-bg: #090909;
 }
