@@ -3,13 +3,9 @@ description: Nuxt UI Pro is a collection of premium Vue components built on top 
 hero:
   title: The ultimate Nuxt and Vue UI library
   description: A comprehensive, Nuxt-integrated UI library providing a rich set of fully-styled, accessible and highly customizable components for building modern web applications.
-  headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
-    icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
-      icon: i-heroicons-arrow-right-20-solid
+      icon: i-lucide-arrow-right
       trailing: true
       to: '#features'
       size: xl
@@ -35,10 +31,10 @@ features:
   items:
     - title: Integrations
       description: Nuxt UI is designed to be used with Nuxt and Vue. It comes with a set of components that are fully styled and accessible out of the box.
-      icon: i-heroicons-cog
+      icon: i-lucide-cog
     - title: Reliable
       description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
+      icon: i-lucide-check
 pricing:
   headline: Pricing
   title: A plan for every need

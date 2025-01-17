@@ -119,24 +119,6 @@ const cards = [{
       </UPageGrid>
     </UPageSection>
 
-    <!--    <UPageSection
-      id="features"
-      :title="page.features.title"
-      :description="page.features.description"
-      :headline="page.features.headline"
-    >
-      <UPageGrid
-        id="features"
-        class="scroll-mt-[calc(var(&#45;&#45;header-height)+140px+128px+96px)]"
-      >
-        <UPageCard
-          v-for="(item, index) in page.features.items"
-          :key="index"
-          v-bind="item"
-        />
-      </UPageGrid>
-    </UPageSection> -->
-
     <UPageSection
       id="templates"
       :title="page.features.title"
@@ -316,7 +298,14 @@ const cards = [{
         multiple
         :items="page.faq.items"
         class="max-w-4xl mx-auto"
-      />
+      >
+        <template #body="{ item }">
+          <MDC
+            :value="item.content"
+            unwrap="p"
+          />
+        </template>
+      </UPageAccordion>
     </UPageSection>
   </div>
 </template>

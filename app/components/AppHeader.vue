@@ -43,7 +43,7 @@ const items = computed(() => [{
         label="Sign in"
         color="neutral"
         variant="ghost"
-        trailing-icon="i-heroicons-arrow-right-20-solid"
+        trailing-icon="i-lucide-arrow-right"
         class="hidden lg:flex"
       />
     </template>
