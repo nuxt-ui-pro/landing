@@ -1,13 +1,12 @@
 <template>
   <div class="relative">
-    <div class="bg-background border-gradient rounded-xl p-4">
-      <div class="aspect-w-16 aspect-h-9 p-2 rounded-lg relative overflow-hidden border border-neutral-950 dark:border-white/10">
+    <div class="border-gradient rounded-xl p-4">
+      <div class="aspect-w-16 aspect-h-9 rounded-xl relative overflow-hidden border border-neutral-950 dark:border-white/10">
         <video
           data-v-baf90ddd=""
           preload="none"
           poster="https://res.cloudinary.com/nuxt/video/upload/so_3.3/v1708511800/ui-pro/video-nuxt-ui-pro_kwfbdh.jpg"
           :controls="true"
-          class="rounded-lg"
         ><source
           data-v-baf90ddd=""
           src="https://res.cloudinary.com/nuxt/video/upload/v1708511800/ui-pro/video-nuxt-ui-pro_kwfbdh.webm"
@@ -27,8 +26,6 @@
 </template>
 
 <style scoped>
-@import "@nuxt/ui-pro";
-
 .border-gradient:after {
   --angle: 0deg;
   --border-color: rgb(var(--ui-color-neutral-300));

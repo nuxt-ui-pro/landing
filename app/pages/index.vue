@@ -57,6 +57,8 @@ const cards = [{
   class: 'col-span-2',
   orientation: 'horizontal' as const
 }]
+
+const isDark = computed(() => useColorMode().value == 'dark')
 </script>
 
 <template>
@@ -69,14 +71,24 @@ const cards = [{
       :links="page.hero.links"
     >
       <template #title>
-        <div>
-          <UIcon
-            name="i-simple-icons-nuxtdotjs"
-            class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
+        <div class="relative">
+          <ParticlesBg
+            class="absolute inset-0"
+            :quantity="100"
+            :ease="100"
+            :color="isDark ? '#FFF' : '#000'"
+            :staticity="10"
+            refresh
           />
-          <h1 class="">
-            {{ page.hero.title }}
-          </h1>
+          <div class="max-w-4xl mx-auto text-center">
+            <UIcon
+              name="i-simple-icons-nuxtdotjs"
+              class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
+            />
+            <h1 class="">
+              {{ page.hero.title }}
+            </h1>
+          </div>
         </div>
       </template>
 
