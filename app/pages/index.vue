@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import PromotionalVideo from '~/components/PromotionalVideo.vue'
+
 const page = await queryCollection('content').first()
 
 useSeoMeta({
@@ -92,7 +94,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
         </div>
       </template>
 
-      <ImagePlaceholder />
+      <PromotionalVideo />
 
       <!--      <ULandingLogos
         :title="page.logos.title"
