@@ -1,14 +1,18 @@
 import { defineCollection, z } from '@nuxt/content'
 
+const variantEnum = z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
+const colorEnum = z.enum(['primary', 'secondary', 'neutral', 'error', 'warning', 'success', 'info'])
+const sizeEnum = z.enum(['xs', 'sm', 'md', 'lg', 'xl'])
+
 const linkSchema = z.object({
   label: z.string().nonempty(),
   to: z.string().nonempty(),
   icon: z.string().optional(),
-  size: z.string().optional(),
+  size: sizeEnum.optional(),
   trailing: z.boolean().optional(),
   target: z.string().optional(),
-  color: z.string().optional(),
-  variant: z.string().optional()
+  color: colorEnum.optional(),
+  variant: variantEnum.optional()
 })
 
 const imageSchema = z.object({
@@ -46,7 +50,7 @@ export const collections = {
       }),
       templates: sectionSchema.extend({
         items: z.array(featureItemSchema),
-        links: linkSchema
+        links: z.array(linkSchema)
       }),
       pricing: sectionSchema.extend({
         plans: z.array(
