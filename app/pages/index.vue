@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import PromotionalVideo from '~/components/PromotionalVideo.vue'
-
 const page = await queryCollection('content').first()
 
 useSeoMeta({
@@ -10,7 +8,7 @@ useSeoMeta({
   ogDescription: page.description
 })
 
-const cards = [{
+const features = [{
   title: 'Color Palette',
   description: 'Choose a primary and a gray color from your Tailwind CSS color palette. Components will be styled accordingly.',
   variant: 'subtle' as const,
@@ -116,16 +114,16 @@ const isDark = computed(() => useColorMode().value == 'dark')
     >
       <UPageGrid>
         <UPageCard
-          v-for="(card, index) in cards"
+          v-for="(feature, index) in features"
           :key="index"
-          v-bind="card"
+          v-bind="feature"
         >
           <UColorModeImage
-            :light="`${card.image.path}-light.svg`"
-            :dark="`${card.image.path}-dark.svg`"
-            :width="card.image.width"
-            :height="card.image.height"
-            :alt="card.title"
+            :light="`${feature.image.path}-light.svg`"
+            :dark="`${feature.image.path}-dark.svg`"
+            :width="feature.image.width"
+            :height="feature.image.height"
+            :alt="feature.title"
             loading="lazy"
             class="object-cover w-full"
           />
@@ -135,19 +133,13 @@ const isDark = computed(() => useColorMode().value == 'dark')
 
     <UPageSection
       id="templates"
-      :title="page.features.title"
-      :description="page.features.description"
-      :headline="page.features.headline"
+      :title="page.templates.title"
+      :description="page.templates.description"
+      :headline="page.templates.headline"
       orientation="horizontal"
       class="overflow-hidden"
-      :features="page.features.items"
-      :links="[{
-        label: 'Explore',
-        to: '/docs',
-        color: 'neutral',
-        variant: 'subtle',
-        trailingIcon: 'i-lucide-arrow-right'
-      }]"
+      :features="page.templates.items"
+      :links="page.templates.links"
     >
       <div class="flex items-start justify-start">
         <UColorModeImage

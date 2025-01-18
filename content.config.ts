@@ -1,5 +1,35 @@
 import { defineCollection, z } from '@nuxt/content'
 
+const linkSchema = z.object({
+  label: z.string().nonempty(),
+  to: z.string().nonempty(),
+  icon: z.string().optional(),
+  size: z.string().optional(),
+  trailing: z.boolean().optional(),
+  target: z.string().optional(),
+  color: z.string().optional(),
+  variant: z.string().optional()
+})
+
+const imageSchema = z.object({
+  src: z.string().nonempty(),
+  alt: z.string().optional(),
+  loading: z.string().optional(),
+  srcset: z.string().optional()
+})
+
+const sectionSchema = z.object({
+  headline: z.string().optional(),
+  title: z.string().nonempty(),
+  description: z.string().optional()
+})
+
+const featureItemSchema = z.object({
+  title: z.string().nonempty(),
+  description: z.string().nonempty(),
+  icon: z.string().nonempty()
+})
+
 export const collections = {
   content: defineCollection({
     source: 'index.yml',
@@ -7,46 +37,18 @@ export const collections = {
     schema: z.object({
       title: z.string().nonempty(),
       description: z.string().nonempty(),
-      hero: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        headline: z.object({
-          label: z.string().nonempty(),
-          to: z.string().nonempty(),
-          icon: z.string().nonempty()
-        }),
-        links: z.array(
-          z.object({
-            label: z.string().nonempty(),
-            icon: z.string().nonempty(),
-            trailing: z.string().nonempty(),
-            to: z.string().nonempty(),
-            size: z.string().nonempty()
-          })
-        )
+      hero: sectionSchema.extend({
+        links: z.array(linkSchema)
       }),
       logos: z.object({
         title: z.string().nonempty(),
-        icons: z.array(
-          z.string().nonempty()
-        )
+        icons: z.array(z.string().nonempty())
       }),
-      features: z.object({
-        headline: z.string().nonempty(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        items: z.array(
-          z.object({
-            title: z.string().nonempty(),
-            description: z.string().nonempty(),
-            icon: z.string().nonempty()
-          })
-        )
+      templates: sectionSchema.extend({
+        items: z.array(featureItemSchema),
+        links: linkSchema
       }),
-      pricing: z.object({
-        headline: z.string().nonempty(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
+      pricing: sectionSchema.extend({
         plans: z.array(
           z.object({
             title: z.string().nonempty(),
@@ -54,20 +56,13 @@ export const collections = {
             price: z.string().nonempty(),
             billing_period: z.string().nonempty(),
             billing_cycle: z.string().nonempty(),
-            button: z.object({
-              label: z.string().nonempty()
-            }),
-            features: z.array(
-              z.string().nonempty()
-            ),
+            button: linkSchema,
+            features: z.array(z.string().nonempty()),
             highlight: z.boolean().optional()
           })
         )
       }),
-      testimonials: z.object({
-        headline: z.string().nonempty(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
+      testimonials: sectionSchema.extend({
         items: z.array(
           z.object({
             quote: z.string().nonempty(),
@@ -76,30 +71,20 @@ export const collections = {
               description: z.string().nonempty(),
               to: z.string().nonempty(),
               target: z.string().nonempty(),
-              avatar: z.object({
-                src: z.string().nonempty(),
-                alt: z.string().nonempty()
-              })
+              avatar: imageSchema
             })
           })
         )
       }),
-      cta: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        links: z.object({
-          label: z.string().nonempty(),
-          size: z.string().nonempty()
-        })
+      cta: sectionSchema.extend({
+        links: z.array(linkSchema)
       }),
-      faq: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
+      faq: sectionSchema.extend({
         items: z.array(
           z.object({
             label: z.string().nonempty(),
             content: z.string().nonempty(),
-            defaultOpen: z.boolean()
+            defaultOpen: z.boolean().optional()
           })
         )
       })
