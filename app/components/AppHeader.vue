@@ -27,12 +27,13 @@ const items = computed(() => [{
 <template>
   <UHeader mode="drawer">
     <template #title>
-      Nuxt UI Pro
-      <UBadge
-        label="Landing"
-        variant="subtle"
-        class="mb-0.5"
-      />
+      <div class="flex items-end gap-2">
+        <LogoPro class="w-auto h-6 shrink-0" />
+        <UBadge
+          label="Landing"
+          variant="subtle"
+        />
+      </div>
     </template>
 
     <UNavigationMenu :items="items" />
