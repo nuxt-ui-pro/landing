@@ -36,7 +36,10 @@ const items = computed(() => [{
       </div>
     </template>
 
-    <UNavigationMenu :items="items" />
+    <UNavigationMenu
+      :items="items"
+      variant="link"
+    />
 
     <template #right>
       <UColorModeButton />

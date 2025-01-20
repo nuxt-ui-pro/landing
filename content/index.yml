@@ -178,11 +178,14 @@ testimonials:
           src: 'https://avatars.githubusercontent.com/u/71938701?v=4'
           loading: lazy
 cta:
-  title: Get started today
-  description: Start building beautiful and responsive Nuxt applications in minutes with Nuxt UI Pro.
+  title: Start with Nuxt UI Pro today
   links:
     - label: Get started
-      size: xl
+      to: 'https://ui3.nuxt.dev/getting-started'
+      icon: i-lucide-arrow-right
+    - label: Read the docs
+      to: 'https://ui3.nuxt.dev'
+      variant: ghost
 faq:
   title: Frequently Asked Questions
   description: If you can't find what you're looking for, email our support team and if you're lucky someone will get back to you.
