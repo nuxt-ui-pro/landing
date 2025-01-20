@@ -48,6 +48,14 @@ export const collections = {
         title: z.string().nonempty(),
         icons: z.array(z.string().nonempty())
       }),
+      sections: z.array(
+        sectionSchema.extend({
+          items: z.array(featureItemSchema),
+          links: z.array(linkSchema),
+          reverse: z.boolean().optional(),
+          code: z.string().optional()
+        })
+      ),
       templates: sectionSchema.extend({
         items: z.array(featureItemSchema),
         links: z.array(linkSchema)

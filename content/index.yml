@@ -23,6 +23,90 @@ logos:
     - i-simple-icons-netlify
     - i-simple-icons-vercel
     - i-simple-icons-cloudflare
+sections:
+  - title: The freedom to build anything
+    description: Nuxt UI Pro ships with an extensive set of advanced components that cover a wide range of use-cases. Carefully crafted to reduce boilerplate code without sacrificing flexibility.
+    id: features
+    features:
+      - name: Fully customizable
+        description: Like Nuxt UI, change the style of any component from your App Config or customize them specifically through the ui prop.
+        icon: i-lucide-pencil-ruler
+      - name: Slots for everything
+        description: Each component leverages the power of Vue's slots to give you the flexibility to build anything.
+        icon: i-lucide-code
+      - name: Responsive by design
+        description: Nuxt UI Pro components aims to structure your content, they are responsive by design and will adapt to any screen size.
+        icon: i-lucide-layout
+    links:
+      - label: Explore components
+        to: https://ui3.nuxt.dev/components
+        icon: i-lucide-arrow-right
+        trailing: true
+    code: |
+      ```vue [app.vue]
+      <script setup lang="ts">
+      const links = [
+        { to: '/', label: 'Home' },
+        { to: '/about', label: 'About' },
+        { to: '/contact', label: 'Contact' }
+      ]
+      </script>
+
+      <template>
+        <UHeader :links="links" />
+
+        <UMain>
+          <UPageHero title="Hello World" />
+
+          <UPageSection title="Features">
+            <UPageGrid>
+              <UPageCard title="First Card" />
+              <UPageCard title="Second Card" />
+              <UPageCard title="Third Card" />
+            </UPageGrid>
+          </UPageSection>
+        </UMain>
+
+        <UFooter />
+      </template>
+      ```
+  - title: The flexibility to control your data
+    description: Although you can use any data source you want, Nuxt UI Pro is fully integrated with Nuxt Content and provides additional features when the module is detected.
+    reverse: true
+    features:
+      - name: 'Write Markdown with ease'
+        description: Nuxt UI Pro overrides Nuxt Content prose components to make them awesome but also adds new ones like Callout, CodeGroup, Field, etc.
+        icon: i-simple-icons-markdown
+      - name: Full-Text Search out of the box
+        description: 'Nuxt UI Pro ships with a ready to use command palette component. No need to setup Algolia DocSearch anymore.'
+        icon: i-lucide-search
+    links:
+      - label: Nuxt Content integration
+        to: https://ui3.nuxt.dev/getting-started/content
+        icon: i-lucide-arrow-right
+        trailing: true
+    code: |
+      ```vue [pages/\[...slug\\].vue]
+      <script setup lang="ts">
+      const route = useRoute()
+
+      const { data: page } = await useAsyncData(route.path, () => queryCollection('content').path(route.path).first())
+      </script>
+
+      <template>
+        <UPage>
+          <UPageHeader :title="page.title" :description="page.description" :links="page.links" />
+
+          <UPageBody prose>
+            <ContentRenderer v-if="page.body" :value="page" />
+          </UPageBody>
+
+          <template #right>
+            <UContentToc :links="page.body.toc.links" />
+          </template>
+        </UPage>
+      </template>
+      ```
 templates:
   headline: Templates
   title: Kickstart with Nuxt UI in seconds

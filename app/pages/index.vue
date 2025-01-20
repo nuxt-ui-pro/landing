@@ -132,6 +132,28 @@ const isDark = computed(() => useColorMode().value == 'dark')
     </UPageSection>
 
     <UPageSection
+      v-for="(section, index) in page.sections"
+      :key="index"
+      v-bind="section"
+      orientation="horizontal"
+    >
+      <!--      <ProsePre
+        language="vue"
+        filename="App.vue"
+        icon="i-simple-icons-vuedotjs"
+        :hide-header="false"
+        meta="meta-info=val"
+      >
+        {{ section.code }}
+      </ProsePre> -->
+      <MDC
+        v-if="section.code"
+        :value="section.code"
+        tag="pre"
+      />
+    </UPageSection>
+
+    <UPageSection
       id="templates"
       :title="page.templates.title"
       :description="page.templates.description"
