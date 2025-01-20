@@ -137,19 +137,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       v-bind="section"
       orientation="horizontal"
     >
-      <!--      <ProsePre
-        language="vue"
-        filename="App.vue"
-        icon="i-simple-icons-vuedotjs"
-        :hide-header="false"
-        meta="meta-info=val"
-      >
-        {{ section.code }}
-      </ProsePre> -->
-      <MDC
-        v-if="section.code"
-        :value="section.code"
-      />
+      <MDC :value="section.code" />
     </UPageSection>
 
     <UPageSection

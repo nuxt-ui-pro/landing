@@ -20,6 +20,12 @@ export default defineNuxtConfig({
     }
   },
 
+  mdc: {
+    highlight: {
+      noApiRoute: false
+    }
+  },
+
   routeRules: {
     '/': { prerender: true }
   },
