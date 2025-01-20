@@ -149,7 +149,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
       <MDC
         v-if="section.code"
         :value="section.code"
-        tag="pre"
       />
     </UPageSection>
 
