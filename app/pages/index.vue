@@ -8,88 +8,37 @@ useSeoMeta({
   ogDescription: page.description
 })
 
-const features = [{
-  title: 'Color Palette',
-  description: 'Choose a primary and a gray color from your Tailwind CSS color palette. Components will be styled accordingly.',
-  variant: 'subtle' as const,
-  icon: 'i-lucide-palette',
-  class: 'col-span-2',
-  image: {
-    path: 'https://ui.nuxt.com/illustrations/color-palette',
-    width: 363,
-    height: 152
-  },
-  orientation: 'horizontal' as const
-}, {
-  title: 'Fully Customizable',
-  description: 'Change the style of any component in your App Config or customize them specifically through the ui prop.',
-  variant: 'subtle' as const,
-  icon: 'i-lucide-wrench',
-  image: {
-    path: 'https://ui.nuxt.com/illustrations/fully-customizable',
-    width: 444,
-    height: 160
-  },
-  class: 'row-span-1.5',
-  orientation: 'vertical' as const
-}, {
-  title: 'Light & Dark',
-  description: 'Every component is designed with dark mode in mind. Works out of the box with @nuxtjs/color-mode.',
-  icon: 'i-lucide-moon',
-  variant: 'subtle' as const,
-  image: {
-    path: 'https://ui.nuxt.com/illustrations/dark-mode',
-    width: 444,
-    height: 160
-  },
-  class: '',
-  orientation: 'vertical' as const
-}, {
-  title: 'Icons',
-  description: 'Choose any of the 100k+ icons from the most popular icon libraries with the Icon component or the icon prop.',
-  variant: 'subtle' as const,
-  icon: 'i-lucide-smile',
-  image: {
-    path: 'https://ui.nuxt.com/illustrations/icon-library',
-    width: 362,
-    height: 184
-  },
-  class: 'col-span-2',
-  orientation: 'horizontal' as const
-}]
-
 const isDark = computed(() => useColorMode().value == 'dark')
 </script>
 
 <template>
   <div class="relative">
-    <div
-      class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80"
-    />
     <UPageHero
+      :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
+      class="relative"
     >
-      <template #title>
-        <div class="relative">
-          <ParticlesBg
-            class="absolute inset-0"
-            :quantity="100"
-            :ease="100"
-            :color="isDark ? '#FFF' : '#000'"
-            :staticity="10"
-            refresh
-          />
-          <div class="max-w-4xl mx-auto text-center">
-            <UIcon
-              name="i-simple-icons-nuxtdotjs"
-              class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
-            />
-            <h1 class="">
-              {{ page.hero.title }}
-            </h1>
-          </div>
-        </div>
+      <template #top>
+        <div
+          class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80"
+        />
+
+        <ParticlesBg
+          class="absolute inset-0 z-[-1] h-[400px]"
+          :quantity="100"
+          :ease="100"
+          :color="isDark ? '#FFF' : '#000'"
+          :staticity="10"
+          refresh
+        />
+      </template>
+
+      <template #headline>
+        <UIcon
+          name="i-simple-icons-nuxtdotjs"
+          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
+        />
       </template>
 
       <PromotionalVideo />
@@ -106,30 +55,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
         />
       </ULandingLogos> -->
     </UPageHero>
-
-    <UPageSection
-      id="features"
-      headline="Features"
-      title="Everything you expect from a UI component library"
-    >
-      <UPageGrid>
-        <UPageCard
-          v-for="(feature, index) in features"
-          :key="index"
-          v-bind="feature"
-        >
-          <UColorModeImage
-            :light="`${feature.image.path}-light.svg`"
-            :dark="`${feature.image.path}-dark.svg`"
-            :width="feature.image.width"
-            :height="feature.image.height"
-            :alt="feature.title"
-            loading="lazy"
-            class="object-cover w-full"
-          />
-        </UPageCard>
-      </UPageGrid>
-    </UPageSection>
 
     <UPageSection
       v-for="(section, index) in page.sections"

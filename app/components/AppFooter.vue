@@ -52,10 +52,9 @@ function onSubmit() {
 <template>
   <USeparator
     icon="i-simple-icons-nuxtdotjs"
-    type="dashed"
     class="h-px"
   />
-  <UFooter :ui="{ container: 'border-t border-[var(--ui-border)]' }">
+  <UFooter :ui="{ top: 'border-b border-[var(--ui-border)]' }">
     <template #top>
       <UContainer>
         <UFooterColumns :links="links">

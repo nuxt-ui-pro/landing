@@ -2,7 +2,7 @@ title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
   title: The ultimate Nuxt and Vue UI library
-  description: A comprehensive, Nuxt-integrated UI library providing a rich set of fully-styled, accessible and highly customizable components for building modern web applications.
+  description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes. It includes all primitives to build landing pages, documentations, blogs, dashboards or entire SaaS products.
   links:
     - label: Get started
       icon: i-lucide-arrow-right
@@ -40,8 +40,7 @@ sections:
     links:
       - label: Explore components
         to: https://ui3.nuxt.dev/components
-        icon: i-lucide-arrow-right
-        trailing: true
+        trailingIcon: i-lucide-arrow-right
     code: |
       ```vue [app.vue]
       <script setup lang="ts">
@@ -266,10 +265,10 @@ cta:
   links:
     - label: Get started
       to: 'https://ui3.nuxt.dev/getting-started'
-      icon: i-lucide-arrow-right
+      trailingIcon: i-lucide-arrow-right
     - label: Read the docs
       to: 'https://ui3.nuxt.dev'
-      variant: ghost
+      variant: subtle
 faq:
   title: Frequently Asked Questions
   description: If you can't find what you're looking for, email our support team and if you're lucky someone will get back to you.
