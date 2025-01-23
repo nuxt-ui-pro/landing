@@ -75,7 +75,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :features="page.templates.items"
       :links="page.templates.links"
     >
-      <div class="flex items-start justify-start">
+      <div class="flex grayscale items-start justify-start">
         <UColorModeImage
           light="https://ui.nuxt.com/templates/dashboard3.png"
           dark="https://ui.nuxt.com/templates/dashboard2.png"

@@ -1,7 +1,10 @@
 <template>
   <div class="relative">
-    <div class="border-gradient rounded-xl p-4">
-      <div class="aspect-w-16 aspect-h-9 rounded-xl relative overflow-hidden border border-neutral-950 dark:border-white/10">
+    <UPageCard
+      variant="soft"
+      class="border-gradient rounded-xl"
+    >
+      <div class="grayscale aspect-w-16 aspect-h-9 rounded-xl relative overflow-hidden border border-neutral-950 dark:border-white/10">
         <video
           data-v-baf90ddd=""
           preload="none"
@@ -21,7 +24,7 @@
           type="video/ogg"
         ></video>
       </div>
-    </div>
+    </UPageCard>
   </div>
 </template>
 
