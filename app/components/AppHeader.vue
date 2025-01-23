@@ -25,7 +25,10 @@ const items = computed(() => [{
 </script>
 
 <template>
-  <UHeader mode="drawer">
+  <UHeader
+    mode="drawer"
+    :menu="{ modal: false }"
+  >
     <template #title>
       <div class="flex items-end gap-2">
         <LogoPro class="w-auto h-6 shrink-0" />
