@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.24",
-    "@iconify-json/simple-icons": "^1.2.20",
+    "@iconify-json/simple-icons": "^1.2.21",
     "@nuxt/content": "^3.0.0",
     "@nuxt/image": "^1.9.0",
     "@nuxt/ui-pro": "https://pkg.pr.new/@nuxt/ui-pro@2dbbff0",
@@ -23,7 +23,7 @@
     "@nuxt/eslint": "^0.7.5",
     "eslint": "^9.18.0",
     "typescript": "^5.7.3",
-    "vue-tsc": "^2.1.10"
+    "vue-tsc": "^2.2.0"
   },
   "packageManager": "pnpm@9.15.4"
 }
