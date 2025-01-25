@@ -42,18 +42,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
       </template>
 
       <PromotionalVideo />
-
-      <!--      <ULandingLogos
-        :title="page.logos.title"
-        align="center"
-      >
-        <UIcon
-          v-for="icon in page.logos.icons"
-          :key="icon"
-          :name="icon"
-          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
-        />
-      </ULandingLogos> -->
     </UPageHero>
 
     <UPageSection
@@ -178,6 +166,20 @@ const isDark = computed(() => useColorMode().value == 'dark')
           </template>
         </UPricingPlan>
       </UContainer>
+    </UPageSection>
+
+    <UPageSection>
+      <UPageLogos
+        :marquee="{ repeat: 7 }"
+        :title="page.logos.title"
+      >
+        <UIcon
+          v-for="icon in page.logos.icons"
+          :key="icon"
+          :name="icon"
+          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
+        />
+      </UPageLogos>
     </UPageSection>
 
     <UPageSection

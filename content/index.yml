@@ -15,14 +15,6 @@ hero:
       color: neutral
       variant: ghost
       to: https://github.com/nuxt-ui-pro/landing/tree/v3
-logos:
-  title: Trusted by the world's best
-  icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
 sections:
   - title: The freedom to build anything
     description: Nuxt UI Pro ships with an extensive set of advanced components that cover a wide range of use-cases. Carefully crafted to reduce boilerplate code without sacrificing flexibility.
@@ -172,6 +164,14 @@ pricing:
         - Lifetime access
       button:
         label: Buy now
+logos:
+  title: Trusted by the world's best
+  icons:
+    - i-simple-icons-amazonaws
+    - i-simple-icons-heroku
+    - i-simple-icons-netlify
+    - i-simple-icons-vercel
+    - i-simple-icons-cloudflare
 testimonials:
   title: What people are saying
   description: Nuxt UI Pro is already trusted by 1,500+ users and teams around the world.
