@@ -82,27 +82,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :headline="page.pricing.headline"
     >
       <UContainer>
-        <UPricingPlan
-          title="Free in development"
-          description="Try Nuxt UI Pro for free in development, no credit card required. Upgrade when ready to deploy."
-          orientation="horizontal"
-          class="mb-16"
-        >
-          <template #button>
-            <div class="flex flex-col w-full gap-2">
-              <UButton
-                color="neutral"
-                variant="subtle"
-                label="Get started for Free"
-                to="https://ui3.nuxt.dev/getting-started"
-                target="_blank"
-                size="lg"
-                block
-              />
-            </div>
-          </template>
-        </UPricingPlan>
-
         <UPricingPlans
           class="mb-16"
           scale
@@ -122,49 +101,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
             :button="plan.button"
           />
         </UPricingPlans>
-
-        <UPricingPlan
-          title="Figma Kit Pro"
-          description="Get all Nuxt UI Pro components in a Figma kit to design your next application before coding. Everything you need, from wire-framing to high-fidelity web integration."
-          orientation="horizontal"
-          price="$99"
-          billing-period="plus local taxes"
-          billing-cycle="one-time payment"
-          tagline="Pay once, own it forever"
-          terms="Invoices and receipts available for easy company reimbursement"
-          :features="[
-            '1500+ components & variants from Nuxt UI & UI Pro',
-            'Light & dark mode support',
-            'Auto-layout & responsive ready',
-            'Free lifetime updates',
-            'Variables: primary, gray, fonts, rounded, shadows, etc.',
-            'Templates: Landing, Docs, SaaS and Dashboard (soon)',
-            'Tailwind CSS assets & icons included',
-            'Includes Nuxt UI Figma Kit'
-          ]"
-        >
-          <template #button>
-            <div class="flex flex-col w-full gap-2">
-              <UButton
-                color="neutral"
-                label="Buy now"
-                to="https://nuxt.lemonsqueezy.com/buy/17213c49-621b-4c2c-9478-3a50a099003d"
-                size="lg"
-                block
-              />
-              <UButton
-                color="neutral"
-                variant="subtle"
-                icon="i-simple-icons-figma"
-                label="Preview in Figma"
-                to="https://www.figma.com/community/file/1288455405058138934/nuxt-ui-v3-official-design-kit-free"
-                target="_blank"
-                block
-                size="lg"
-              />
-            </div>
-          </template>
-        </UPricingPlan>
       </UContainer>
     </UPageSection>
 

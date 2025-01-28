@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const links = [{
+const columns = [{
   label: 'Resources',
   children: [{
     label: 'Help center'
@@ -57,7 +57,7 @@ function onSubmit() {
   <UFooter :ui="{ top: 'border-b border-[var(--ui-border)]' }">
     <template #top>
       <UContainer>
-        <UFooterColumns :links="links">
+        <UFooterColumns :columns="columns">
           <template #right>
             <form @submit.prevent="onSubmit">
               <UFormField

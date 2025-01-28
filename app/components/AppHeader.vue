@@ -38,7 +38,6 @@ const items = computed(() => [{
           }, {
             label: `Landing`,
             to: 'https://landing-template.nuxt.dev/',
-            active: true,
             checked: true,
             type: 'checkbox'
           }, {
