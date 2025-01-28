@@ -44,9 +44,9 @@ sections:
       </script>
 
       <template>
-        <UHeader :links="links" />
+        <UApp>
+          <UHeader :links="links" />
 
-        <UMain>
           <UPageHero title="Hello World" />
 
           <UPageSection title="Features">
@@ -56,9 +56,9 @@ sections:
               <UPageCard title="Third Card" />
             </UPageGrid>
           </UPageSection>
-        </UMain>
 
-        <UFooter />
+          <UFooter />
+        </UApp>
       </template>
       ```
   - title: The flexibility to control your data
@@ -88,7 +88,7 @@ sections:
         <UPage>
           <UPageHeader :title="page.title" :description="page.description" :links="page.links" />
 
-          <UPageBody prose>
+          <UPageBody>
             <ContentRenderer v-if="page.body" :value="page" />
           </UPageBody>
 
