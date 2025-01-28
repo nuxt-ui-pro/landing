@@ -27,12 +27,45 @@ const items = computed(() => [{
 <template>
   <UHeader>
     <template #title>
-      <div class="flex items-end gap-2">
+      <div class="flex items-center gap-2">
         <LogoPro class="w-auto h-6 shrink-0" />
-        <UBadge
-          label="Landing"
-          variant="subtle"
-        />
+        <UDropdownMenu
+          v-slot="{ open }"
+          :modal="false"
+          :items="[{
+            label: `Starter`,
+            to: 'https://starter-template.nuxt.dev/'
+          }, {
+            label: `Landing`,
+            to: 'https://landing-template.nuxt.dev/',
+            active: true,
+            checked: true,
+            type: 'checkbox'
+          }, {
+            label: `Docs`,
+            to: 'https://docs-template.nuxt.dev/'
+          }, {
+            label: `SaaS`,
+            to: 'https://saas-template.nuxt.dev/'
+          }, {
+            label: `Dashboard`,
+            to: 'https://dashboard-template.nuxt.dev/'
+          }]"
+          :ui="{ content: 'w-(--reka-dropdown-menu-trigger-width) min-w-0' }"
+          size="xs"
+        >
+          <UButton
+            label="Landing"
+            variant="subtle"
+            trailing-icon="i-lucide-chevron-down"
+            size="xs"
+            class="-mb-[6px] font-semibold rounded-full truncate"
+            :class="[open && 'bg-[var(--ui-primary)]/15 ']"
+            :ui="{
+              trailingIcon: ['transition-transform duration-200', open ? 'rotate-180' : undefined].filter(Boolean).join(' ')
+            }"
+          />
+        </UDropdownMenu>
       </div>
     </template>
 
