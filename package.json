@@ -16,7 +16,7 @@
     "@iconify-json/simple-icons": "^1.2.21",
     "@nuxt/content": "^3.0.0",
     "@nuxt/image": "^1.9.0",
-    "@nuxt/ui-pro": "https://pkg.pr.new/@nuxt/ui-pro@880e49c",
+    "@nuxt/ui-pro": "^3.0.0-alpha.12",
     "nuxt": "^3.15.2"
   },
   "devDependencies": {
