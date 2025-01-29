@@ -65,21 +65,32 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :title="page.templates.title"
       :description="page.templates.description"
       :headline="page.templates.headline"
-      orientation="horizontal"
       class="overflow-hidden"
-      :features="page.templates.items"
       :links="page.templates.links"
     >
-      <div class="flex grayscale items-start justify-start">
-        <UColorModeImage
-          light="https://ui.nuxt.com/templates/dashboard3.png"
-          dark="https://ui.nuxt.com/templates/dashboard2.png"
-          alt="Product screenshot"
-          class="w-[48rem] max-w-none rounded-xl shadow-xl sm:w-[57rem] ring ring-[var(--ui-border)]"
-          width="4804"
-          height="3000"
-        />
-      </div>
+      <UCarousel
+        v-slot="{ item }"
+        loop
+        arrows
+        dots
+        :autoplay="{ delay: 3000 }"
+        :items="page.templates.items"
+        :ui="{ item: 'basis-1/2', container: 'py-2' }"
+      >
+        <UPageCard
+          :to="item.to"
+          :title="item.title"
+          :description="item.description"
+          class="group"
+          :ui="{ container: 'p-4 sm:p-4' }"
+        >
+          <img
+            :src="item.image"
+            :alt="item.title"
+            class="rounded-lg grayscale group-hover:grayscale-0 transition-all duration-200 ease-in-out"
+          >
+        </UPageCard>
+      </UCarousel>
     </UPageSection>
 
     <UPageSection
@@ -112,13 +123,12 @@ const isDark = computed(() => useColorMode().value == 'dark')
     </UPageSection>
 
     <UPageSection>
-      <UPageLogos :title="page.logos.title">
-        <UIcon
-          v-for="icon in page.logos.icons"
-          :key="icon"
-          :name="icon"
-          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
-        />
+      <UPageLogos>
+        <img
+          v-for="(logo, index) in page.logos"
+          :key="index"
+          v-bind="logo"
+        >
       </UPageLogos>
     </UPageSection>
 

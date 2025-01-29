@@ -109,17 +109,27 @@ templates:
       description: A simple and clean template to get started with Nuxt UI Pro.
       icon: i-lucide-rocket
       to: 'https://ui-pro-starter.nuxt.dev'
-    - title: SaaS
+      image: '/templates/starter.png'
+    - title: Landing
+      description: A template for building a landing page with Nuxt UI Pro.
+      icon: i-lucide-layout
+      to: 'https://landing-template.nuxt.dev/'
+      image: '/templates/landing.png'
+    - title: Saas
       description: A template for building a SaaS application with Nuxt UI Pro.
       icon: i-lucide-cloud
       to: 'https://saas-template.nuxt.dev/'
-    - title: And more
-      description: Explore all available templates to find the one that fits your needs.
-      icon: i-lucide-grid
-  links:
-    - label: Explore all templates
-      to: 'https://ui.nuxt.com/pro/templates'
-      trailingIcon: i-lucide-arrow-right
+      image: '/templates/saas.png'
+    - title: Docs
+      description: A template for building a documentation site with Nuxt UI Pro.
+      icon: i-lucide-book
+      to: 'https://docs-template.nuxt.dev/'
+      image: '/templates/docs.png'
+    - title: Dashboard
+      description: A template for building a dashboard with Nuxt UI Pro.
+      icon: i-lucide-chart-bar
+      to: 'https://dashboard-template.nuxt.dev/'
+      image: '/templates/dashboard.png'
 pricing:
   headline: Pricing
   title: A plan for every need
@@ -167,13 +177,66 @@ pricing:
       button:
         label: Buy now
 logos:
-  title: Trusted by the world's best
-  icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
+  - src: /logos/springfieldclinic.svg
+    alt: Springfield Clinic
+    width: 122
+    height: 24
+  - src: /logos/churnkey.svg
+    alt: Churnkey
+    width: 104
+    height: 24
+  - src: /logos/bosch.svg
+    alt: BOSCH
+    width: 107
+    height: 24
+  - src: /logos/blizzard.svg
+    alt: Blizzard
+    width: 46
+    height: 24
+  - src: /logos/bodet.svg
+    alt: Bodet
+    width: 66
+    height: 22
+  - src: /logos/win.svg
+    alt: WinReality
+    width: 62
+    height: 24
+  - src: /logos/tower.svg
+    alt: Tower Research
+    width: 64
+    height: 22
+  - src: /logos/liegeairport.svg
+    alt: Liege Airport
+    width: 59
+    height: 24
+  - src: /logos/wuniversity.svg
+    alt: University of Washington
+    width: 112
+    height: 24
+  - src: /logos/funda.svg
+    alt: Funda
+    width: 61
+    height: 22
+  - src: /logos/exxonmobil.svg
+    alt: ExxonMobil
+    width: 114
+    height: 22
+  - src: /logos/mainpost.svg
+    alt: Main Post
+    width: 132
+    height: 20
+  - src: /logos/insep.svg
+    alt: INSEP
+    width: 35
+    height: 24
+  - src: /logos/applause.svg
+    alt: Applause
+    width: 138
+    height: 22
+  - src: /logos/instadapp.svg
+    alt: Instadapp
+    width: 133
+    height: 20
 testimonials:
   title: What people are saying
   description: Nuxt UI Pro is already trusted by 1,500+ users and teams around the world.

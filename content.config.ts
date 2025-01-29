@@ -44,10 +44,12 @@ export const collections = {
       hero: sectionSchema.extend({
         links: z.array(linkSchema)
       }),
-      logos: z.object({
-        title: z.string().nonempty(),
-        icons: z.array(z.string().nonempty())
-      }),
+      logos: z.array(z.object({
+        src: z.string().nonempty(),
+        alt: z.string().nonempty(),
+        width: z.string().nonempty(),
+        height: z.string().nonempty()
+      })),
       sections: z.array(
         sectionSchema.extend({
           items: z.array(featureItemSchema),
@@ -57,7 +59,10 @@ export const collections = {
         })
       ),
       templates: sectionSchema.extend({
-        items: z.array(featureItemSchema),
+        items: z.array(featureItemSchema.extend({
+          image: z.string().nonempty(),
+          to: z.string().nonempty()
+        })),
         links: z.array(linkSchema)
       }),
       pricing: sectionSchema.extend({
