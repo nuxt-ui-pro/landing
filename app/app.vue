@@ -19,13 +19,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppHeader />
+  <UApp :toaster="{ expand: false }">
+    <AppHeader />
 
-  <UMain>
-    <NuxtPage />
-  </UMain>
+    <UMain>
+      <NuxtPage />
+    </UMain>
 
-  <AppFooter />
-
-  <UNotifications />
+    <AppFooter />
+  </UApp>
 </template>
