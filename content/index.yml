@@ -1,20 +1,22 @@
 title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: The ultimate Nuxt and Vue UI library
+  title: The ultimate Nuxt/Vue UI library
   description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes. It includes all primitives to build landing pages, documentations, blogs, dashboards or entire SaaS products.
   links:
     - label: Get started
       icon: i-lucide-arrow-right
       trailing: true
       to: https://ui3.nuxt.dev/getting-started
+      target: _blank
       size: xl
     - label: Use this template
       icon: i-simple-icons-github
       size: xl
       color: neutral
-      variant: ghost
+      variant: subtle
       to: https://github.com/nuxt-ui-pro/landing/tree/v3
+      target: _blank
 sections:
   - title: The freedom to build anything
     description: Nuxt UI Pro ships with an extensive set of advanced components that cover a wide range of use-cases. Carefully crafted to reduce boilerplate code without sacrificing flexibility.
@@ -261,13 +263,17 @@ testimonials:
           src: 'https://avatars.githubusercontent.com/u/71938701?v=4'
           loading: lazy
 cta:
-  title: Start with Nuxt UI Pro today
+  title: Start with Nuxt UI Pro today!
+  description: Nuxt UI Pro is free in development, but you need a license to use it in production.
   links:
-    - label: Get started
-      to: 'https://ui3.nuxt.dev/getting-started'
-      trailingIcon: i-lucide-arrow-right
-    - label: Read the docs
-      to: 'https://ui3.nuxt.dev'
+    - label: Buy now
+      to: 'https://ui.nuxt.com/pro/purchase'
+      target: _blank
+      icon: i-lucide-shopping-cart
+    - label: License
+      to: 'https://ui3.nuxt.dev/getting-started/license'
+      trailingIcon: i-lucide-circle-help
+      target: _blank
       variant: subtle
 faq:
   title: Frequently Asked Questions

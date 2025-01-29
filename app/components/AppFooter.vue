@@ -88,16 +88,14 @@ function onSubmit() {
     </template>
 
     <template #left>
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+      <p class="text-sm text-(--ui-text-muted)">
+        Copyright © {{ new Date().getFullYear() }}
       </p>
     </template>
 
     <template #right>
-      <UColorModeButton size="sm" />
-
       <UButton
-        to="https://github.com/nuxt-ui-pro/landing"
+        to="https://github.com/nuxt-ui-pro/landing/tree/v3"
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="GitHub"

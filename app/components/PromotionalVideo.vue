@@ -1,9 +1,8 @@
 <template>
   <div class="relative">
     <UPageCard
-      variant="soft"
-      class="grayscale rounded-xl"
-      :ui="{ container: 'p-2 md:p-3 lg:p-3' }"
+      variant="subtle"
+      class="grayscale rounded-2xl"
     >
       <video
         class="rounded-xl"

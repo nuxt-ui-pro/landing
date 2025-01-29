@@ -20,9 +20,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       class="relative"
     >
       <template #top>
-        <div
-          class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80"
-        />
+        <div class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
         <ParticlesBg
           class="absolute inset-0 z-[-1] h-[400px]"
@@ -34,15 +32,24 @@ const isDark = computed(() => useColorMode().value == 'dark')
         />
       </template>
 
-      <template #headline>
-        <UIcon
-          name="i-simple-icons-nuxtdotjs"
-          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
-        />
-      </template>
-
       <PromotionalVideo />
     </UPageHero>
+
+    <UPageCTA
+      description="“Nuxt UI, born from a desire to improve Vue component development, is the go-to library for building modern web interfaces. We aim to provide you with a comprehensive set of tools to create and customize your next UI while maintaining the best developer experience.”"
+      variant="soft"
+      class="rounded-none"
+      :ui="{ container: 'sm:py-12 lg:py-12 sm:gap-8' }"
+    >
+      <UUser
+        name="Benjamin Canac"
+        description="Author of Nuxt UI"
+        to="https://github.com/benjamincanac"
+        :avatar="{ src: 'https://github.com/benjamincanac.png' }"
+        size="xl"
+        class="justify-center"
+      />
+    </UPageCTA>
 
     <UPageSection
       v-for="(section, index) in page.sections"
@@ -105,10 +112,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
     </UPageSection>
 
     <UPageSection>
-      <UPageLogos
-        :marquee="{ repeat: 7 }"
-        :title="page.logos.title"
-      >
+      <UPageLogos :title="page.logos.title">
         <UIcon
           v-for="icon in page.logos.icons"
           :key="icon"
@@ -144,22 +148,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
       </UContainer>
     </UPageSection>
 
-    <UPageCTA
-      description="“Nuxt UI, born from a desire to improve Vue component development, is the go-to library for building modern web interfaces. We aim to provide you with a comprehensive set of tools to create and customize your next UI while maintaining the best developer experience.”"
-      variant="soft"
-      class="rounded-none"
-      :ui="{ container: 'lg:py-12' }"
-    >
-      <UUser
-        name="Benjamin Canac"
-        description="Author of Nuxt UI"
-        to="https://github.com/benjamincanac"
-        :avatar="{ src: 'https://github.com/benjamincanac.png' }"
-        size="xl"
-        class="justify-center"
-      />
-    </UPageCTA>
-
     <UPageSection
       id="faq"
       :title="page.faq.title"
@@ -187,9 +175,8 @@ const isDark = computed(() => useColorMode().value == 'dark')
       variant="naked"
       class="overflow-hidden"
     >
-      <div
-        class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80"
-      />
+      <div class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
+
       <div class="stars size-full absolute pointer-events-none inset-x-0 top-0 opacity-75">
         <div class="h-px w-px rounded-full bg-transparent" />
         <div class="h-px w-px rounded-full bg-transparent" />

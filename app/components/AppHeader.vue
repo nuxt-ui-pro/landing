@@ -40,12 +40,14 @@ const items = computed(() => [{
 
     <template #right>
       <UColorModeButton />
+
       <UButton
-        label="Sign in"
+        to="https://github.com/nuxt-ui-pro/landing/tree/v3"
+        target="_blank"
+        icon="i-simple-icons-github"
+        aria-label="GitHub"
         color="neutral"
         variant="ghost"
-        trailing-icon="i-lucide-arrow-right"
-        class="hidden lg:flex"
       />
     </template>
 
@@ -54,15 +56,6 @@ const items = computed(() => [{
         :items="items"
         orientation="vertical"
         class="-mx-2.5"
-      />
-
-      <USeparator class="my-6" />
-
-      <UButton
-        label="Sign in"
-        color="neutral"
-        block
-        class="mb-3"
       />
     </template>
   </UHeader>

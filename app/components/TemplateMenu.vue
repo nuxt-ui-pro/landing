@@ -4,10 +4,11 @@
     :modal="false"
     :items="[{
       label: `Starter`,
-      to: 'https://starter-template.nuxt.dev/'
+      to: 'https://ui-pro-starter.nuxt.dev/'
     }, {
       label: `Landing`,
       to: 'https://landing-template.nuxt.dev/',
+      color: 'primary',
       checked: true,
       type: 'checkbox'
     }, {
@@ -29,7 +30,7 @@
       trailing-icon="i-lucide-chevron-down"
       size="xs"
       class="-mb-[6px] font-semibold rounded-full truncate"
-      :class="[open && 'bg-[var(--ui-primary)]/15 ']"
+      :class="[open && 'bg-[var(--ui-primary)]/15']"
       :ui="{
         trailingIcon: ['transition-transform duration-200', open ? 'rotate-180' : undefined].filter(Boolean).join(' ')
       }"
