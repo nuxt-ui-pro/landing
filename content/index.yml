@@ -7,7 +7,7 @@ hero:
     - label: Get started
       icon: i-lucide-arrow-right
       trailing: true
-      to: https://ui3.nuxt.dev/getting-started
+      to: https://ui3.nuxt.dev/getting-started/installation/pro/nuxt
       target: _blank
       size: xl
     - label: Use this template
