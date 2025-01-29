@@ -36,16 +36,13 @@ const isDark = computed(() => useColorMode().value == 'dark')
     </UPageHero>
 
     <UPageCTA
-      description="“Nuxt UI, born from a desire to improve Vue component development, is the go-to library for building modern web interfaces. We aim to provide you with a comprehensive set of tools to create and customize your next UI while maintaining the best developer experience.”"
+      :description="page.authorQuote.quote"
       variant="soft"
       class="rounded-none"
       :ui="{ container: 'sm:py-12 lg:py-12 sm:gap-8' }"
     >
       <UUser
-        name="Benjamin Canac"
-        description="Author of Nuxt UI"
-        to="https://github.com/benjamincanac"
-        :avatar="{ src: 'https://github.com/benjamincanac.png' }"
+        v-bind="page.authorQuote.user"
         size="xl"
         class="justify-center"
       />
@@ -79,11 +76,16 @@ const isDark = computed(() => useColorMode().value == 'dark')
       >
         <UPageCard
           :to="item.to"
-          :title="item.title"
           :description="item.description"
           class="group"
-          :ui="{ container: 'p-4 sm:p-4' }"
+          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
         >
+          <template #title>
+            <UIcon :name="item.icon" />
+            <span>
+              {{ item.title }}
+            </span>
+          </template>
           <img
             :src="item.image"
             :alt="item.title"

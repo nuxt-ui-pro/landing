@@ -17,6 +17,14 @@ hero:
       variant: subtle
       to: https://github.com/nuxt-ui-pro/landing/tree/v3
       target: _blank
+authorQuote:
+  quote: “Nuxt UI, born from a desire to improve Vue component development, is the go-to library for building modern web interfaces. We aim to provide you with a comprehensive set of tools to create and customize your next UI while maintaining the best developer experience.”
+  user:
+    name: Benjamin Canac
+    description: Author of Nuxt UI
+    to: https://github.com/benjamincanac
+    avatar:
+      src: https://github.com/benjamincanac.png
 sections:
   - title: The freedom to build anything
     description: Nuxt UI Pro ships with an extensive set of advanced components that cover a wide range of use-cases. Carefully crafted to reduce boilerplate code without sacrificing flexibility.
@@ -105,11 +113,6 @@ templates:
   title: Kickstart with Nuxt UI in seconds
   description: Choose from a variety of templates to get started with Nuxt UI Pro in seconds. Each template is designed to help you build beautiful and responsive Nuxt applications in minutes.
   items:
-    - title: Starter
-      description: A simple and clean template to get started with Nuxt UI Pro.
-      icon: i-lucide-rocket
-      to: 'https://ui-pro-starter.nuxt.dev'
-      image: '/templates/starter.png'
     - title: Landing
       description: A template for building a landing page with Nuxt UI Pro.
       icon: i-lucide-layout
