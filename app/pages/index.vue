@@ -39,7 +39,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :description="page.authorQuote.quote"
       variant="soft"
       class="rounded-none"
-      :ui="{ container: 'sm:py-12 lg:py-12 sm:gap-8' }"
+      :ui="{ container: 'sm:py-12 lg:py-12 sm:gap-8', description: 'before:content-[open-quote] after:content-[close-quote]' }"
     >
       <UUser
         v-bind="page.authorQuote.user"
@@ -59,11 +59,8 @@ const isDark = computed(() => useColorMode().value == 'dark')
 
     <UPageSection
       id="templates"
-      :title="page.templates.title"
-      :description="page.templates.description"
-      :headline="page.templates.headline"
+      v-bind="page.templates"
       class="overflow-hidden"
-      :links="page.templates.links"
     >
       <UCarousel
         v-slot="{ item }"
@@ -97,9 +94,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
 
     <UPageSection
       id="pricing"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :headline="page.pricing.headline"
+      v-bind="page.pricing"
     >
       <UContainer>
         <UPricingPlans
@@ -124,22 +119,18 @@ const isDark = computed(() => useColorMode().value == 'dark')
       </UContainer>
     </UPageSection>
 
-    <UPageSection>
-      <UPageLogos>
+    <UPageSection
+      id="testimonials"
+      v-bind="page.testimonials"
+    >
+      <UPageMarquee pause-on-hover>
         <img
           v-for="(logo, index) in page.logos"
           :key="index"
           v-bind="logo"
+          class="h-6 shrink-0 max-w-[140px]"
         >
-      </UPageLogos>
-    </UPageSection>
-
-    <UPageSection
-      id="testimonials"
-      :headline="page.testimonials.headline"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-    >
+      </UPageMarquee>
       <UContainer>
         <UPageColumns class="xl:columns-4">
           <UPageCard
@@ -162,8 +153,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
 
     <UPageSection
       id="faq"
-      :title="page.faq.title"
-      :description="page.faq.description"
+      v-bind="page.faq"
       class="scroll-mt-[var(--header-height)]"
     >
       <UPageAccordion
