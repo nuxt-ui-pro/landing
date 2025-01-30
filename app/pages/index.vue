@@ -128,7 +128,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
           v-for="(logo, index) in page.logos"
           :key="index"
           v-bind="logo"
-          class="h-6 shrink-0 max-w-[140px]"
+          class="h-6 shrink-0 max-w-[140px] filter invert dark:invert-0"
         >
       </UPageMarquee>
       <UContainer>
