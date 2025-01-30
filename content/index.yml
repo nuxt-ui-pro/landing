@@ -225,7 +225,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1519741249602?e=1743638400&v=beta&t=lw2K6vS0OOCZWGtHY1buJVkRItQCa4OQw0vzAhhpJk8'
-          loading: lazy
     - quote: "Wow, Nuxt UI Pro is a total game-changer! I'm seriously impressed with the quality, attention to detail, and the insane variety of components you get. It's like hitting the jackpot for any developer. I've saved countless hours that I would've spent stressing over making my apps look good, with amazing accessible UX,  and instead, I've been able to focus on the real deal – building the app itself. It's an instant buy for me, every single time. No second thoughts!"
       user:
         name: 'Yaz Jallad'
@@ -234,7 +233,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1824690890222485504/lQ7v1AGt_400x400.jpg'
-          loading: lazy
     - quote: "Nuxt UI Pro saves 100s of hours of dev and design time while delivering a clean professional look on any device."
       user:
         name: 'Kevin Olson'
@@ -244,7 +242,6 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/acidjazz'
           srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/acidjazz 2x'
-          loading: lazy
     - quote: "I decided to replace my custom-built components with a component library and chose Nuxt UI Pro. It only took me a few hours, and the new UI looks more professional. Integrating the library is easy; the components are well-documented and highly customizable. I can only recommend it; this library is my new choice for new SaaS products."
       user:
         name: 'Michael Hoffmann'
@@ -253,7 +250,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/mokkapps'
-          loading: lazy
     - quote: "Nuxt UI Pro is my go to component library. Out-of-the-box it handles all of the UI demands I throw at it while looking great. The customisation is really worth thought out, allowing you to override components in a breeze. Always amazed at the improvements dropped in each update as well, the team is doing an amazing job."
       user:
         name: 'Harlan Wilton'
@@ -262,7 +258,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/harlan-zw'
-          loading: lazy
     - quote: "I jumped at the chance to buy the Nuxt team's new UI kit as soon as I saw it. While I'm already a fan of Nuxt UI, the pro version takes it to a whole new level and lets me paste entire blocks into all my projects, saving me a ton of time."
       user:
         name: 'Thomas Sanlis'
@@ -271,7 +266,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1374040164180299791/ACw4G3nZ_400x400.jpg'
-          loading: lazy
     - quote: "Nuxt UI has allowed me to develop my SaaS without any prior mockups. The design quality of their components and the intelligence of the DX meant that I was able to try many different layouts for my application until I found the perfect UX for my users. Nuxt UI is the ui-kit I would have dreamed of building myself, and Nuxt UI Pro makes things even easier when you want to go further with your SaaS. Kudos to the team."
       user:
         name: 'Benjamin Code'
@@ -280,7 +274,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1607353032420769793/I8qQSUfQ_400x400.jpg'
-          loading: lazy
     - quote: "Nuxt UI Pro is my preferred choice for everything, from a POC to a web platform. It's ready to use out-of-the-box and assists me in crafting pixel-perfect UIs. It saves me a significant amount of time while remaining highly customizable. Give it a try, and you won't be let down."
       user:
         name: 'Estéban Soubiran'
@@ -289,7 +282,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1801649350319218689/aS_X_iTm_400x400.jpg'
-          loading: lazy
     - quote: "As someone who builds a lot of projects, Nuxt UI Pro has been a game-changer. It's not just about saving time – it's about having components that are thoughtfully designed and just work. The developer experience is exceptional, and I can focus on building features instead of tweaking UI components."
       user:
         name: 'Hugo Richard'
@@ -298,7 +290,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://avatars.githubusercontent.com/u/71938701?v=4'
-          loading: lazy
 cta:
   title: Start with Nuxt UI Pro today!
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
