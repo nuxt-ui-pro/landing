@@ -27,14 +27,15 @@ const imageSchema = z.object({
   srcset: z.string().optional()
 })
 
-const sectionSchema = z.object({
-  headline: z.string().optional(),
-  ...baseSchema
-})
-
 const featureItemSchema = z.object({
   ...baseSchema,
   icon: z.string().nonempty()
+})
+
+const sectionSchema = z.object({
+  headline: z.string().optional(),
+  ...baseSchema,
+  features: z.array(featureItemSchema)
 })
 
 const userSchema = z.object({
@@ -59,6 +60,7 @@ export const collections = {
     schema: z.object({
       ...baseSchema,
       hero: sectionWithLinksSchema,
+      features: sectionSchema,
       authorQuote: z.object({
         quote: z.string().nonempty(),
         user: userSchema
