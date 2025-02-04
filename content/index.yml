@@ -1,7 +1,7 @@
 title: Nuxt UI Pro - Landing template
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 hero:
-  title: The ultimate Nuxt/Vue UI library
+  title: Build you landing with Nuxt UI Pro
   description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes. It includes all primitives to build landing pages, documentations, blogs, dashboards or entire SaaS products.
   links:
     - label: Get started
@@ -17,6 +17,45 @@ hero:
       variant: subtle
       to: https://github.com/nuxt-ui-pro/landing/tree/v3
       target: _blank
+features:
+  title: Create stunning Nuxt apps
+  description: Nuxt UI Pro comes packed with powerful features to help you build modern, high-performance Nuxt applications faster. From pre-built UI sections to Figma design kits, every detail is crafted to enhance your workflow and deliver a polished user experience.
+  features:
+    - title: 40+ Ready-to-use Sections
+      description: Pre-built UI components for landing pages, documentation, blogs, dashboards, and more—ready to use out of the box.
+      icon: i-lucide-layout-grid
+    - title: Auto Dark Mode
+      description: Seamlessly adapts to user preferences with a built-in dark mode switch—no extra configuration needed.
+      icon: i-lucide-moon
+    - title: Blazing-fast Performance
+      description: Optimized for Nuxt 3 with minimal bundle size, lightning-fast rendering, and best practices in performance.
+      icon: i-lucide-zap
+    - title: SEO & Accessibility Ready
+      description: Built with proper semantic HTML, structured data, and accessibility in mind for better rankings and usability.
+      icon: i-lucide-search-check
+    - title: Fully Customizable UI
+      description: Modify colors, fonts, spacing, and layouts with Tailwind CSS and Nuxt UI’s design tokens to match your brand identity.
+      icon: i-lucide-settings-2
+    - title: Nuxt Content Support
+      description: Write content with Markdown and MDC, making it easy to build documentation, blogs, and knowledge bases.
+      icon: i-simple-icons-markdown
+    - title: Vue-only mode
+      description: Enjoy the benefits of Nuxt UI Pro without Nuxt. Integrate it seamlessly into your Vue 3 + Vite projects and build modern UIs with ease.
+      icon: i-simple-icons-vuedotjs
+    - title: Built-in Internationalization (i18n)
+      description: Easily localize your site with built-in support for multiple languages and right-to-left (RTL) layouts.
+      icon: i-lucide-globe
+    - title: Figma Design Kits
+      description: Match your development workflow with Nuxt UI & UI Pro Figma UI kits, ensuring a fast transition from design to code.
+      icon: i-simple-icons-figma
+authorQuote:
+  quote: Nuxt UI, born from a desire to improve Vue component development, is the go-to library for building modern web interfaces. We aim to provide you with a comprehensive set of tools to create and customize your next UI while maintaining the best developer experience.
+  user:
+    name: Benjamin Canac
+    description: Author of Nuxt UI
+    to: https://github.com/benjamincanac
+    avatar:
+      src: https://github.com/benjamincanac.png
 sections:
   - title: The freedom to build anything
     description: Nuxt UI Pro ships with an extensive set of advanced components that cover a wide range of use-cases. Carefully crafted to reduce boilerplate code without sacrificing flexibility.
@@ -105,21 +144,26 @@ templates:
   title: Kickstart with Nuxt UI in seconds
   description: Choose from a variety of templates to get started with Nuxt UI Pro in seconds. Each template is designed to help you build beautiful and responsive Nuxt applications in minutes.
   items:
-    - title: Starter
-      description: A simple and clean template to get started with Nuxt UI Pro.
-      icon: i-lucide-rocket
-      to: 'https://ui-pro-starter.nuxt.dev'
-    - title: SaaS
+    - title: Landing
+      description: A template for building a landing page with Nuxt UI Pro.
+      icon: i-lucide-layout
+      to: 'https://landing-template.nuxt.dev/'
+      image: '/templates/landing.png'
+    - title: Saas
       description: A template for building a SaaS application with Nuxt UI Pro.
       icon: i-lucide-cloud
       to: 'https://saas-template.nuxt.dev/'
-    - title: And more
-      description: Explore all available templates to find the one that fits your needs.
-      icon: i-lucide-grid
-  links:
-    - label: Explore all templates
-      to: 'https://ui.nuxt.com/pro/templates'
-      trailingIcon: i-lucide-arrow-right
+      image: '/templates/saas.png'
+    - title: Docs
+      description: A template for building a documentation site with Nuxt UI Pro.
+      icon: i-lucide-book
+      to: 'https://docs-template.nuxt.dev/'
+      image: '/templates/docs.png'
+    - title: Dashboard
+      description: A template for building a dashboard with Nuxt UI Pro.
+      icon: i-lucide-chart-bar
+      to: 'https://dashboard-template.nuxt.dev/'
+      image: '/templates/dashboard.png'
 pricing:
   headline: Pricing
   title: A plan for every need
@@ -138,6 +182,7 @@ pricing:
         - Lifetime access
       button:
         label: Buy now
+        to: https://nuxt.lemonsqueezy.com/buy/057dacb2-87ba-4dc1-9256-59ee5b3bd394
     - title: Startup
       description: Best suited for small teams, startups and agencies.
       price: $499
@@ -151,6 +196,7 @@ pricing:
         - Lifetime access
       button:
         label: Buy now
+        to: https://nuxt.lemonsqueezy.com/buy/2e042a33-7e76-4dda-bd68-e353c182e571
       highlight: true
     - title: Organization
       description: Ideal for larger teams and organizations.
@@ -166,14 +212,38 @@ pricing:
         - Lifetime access
       button:
         label: Buy now
+        to: https://nuxt.lemonsqueezy.com/buy/2979099c-b7a0-4ba1-90e0-a0d60509b92d
 logos:
-  title: Trusted by the world's best
-  icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
+  - src: /logos/springfieldclinic.svg
+    alt: Springfield Clinic
+  - src: /logos/churnkey.svg
+    alt: Churnkey
+  - src: /logos/bosch.svg
+    alt: BOSCH
+  - src: /logos/blizzard.svg
+    alt: Blizzard
+  - src: /logos/bodet.svg
+    alt: Bodet
+  - src: /logos/win.svg
+    alt: WinReality
+  - src: /logos/tower.svg
+    alt: Tower Research
+  - src: /logos/liegeairport.svg
+    alt: Liege Airport
+  - src: /logos/wuniversity.svg
+    alt: University of Washington
+  - src: /logos/funda.svg
+    alt: Funda
+  - src: /logos/exxonmobil.svg
+    alt: ExxonMobil
+  - src: /logos/mainpost.svg
+    alt: Main Post
+  - src: /logos/insep.svg
+    alt: INSEP
+  - src: /logos/applause.svg
+    alt: Applause
+  - src: /logos/instadapp.svg
+    alt: Instadapp
 testimonials:
   title: What people are saying
   description: Nuxt UI Pro is already trusted by 1,500+ users and teams around the world.
@@ -185,8 +255,7 @@ testimonials:
         to: 'https://www.linkedin.com/in/anthonybettini/'
         target: _blank
         avatar:
-          src: 'https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1519741249442?e=1734566400&v=beta&t=mLV1GAL0RopSlgVP1jLGY2Gt2_pkTu6kcl2mG-Ljg5w'
-          loading: lazy
+          src: 'https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1519741249602?e=1743638400&v=beta&t=lw2K6vS0OOCZWGtHY1buJVkRItQCa4OQw0vzAhhpJk8'
     - quote: "Wow, Nuxt UI Pro is a total game-changer! I'm seriously impressed with the quality, attention to detail, and the insane variety of components you get. It's like hitting the jackpot for any developer. I've saved countless hours that I would've spent stressing over making my apps look good, with amazing accessible UX,  and instead, I've been able to focus on the real deal – building the app itself. It's an instant buy for me, every single time. No second thoughts!"
       user:
         name: 'Yaz Jallad'
@@ -195,7 +264,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1824690890222485504/lQ7v1AGt_400x400.jpg'
-          loading: lazy
     - quote: "Nuxt UI Pro saves 100s of hours of dev and design time while delivering a clean professional look on any device."
       user:
         name: 'Kevin Olson'
@@ -205,7 +273,6 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/acidjazz'
           srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/acidjazz 2x'
-          loading: lazy
     - quote: "I decided to replace my custom-built components with a component library and chose Nuxt UI Pro. It only took me a few hours, and the new UI looks more professional. Integrating the library is easy; the components are well-documented and highly customizable. I can only recommend it; this library is my new choice for new SaaS products."
       user:
         name: 'Michael Hoffmann'
@@ -214,8 +281,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/mokkapps'
-          srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/mokkapps 2x'
-          loading: lazy
     - quote: "Nuxt UI Pro is my go to component library. Out-of-the-box it handles all of the UI demands I throw at it while looking great. The customisation is really worth thought out, allowing you to override components in a breeze. Always amazed at the improvements dropped in each update as well, the team is doing an amazing job."
       user:
         name: 'Harlan Wilton'
@@ -224,8 +289,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/harlan-zw'
-          srcset: 'https://ipx.nuxt.com/f_auto,s_80x80/gh_avatar/harlan-zw 2x'
-          loading: lazy
     - quote: "I jumped at the chance to buy the Nuxt team's new UI kit as soon as I saw it. While I'm already a fan of Nuxt UI, the pro version takes it to a whole new level and lets me paste entire blocks into all my projects, saving me a ton of time."
       user:
         name: 'Thomas Sanlis'
@@ -234,7 +297,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1374040164180299791/ACw4G3nZ_400x400.jpg'
-          loading: lazy
     - quote: "Nuxt UI has allowed me to develop my SaaS without any prior mockups. The design quality of their components and the intelligence of the DX meant that I was able to try many different layouts for my application until I found the perfect UX for my users. Nuxt UI is the ui-kit I would have dreamed of building myself, and Nuxt UI Pro makes things even easier when you want to go further with your SaaS. Kudos to the team."
       user:
         name: 'Benjamin Code'
@@ -243,7 +305,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1607353032420769793/I8qQSUfQ_400x400.jpg'
-          loading: lazy
     - quote: "Nuxt UI Pro is my preferred choice for everything, from a POC to a web platform. It's ready to use out-of-the-box and assists me in crafting pixel-perfect UIs. It saves me a significant amount of time while remaining highly customizable. Give it a try, and you won't be let down."
       user:
         name: 'Estéban Soubiran'
@@ -252,8 +313,7 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1801649350319218689/aS_X_iTm_400x400.jpg'
-          loading: lazy
-    - quote: "As someone who builds a lot of open-source projects, Nuxt UI Pro has completely changed my development workflow. The components are not just beautiful, they're thoughtfully designed with developer experience in mind. From dashboards to documentation sites, everything just feels right."
+    - quote: "As someone who builds a lot of projects, Nuxt UI Pro has been a game-changer. It's not just about saving time – it's about having components that are thoughtfully designed and just work. The developer experience is exceptional, and I can focus on building features instead of tweaking UI components."
       user:
         name: 'Hugo Richard'
         description:  'Frontend Engineer at NuxtLabs'
@@ -261,7 +321,6 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://avatars.githubusercontent.com/u/71938701?v=4'
-          loading: lazy
 cta:
   title: Start with Nuxt UI Pro today!
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
