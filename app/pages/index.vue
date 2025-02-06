@@ -35,7 +35,10 @@ const isDark = computed(() => useColorMode().value == 'dark')
       <PromotionalVideo />
     </UPageHero>
 
-    <UPageSection v-bind="page.features" :ui="{ title: 'text-left', description: 'text-left' }" />
+    <UPageSection
+      v-bind="page.features"
+      :ui="{ title: 'text-left', description: 'text-left' }"
+    />
 
     <UPageCTA
       :description="page.authorQuote.quote"
