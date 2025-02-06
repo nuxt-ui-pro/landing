@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => {
+const { data: page } = await useAsyncData('home', () => {
   return queryCollection('content').first()
 })
 
