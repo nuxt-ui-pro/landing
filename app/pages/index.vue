@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const page = await queryCollection('content').first()
+const { data: page } = await useAsyncData('home', () => {
+  return queryCollection('content').first()
+})
 
 useSeoMeta({
-  title: page.title,
-  ogTitle: page.title,
-  description: page.description,
-  ogDescription: page.description
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description
 })
 
 const isDark = computed(() => useColorMode().value == 'dark')
