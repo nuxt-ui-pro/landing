@@ -5,10 +5,10 @@ const { data: page } = await useAsyncData(route.path, () => {
 })
 
 useSeoMeta({
-  title: page.title,
-  ogTitle: page.title,
-  description: page.description,
-  ogDescription: page.description
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description
 })
 
 const isDark = computed(() => useColorMode().value == 'dark')
