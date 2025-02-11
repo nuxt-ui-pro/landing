@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const route = useRoute()
 const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
