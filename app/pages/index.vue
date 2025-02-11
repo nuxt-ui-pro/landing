@@ -130,7 +130,10 @@ const isDark = computed(() => useColorMode().value == 'dark')
       id="testimonials"
       v-bind="page.testimonials"
     >
-      <UPageMarquee pause-on-hover>
+      <UPageMarquee
+        pause-on-hover
+        class="[--duration:50s]"
+      >
         <img
           v-for="(logo, index) in page.logos"
           :key="index"
