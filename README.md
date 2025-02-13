@@ -6,7 +6,7 @@ This template lets you build a landing page with [Nuxt UI Pro v3](https://ui3.nu
 
 [![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
 
-- [Live demo](https://v3.landing-template.nuxt.dev/)
+- [Live demo](https://landing-template.nuxt.dev/)
 - [Documentation](https://ui3.nuxt.dev/getting-started/installation/pro/nuxt)
 
 [![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?repo=nuxt-ui-pro/landing)
