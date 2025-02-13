@@ -1,18 +1,15 @@
-![nuxt-ui-landing-social-card](https://github.com/nuxt-ui-pro/landing/assets/739984/d0919c96-e5f2-47e9-b460-44f87341218d)
+![nuxt-ui-landing-social-card](https://github.com/user-attachments/assets/299676e9-b798-42b2-85bf-f8eb606993a2)
 
 # Nuxt UI Pro - Landing template
 
-This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
+This template lets you build a landing page with [Nuxt UI Pro v3](https://ui3.nuxt.dev/pro) quickly.
 
 [![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
 
-- [Live demo](https://landing-template.nuxt.dev/)
-- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
-- [Documentation](https://ui.nuxt.com/pro/getting-started)
+- [Live demo](https://v3.landing-template.nuxt.dev/)
+- [Documentation](https://ui3.nuxt.dev/getting-started/installation/pro/nuxt)
 
 [![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?repo=nuxt-ui-pro/landing)
-
-https://github.com/nuxt-ui-pro/landing/assets/904724/c7dd64a4-a09c-4cab-9572-92a02a5e06f9
 
 ## Quick Start
 
