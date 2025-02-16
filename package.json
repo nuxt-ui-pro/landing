@@ -25,8 +25,5 @@
     "typescript": "^5.7.3",
     "vue-tsc": "^2.2.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": ["better-sqlite3"]
-  },
-  "packageManager": "pnpm@10.4.0"
+  "packageManager": "yarn@1.22.19"
 }
