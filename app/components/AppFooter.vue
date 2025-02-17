@@ -54,7 +54,8 @@ function onSubmit() {
     icon="i-simple-icons-nuxtdotjs"
     class="h-px"
   />
-  <UFooter :ui="{ top: 'border-b border-[var(--ui-border)]' }">
+
+  <UFooter :ui="{ top: 'border-b border-(--ui-border)' }">
     <template #top>
       <UContainer>
         <UFooterColumns :columns="columns">

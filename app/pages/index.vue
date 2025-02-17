@@ -22,7 +22,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       class="relative"
     >
       <template #top>
-        <div class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80" />
+        <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
         <ParticlesBg
           class="absolute inset-0 z-[-1] h-[400px]"
@@ -164,7 +164,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
     <UPageSection
       id="faq"
       v-bind="page.faq"
-      class="scroll-mt-[var(--header-height)]"
+      class="scroll-mt-(--ui-header-height)"
     >
       <UPageAccordion
         multiple
@@ -187,7 +187,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       variant="naked"
       class="overflow-hidden"
     >
-      <div class="absolute rounded-full dark:bg-[var(--ui-primary)] blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
+      <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
       <StarsBg />
     </UPageCTA>
