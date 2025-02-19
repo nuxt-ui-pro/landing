@@ -62,7 +62,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
     </template>
 
-    <template #content>
+    <template #body>
       <UNavigationMenu
         :items="items"
         orientation="vertical"
