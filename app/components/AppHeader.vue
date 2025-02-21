@@ -33,22 +33,19 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       </NuxtLink>
     </template>
 
-    <UNavigationMenu
-      :items="items"
-      variant="link"
-    />
-
     <template #right>
-      <UColorModeButton />
+      <UNavigationMenu
+        :items="items"
+        variant="link"
+        class="hidden lg:block"
+      />
 
       <UButton
-        to="https://github.com/nuxt-ui-pro/landing/tree/v3"
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
-        color="neutral"
-        variant="ghost"
+        label="Download App"
+        variant="subtle"
       />
+
+      <UColorModeButton />
     </template>
 
     <template #content>
