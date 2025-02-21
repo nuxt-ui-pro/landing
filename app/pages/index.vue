@@ -33,71 +33,19 @@ const isDark = computed(() => useColorMode().value == 'dark')
           refresh
         />
       </template>
-
-      <PromotionalVideo />
     </UPageHero>
-
-    <UPageSection
-      v-bind="page.features"
-      :ui="{ title: 'text-left', description: 'text-left' }"
-    />
-
-    <UPageCTA
-      :description="page.authorQuote.quote"
-      variant="soft"
-      class="rounded-none"
-      :ui="{ container: 'sm:py-12 lg:py-12 sm:gap-8', description: 'before:content-[open-quote] after:content-[close-quote]' }"
-    >
-      <UUser
-        v-bind="page.authorQuote.user"
-        size="xl"
-        class="justify-center"
-      />
-    </UPageCTA>
 
     <UPageSection
       v-for="(section, index) in page.sections"
       :key="index"
       v-bind="section"
       orientation="horizontal"
-    >
-      <MDC :value="section.code" />
-    </UPageSection>
+    />
 
     <UPageSection
-      id="templates"
-      v-bind="page.templates"
-      class="overflow-hidden"
-    >
-      <UCarousel
-        v-slot="{ item }"
-        loop
-        arrows
-        dots
-        :autoplay="{ delay: 3000 }"
-        :items="page.templates.items"
-        :ui="{ item: 'basis-1/2', container: 'py-2' }"
-      >
-        <UPageCard
-          :to="item.to"
-          :description="item.description"
-          class="group"
-          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
-        >
-          <template #title>
-            <UIcon :name="item.icon" />
-            <span>
-              {{ item.title }}
-            </span>
-          </template>
-          <img
-            :src="item.image"
-            :alt="item.title"
-            class="rounded-lg grayscale group-hover:grayscale-0 transition-all duration-200 ease-in-out"
-          >
-        </UPageCard>
-      </UCarousel>
-    </UPageSection>
+      v-bind="page.features"
+      :ui="{ title: 'text-left', description: 'text-left' }"
+    />
 
     <UPageSection
       id="pricing"
@@ -130,17 +78,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
       id="testimonials"
       v-bind="page.testimonials"
     >
-      <UPageMarquee
-        pause-on-hover
-        class="[--duration:50s]"
-      >
-        <img
-          v-for="(logo, index) in page.logos"
-          :key="index"
-          v-bind="logo"
-          class="h-6 shrink-0 max-w-[140px] filter invert dark:invert-0"
-        >
-      </UPageMarquee>
       <UContainer>
         <UPageColumns class="xl:columns-4">
           <UPageCard
@@ -159,25 +96,6 @@ const isDark = computed(() => useColorMode().value == 'dark')
           </UPageCard>
         </UPageColumns>
       </UContainer>
-    </UPageSection>
-
-    <UPageSection
-      id="faq"
-      v-bind="page.faq"
-      class="scroll-mt-(--ui-header-height)"
-    >
-      <UPageAccordion
-        multiple
-        :items="page.faq.items"
-        class="max-w-4xl mx-auto"
-      >
-        <template #body="{ item }">
-          <MDC
-            :value="item.content"
-            unwrap="p"
-          />
-        </template>
-      </UPageAccordion>
     </UPageSection>
 
     <USeparator />

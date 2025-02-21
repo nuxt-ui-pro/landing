@@ -14,7 +14,7 @@ This template lets you build a landing page with [Nuxt UI Pro v3](https://ui3.nu
 ## Quick Start
 
 ```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-pro/landing
+npx nuxi init -t github:nuxt-ui-pro/landing#v3
 ```
 
 ## Setup

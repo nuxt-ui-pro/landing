@@ -5,32 +5,22 @@ const { activeHeadings, updateHeadings } = useScrollspy()
 const items = computed(() => [{
   label: 'Features',
   to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('templates')
-}, {
-  label: 'Templates',
-  to: '#templates',
-  active: activeHeadings.value.includes('templates') && !activeHeadings.value.includes('pricing')
+  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
 }, {
   label: 'Pricing',
   to: '#pricing',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('testimonials')
 }, {
   label: 'Testimonials',
   to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('faq')
-}, {
-  label: 'FAQ',
-  to: '#faq',
-  active: activeHeadings.value.includes('faq')
+  active: activeHeadings.value.includes('testimonials')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
     document.querySelector('#features'),
-    document.querySelector('#templates'),
     document.querySelector('#pricing'),
-    document.querySelector('#testimonials'),
-    document.querySelector('#faq')
+    document.querySelector('#testimonials')
   ])
 })
 </script>
@@ -41,7 +31,6 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <NuxtLink to="/">
         <LogoPro class="w-auto h-6 shrink-0" />
       </NuxtLink>
-      <TemplateMenu />
     </template>
 
     <UNavigationMenu

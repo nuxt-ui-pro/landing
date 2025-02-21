@@ -60,27 +60,14 @@ export const collections = {
     schema: z.object({
       ...baseSchema,
       hero: sectionWithLinksSchema,
-      features: sectionSchema,
-      authorQuote: z.object({
-        quote: z.string().nonempty(),
-        user: userSchema
-      }),
       sections: z.array(
         sectionSchema.extend({
           items: z.array(featureItemSchema),
           links: z.array(linkSchema),
-          reverse: z.boolean().optional(),
-          code: z.string().optional()
+          reverse: z.boolean().optional()
         })
       ),
-      templates: sectionWithLinksSchema.extend({
-        items: z.array(
-          featureItemSchema.extend({
-            image: z.string().nonempty(),
-            to: z.string().nonempty()
-          })
-        )
-      }),
+      features: sectionSchema,
       pricing: sectionSchema.extend({
         plans: z.array(z.object({
           ...baseSchema,
@@ -92,26 +79,13 @@ export const collections = {
           highlight: z.boolean().optional()
         }))
       }),
-      logos: z.array(z.object({
-        src: z.string().nonempty(),
-        alt: z.string().nonempty(),
-        width: z.string().nonempty(),
-        height: z.string().nonempty()
-      })),
       testimonials: sectionSchema.extend({
         items: z.array(z.object({
           quote: z.string().nonempty(),
           user: testimonialUserSchema
         }))
       }),
-      cta: sectionWithLinksSchema,
-      faq: sectionSchema.extend({
-        items: z.array(z.object({
-          label: z.string().nonempty(),
-          content: z.string().nonempty(),
-          defaultOpen: z.boolean().optional()
-        }))
-      })
+      cta: sectionWithLinksSchema
     })
   })
 }
