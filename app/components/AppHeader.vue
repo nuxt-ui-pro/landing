@@ -9,7 +9,7 @@ const items = computed(() => [{
 }, {
   label: 'Pricing',
   to: '#pricing',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
 }, {
   label: 'Testimonials',
   to: '#testimonials',
@@ -51,7 +51,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
     </template>
 
-    <template #body>
+    <template #content>
       <UNavigationMenu
         :items="items"
         orientation="vertical"

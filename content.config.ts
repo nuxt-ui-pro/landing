@@ -67,7 +67,10 @@ export const collections = {
           reverse: z.boolean().optional()
         })
       ),
-      features: sectionSchema,
+      features: sectionSchema.extend({
+        items: z.array(featureItemSchema)
+      }),
+      steps: sectionSchema,
       pricing: sectionSchema.extend({
         plans: z.array(z.object({
           ...baseSchema,

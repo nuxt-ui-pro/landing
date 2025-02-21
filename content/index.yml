@@ -1,12 +1,13 @@
 title: LoveCoding
 description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
 hero:
-  title: Code at the Perfect Time
+  title: Code at the [Perfect Time]{.text-(--ui-primary)}
   description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
   links:
     - label: Getting Started
       icon: i-lucide-arrow-right
       trailing: true
+      variant: subtle
       to: https://ui3.nuxt.dev/getting-started/installation/pro/nuxt
       target: _blank
       size: xl
@@ -14,11 +15,11 @@ hero:
       icon: i-simple-icons-github
       size: xl
       color: neutral
-      variant: subtle
+      variant: ghost
       to: https://github.com/nuxt-ui-pro/landing/tree/v3
       target: _blank
 sections:
-  - title: Revolutionize your coding experience
+  - title: '[Revolutionize]{.text-(--ui-primary)} your coding experience'
     description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
     images: ''
     features:
@@ -29,7 +30,7 @@ sections:
       - title: Improve workflow efficiency
         description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
 features:
-  title: Take control of your productivity
+  title: Take control of your [productivity]{.text-(--ui-primary)}
   description: Make every coding session count with smart analytics and workflow optimization.
   features:
     - title: AI-Powered Focus Tracking
@@ -49,9 +50,19 @@ features:
       icon: i-lucide-mouse-pointer-2
     - title: Performance Analytics
       description: Track your coding metrics and get insights to boost your speed and code quality.
-      icon: i-simple-chart-line
+      icon: i-lucide-chart-line
+steps:
+  title: Start coding smarter in [3 steps]{.text-(--ui-primary)}
+  description: Transform your development workflow with our AI-powered assistant.
+  items:
+    - title: Connect Your IDE
+      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
+    - title: Track & Analyze
+      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
+    - title: Optimize & Code Smarter
+      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
 pricing:
-  title: Choose your productivity path
+  title: Choose your [productivity]{.text-(--ui-primary)} path
   description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
   plans:
     - title: Pro Developer
@@ -67,6 +78,7 @@ pricing:
       button:
         label: Buy now
         color: neutral
+        variant: outline
         to: '#'
     - title: Team Developer
       description: For bootstrappers and indie hackers.
@@ -83,10 +95,10 @@ pricing:
         variant: subtle
         to: '#'
 testimonials:
-  title: Join thousands of productive developers
+  title: Join thousands of productive [developers]{.text-(--ui-primary)}
   description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
   items:
-    - quote: “Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.”
+    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
       user:
         name: 'Sarah Doe'
         description: 'Full Stack Developer'
@@ -94,7 +106,7 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1519741249602?e=1743638400&v=beta&t=lw2K6vS0OOCZWGtHY1buJVkRItQCa4OQw0vzAhhpJk8'
-    - quote: "Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity."
+    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
       user:
         name: 'Sébastien Doe'
         description:  'Lead Software Engineer'
@@ -102,7 +114,7 @@ testimonials:
         target: _blank
         avatar:
           src: 'https://pbs.twimg.com/profile_images/1824690890222485504/lQ7v1AGt_400x400.jpg'
-    - quote: "Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time."
+    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
       user:
         name: 'Benjamin Doe'
         description:  'Senior Frontend Developer'
@@ -111,9 +123,11 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/acidjazz'
 cta:
-  title: Start with LoveCoding today
+  title: Start with LoveCoding [today]{.text-(--ui-primary)}
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
   links:
     - label: Get started
       to: '#'
+      variant: subtle
       icon: i-lucide-arrow-right
+      trailing: true

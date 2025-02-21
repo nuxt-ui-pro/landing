@@ -21,17 +21,8 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :links="page.hero.links"
       class="relative"
     >
-      <template #top>
-        <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[300px] size-60 sm:size-80 transform -translate-x-1/2 left-1/2 -translate-y-80" />
-
-        <ParticlesBg
-          class="absolute inset-0 z-[-1] h-[400px]"
-          :quantity="100"
-          :ease="100"
-          :color="isDark ? '#FFF' : '#000'"
-          :staticity="10"
-          refresh
-        />
+      <template #title>
+        <MDC :value="page.hero.title" />
       </template>
     </UPageHero>
 
@@ -40,17 +31,62 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :key="index"
       v-bind="section"
       orientation="horizontal"
-    />
+      reverse
+    >
+      <template #title>
+        <MDC
+          :value="section.title"
+          class="*:leading-11"
+        />
+      </template>
+    </UPageSection>
 
     <UPageSection
+      id="features"
       v-bind="page.features"
       :ui="{ title: 'text-left', description: 'text-left' }"
-    />
+    >
+      <template #title>
+        <MDC :value="page.features.title" />
+      </template>
+    </UPageSection>
+
+    <UPageSection
+      id="steps"
+      v-bind="page.steps"
+      :ui="{ title: 'text-left', description: 'text-left' }"
+    >
+      <template #title>
+        <MDC :value="page.steps.title" />
+      </template>
+
+      <template #features>
+        <UPageCard
+          v-for="(step, index) in page.steps.items"
+          :key="index"
+          class="group"
+          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
+        >
+          <div class="flex flex-col gap-2">
+            <span class="text-lg font-semibold">
+              {{ step.title }}
+            </span>
+            <span class="text-sm text-(--ui-text-muted)">
+              {{ step.description }}
+            </span>
+          </div>
+        </UPageCard>
+      </template>
+    </UPageSection>
 
     <UPageSection
       id="pricing"
       v-bind="page.pricing"
     >
+      <template #title>
+        <MDC :value="page.pricing.title" />
+      </template>
+
       <UContainer>
         <UPricingPlans
           class="mb-16"
@@ -78,8 +114,11 @@ const isDark = computed(() => useColorMode().value == 'dark')
       id="testimonials"
       v-bind="page.testimonials"
     >
+      <template #title>
+        <MDC :value="page.testimonials.title" />
+      </template>
       <UContainer>
-        <UPageColumns class="xl:columns-4">
+        <UPageColumns class="xl:columns-3">
           <UPageCard
             v-for="(testimonial, index) in page.testimonials.items"
             :key="index"
@@ -105,9 +144,10 @@ const isDark = computed(() => useColorMode().value == 'dark')
       variant="naked"
       class="overflow-hidden"
     >
+      <template #title>
+        <MDC :value="page.cta.title" />
+      </template>
       <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
-
-      <StarsBg />
     </UPageCTA>
   </div>
 </template>
