@@ -23,7 +23,7 @@ useSeoMeta({
       <template #title>
         <MDC
           :value="page.hero.title"
-          class="*:leading-11"
+          class="*:leading-14"
         />
       </template>
       <UColorModeImage
@@ -63,7 +63,7 @@ useSeoMeta({
     <UPageSection
       id="features"
       v-bind="page.features"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
+      :ui="{ title: 'text-left @container relative flex', description: 'text-left' }"
       class="relative overflow-hidden"
     >
       <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
@@ -71,12 +71,22 @@ useSeoMeta({
       <template #title>
         <MDC
           :value="page.features.title"
+          class="*:leading-9"
         />
-        <UColorModeImage
-          light="/images/light/line-2.svg"
-          dark="/images/dark/line-2.svg"
-          class="hidden @min-[1070px]:block absolute right-0 top-1/3 transform translate-y-1/2 translate-x-1/2"
-        />
+        <div class="hidden @min-[1070px]:flex flex-1">
+          <UColorModeImage
+            light="/images/light/line-2.svg"
+            dark="/images/dark/line-2.svg"
+            class="flex-1 right-0 transform translate-x-1/3"
+          />
+        </div>
+        <!--        <div class="hidden @min-[1070px]:block">
+          <UColorModeImage
+            light="/images/light/line-2.svg"
+            dark="/images/dark/line-2.svg"
+            class="absolute right-0 top-1/3 transform translate-y-1/2 translate-x-1/2 w-full"
+          />
+        </div> -->
       </template>
     </UPageSection>
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
