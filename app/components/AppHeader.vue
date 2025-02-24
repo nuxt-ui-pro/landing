@@ -45,16 +45,23 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <UButton
         label="Download App"
         variant="subtle"
+        class="hidden lg:block"
       />
 
       <UColorModeButton />
     </template>
 
-    <template #content>
+    <template #body>
       <UNavigationMenu
         :items="items"
         orientation="vertical"
         class="-mx-2.5"
+      />
+      <UButton
+        class="mt-4"
+        label="Download App"
+        variant="subtle"
+        block
       />
     </template>
   </UHeader>

@@ -23,14 +23,16 @@ useSeoMeta({
       <template #title>
         <MDC
           :value="page.hero.title"
-          class="*:leading-14"
+          class="*:leading-11 sm:*:leading-16"
         />
       </template>
-      <UColorModeImage
-        light="/images/light/line-1.svg"
-        dark="/images/dark/line-1.svg"
-        class="absolute pointer-events-none left-10 top-0 h-full w-1/2"
-      />
+      <div class="hidden md:block">
+        <UColorModeImage
+          light="/images/light/line-1.svg"
+          dark="/images/dark/line-1.svg"
+          class="absolute pointer-events-none left-0 top-0 object-cover size-full"
+        />
+      </div>
     </UPageHero>
 
     <UPageSection
