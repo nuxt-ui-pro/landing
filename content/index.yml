@@ -147,8 +147,12 @@ cta:
   title: Start with LoveCoding [today]{.text-(--ui-primary)}
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
   links:
-    - label: Get started
-      to: '#'
+    - label: Buy now
+      to: 'https://ui.nuxt.com/pro/purchase'
+      target: _blank
+      icon: i-lucide-shopping-cart
+    - label: License
+      to: 'https://ui3.nuxt.dev/getting-started/license'
+      trailingIcon: i-lucide-circle-help
+      target: _blank
       variant: subtle
-      icon: i-lucide-arrow-right
-      trailing: true

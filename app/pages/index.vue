@@ -202,7 +202,7 @@ useSeoMeta({
     <UPageCTA
       v-bind="page.cta"
       variant="naked"
-      class="relative overflow-hidden"
+      class="overflow-hidden"
     >
       <UColorModeImage
         light="/images/light/line-6.svg"
@@ -218,6 +218,8 @@ useSeoMeta({
         <MDC :value="page.cta.title" />
       </template>
       <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
+
+      <StarsBg />
     </UPageCTA>
   </div>
 </template>
