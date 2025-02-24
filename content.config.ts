@@ -30,7 +30,17 @@ const imageSchema = z.object({
 const featureItemSchema = z.object({
   ...baseSchema,
   icon: z.string().nonempty(),
-  class: z.string().optional()
+  class: z.string().optional(),
+  image: z.object({
+    light: z.string().nonempty(),
+    dark: z.string().nonempty()
+  }).optional(),
+  ui: z.object({
+    title: z.string().optional(),
+    description: z.string().optional(),
+    leadingIcon: z.string().optional(),
+    leading: z.string().optional()
+  })
 })
 
 const sectionSchema = z.object({

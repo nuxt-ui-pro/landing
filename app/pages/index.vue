@@ -9,6 +9,8 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description
 })
+
+const isDark = computed(() => useColorMode().value == 'dark')
 </script>
 
 <template>
@@ -21,9 +23,16 @@ useSeoMeta({
       :ui="{ container: 'md:pt-18 lg:pt-24' }"
     >
       <template #title>
-        <MDC :value="page.hero.title" />
+        <MDC
+          :value="page.hero.title"
+          class="*:leading-11"
+        />
       </template>
-      <Line1 class="absolute -bottom-16" />
+      <UColorModeImage
+        light="/images/light/line-1.svg"
+        dark="/images/dark/line-1.svg"
+        class="absolute -bottom-16"
+      />
     </UPageHero>
 
     <UPageSection
@@ -37,7 +46,7 @@ useSeoMeta({
       <template #title>
         <MDC
           :value="section.title"
-          class="*:leading-11"
+          class="sm:*:leading-11"
         />
       </template>
       <img
@@ -64,13 +73,17 @@ useSeoMeta({
       :ui="{ title: 'text-left @container relative', description: 'text-left' }"
       class="relative overflow-hidden"
     >
-      <div class="absolute -left-10 top-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
-      <div class="absolute -right-10 -bottom-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
       <template #title>
         <MDC
           :value="page.features.title"
         />
-        <Line2 class="hidden @min-[1070px]:block absolute right-0 top-1/3 transform translate-y-1/2 translate-x-1/2" />
+        <UColorModeImage
+          light="/images/light/line-2.svg"
+          dark="/images/dark/line-2.svg"
+          class="hidden @min-[1070px]:block absolute right-0 top-1/3 transform translate-y-1/2 translate-x-1/2"
+        />
       </template>
     </UPageSection>
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
@@ -78,8 +91,15 @@ useSeoMeta({
     <UPageSection
       id="steps"
       v-bind="page.steps"
-      :ui="{ title: 'text-left', description: 'text-left' }"
+      class="relative overflow-hidden"
     >
+      <template #headline>
+        <UColorModeImage
+          light="/images/light/line-3.svg"
+          dark="/images/dark/line-3.svg"
+          class="absolute -top-10 sm:top-0 right-1/2"
+        />
+      </template>
       <template #title>
         <MDC :value="page.steps.title" />
       </template>
@@ -91,6 +111,12 @@ useSeoMeta({
           class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
         >
+          <UColorModeImage
+            :light="step.image?.light"
+            :dark="step.image?.dark"
+            :alt="step.title"
+            class="size-full"
+          />
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
               {{ step.title }}
@@ -138,6 +164,13 @@ useSeoMeta({
       id="testimonials"
       v-bind="page.testimonials"
     >
+      <template #headline>
+        <UColorModeImage
+          light="/images/light/line-5.svg"
+          dark="/images/dark/line-5.svg"
+          class="absolute -top-10 sm:top-0 right-1/2"
+        />
+      </template>
       <template #title>
         <MDC :value="page.testimonials.title" />
       </template>
@@ -166,8 +199,18 @@ useSeoMeta({
     <UPageCTA
       v-bind="page.cta"
       variant="naked"
-      class="overflow-hidden"
+      class="relative overflow-hidden"
     >
+      <UColorModeImage
+        light="/images/light/line-6.svg"
+        dark="/images/dark/line-6.svg"
+        class="absolute left-10 -top-10 sm:top-0 right-1/2 h-1/2"
+      />
+      <UColorModeImage
+        light="/images/light/line-7.svg"
+        dark="/images/dark/line-7.svg"
+        class="absolute right-0 bottom-0 h-full"
+      />
       <template #title>
         <MDC :value="page.cta.title" />
       </template>

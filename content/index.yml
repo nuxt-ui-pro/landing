@@ -39,31 +39,52 @@ features:
     - title: AI-Powered Focus Tracking
       description: Discover your optimal coding hours with real-time AI analysis of your productivity patterns.
       icon: i-lucide-wand-sparkles
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Distraction Alerts
       description: Get notified when your focus drifts and bring your attention back.
       icon: i-lucide-bell-ring
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Smart Code Snippets
       description: Save and reuse frequently used code blocks for efficiency.
       icon: i-lucide-code-xml
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Deep Work Mode
       description: Block distractions and set structured coding sessions with built-in Pomodoro timers.
       icon: i-lucide-moon
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Collaborative Insights
       description: Sync your workflow with teammates and see when they are most productive.
       icon: i-lucide-mouse-pointer-2
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Performance Analytics
       description: Track your coding metrics and get insights to boost your speed and code quality.
       icon: i-lucide-chart-line
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
 steps:
   title: Start coding smarter in [3 steps]{.text-(--ui-primary)}
   description: Transform your development workflow with our AI-powered assistant.
   items:
     - title: Connect Your IDE
       description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
+      image:
+        light: '/images/light/connect.svg'
+        dark: '/images/dark/connect.svg'
     - title: Track & Analyze
       description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
+      image:
+        light: '/images/light/optimize.svg'
+        dark: '/images/dark/optimize.svg'
     - title: Optimize & Code Smarter
       description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
+      image:
+        light: '/images/light/track.svg'
+        dark: '/images/dark/track.svg'
 pricing:
   title: Choose your [productivity]{.text-(--ui-primary)} path
   description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
@@ -105,26 +126,23 @@ testimonials:
       user:
         name: 'Sarah Doe'
         description: 'Full Stack Developer'
-        to: 'https://www.linkedin.com/in/anthonybettini/'
         target: _blank
         avatar:
-          src: 'https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1519741249602?e=1743638400&v=beta&t=lw2K6vS0OOCZWGtHY1buJVkRItQCa4OQw0vzAhhpJk8'
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
     - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
       user:
         name: 'Sébastien Doe'
         description:  'Lead Software Engineer'
-        to: 'https://twitter.com/ninjaparade/'
         target: _blank
         avatar:
-          src: 'https://pbs.twimg.com/profile_images/1824690890222485504/lQ7v1AGt_400x400.jpg'
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
     - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
       user:
         name: 'Benjamin Doe'
         description:  'Senior Frontend Developer'
-        to: 'https://github.com/acidjazz'
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/acidjazz'
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
 cta:
   title: Start with LoveCoding [today]{.text-(--ui-primary)}
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
