@@ -23,11 +23,7 @@ useSeoMeta({
       <template #title>
         <MDC :value="page.hero.title" />
       </template>
-      <img
-        src="/images/line-1.png"
-        alt="Line 1"
-        class="absolute -bottom-16"
-      >
+      <Line1 class="absolute -bottom-16" />
     </UPageHero>
 
     <UPageSection
@@ -61,20 +57,23 @@ useSeoMeta({
       >
     </UPageSection>
 
+    <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
     <UPageSection
       id="features"
       v-bind="page.features"
-      :ui="{ title: 'text-left relative', description: 'text-left' }"
+      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
+      class="relative overflow-hidden"
     >
+      <div class="absolute -left-10 top-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
+      <div class="absolute -right-10 -bottom-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
       <template #title>
-        <MDC :value="page.features.title" />
-        <img
-          src="/images/line-2.png"
-          class="hidden lg:block absolute right-0 top-0 transform translate-y-1/2 translate-x-1/2"
-          alt="line 2"
-        >
+        <MDC
+          :value="page.features.title"
+        />
+        <Line2 class="hidden @min-[1070px]:block absolute right-0 top-1/3 transform translate-y-1/2 translate-x-1/2" />
       </template>
     </UPageSection>
+    <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
 
     <UPageSection
       id="steps"
