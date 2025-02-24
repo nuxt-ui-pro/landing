@@ -144,7 +144,7 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
 cta:
-  title: Start with LoveCoding [today]{.text-(--ui-primary)}
+  title: Build your landing page with [Nuxt UI Pro]{.text-(--ui-primary)}
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
   links:
     - label: Buy now
