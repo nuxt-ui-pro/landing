@@ -29,7 +29,8 @@ const imageSchema = z.object({
 
 const featureItemSchema = z.object({
   ...baseSchema,
-  icon: z.string().nonempty()
+  icon: z.string().nonempty(),
+  class: z.string().optional()
 })
 
 const sectionSchema = z.object({
@@ -64,13 +65,19 @@ export const collections = {
         sectionSchema.extend({
           items: z.array(featureItemSchema),
           links: z.array(linkSchema),
-          reverse: z.boolean().optional()
+          reverse: z.boolean().optional(),
+          images: z.object({
+            mobile: z.string().optional(),
+            desktop: z.string().optional()
+          })
         })
       ),
       features: sectionSchema.extend({
         items: z.array(featureItemSchema)
       }),
-      steps: sectionSchema,
+      steps: sectionSchema.extend({
+        items: z.array(featureItemSchema)
+      }),
       pricing: sectionSchema.extend({
         plans: z.array(z.object({
           ...baseSchema,

@@ -9,8 +9,6 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description
 })
-
-const isDark = computed(() => useColorMode().value == 'dark')
 </script>
 
 <template>
@@ -20,10 +18,16 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :description="page.hero.description"
       :links="page.hero.links"
       class="relative"
+      :ui="{ container: 'md:pt-18 lg:pt-24' }"
     >
       <template #title>
         <MDC :value="page.hero.title" />
       </template>
+      <img
+        src="/images/line-1.png"
+        alt="Line 1"
+        class="absolute -bottom-16"
+      >
     </UPageHero>
 
     <UPageSection
@@ -31,6 +35,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :key="index"
       v-bind="section"
       orientation="horizontal"
+      :ui="{ container: 'lg:px-0', features: 'border-l border-(--ui-border) pl-4' }"
       reverse
     >
       <template #title>
@@ -39,15 +44,35 @@ const isDark = computed(() => useColorMode().value == 'dark')
           class="*:leading-11"
         />
       </template>
+      <img
+        :src="section.images.desktop"
+        :alt="section.title"
+        class="hidden lg:block xl:hidden lg:-left-16"
+      >
+      <img
+        :src="section.images.mobile"
+        :alt="section.title"
+        class="hidden xl:block"
+      >
+      <img
+        :src="section.images.mobile"
+        :alt="section.title"
+        class="block lg:hidden"
+      >
     </UPageSection>
 
     <UPageSection
       id="features"
       v-bind="page.features"
-      :ui="{ title: 'text-left', description: 'text-left' }"
+      :ui="{ title: 'text-left relative', description: 'text-left' }"
     >
       <template #title>
         <MDC :value="page.features.title" />
+        <img
+          src="/images/line-2.png"
+          class="hidden lg:block absolute right-0 top-0 transform translate-y-1/2 translate-x-1/2"
+          alt="line 2"
+        >
       </template>
     </UPageSection>
 

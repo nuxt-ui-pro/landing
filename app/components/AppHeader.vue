@@ -29,7 +29,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
   <UHeader>
     <template #left>
       <NuxtLink to="/">
-        <LogoPro class="w-auto h-6 shrink-0" />
+        <Logo class="w-auto h-6 shrink-0" />
       </NuxtLink>
     </template>
 
