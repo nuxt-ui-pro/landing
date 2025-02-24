@@ -9,8 +9,6 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description
 })
-
-const isDark = computed(() => useColorMode().value == 'dark')
 </script>
 
 <template>
@@ -31,7 +29,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       <UColorModeImage
         light="/images/light/line-1.svg"
         dark="/images/dark/line-1.svg"
-        class="absolute -bottom-16"
+        class="absolute -bottom-24 h-full"
       />
     </UPageHero>
 
@@ -40,7 +38,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       :key="index"
       v-bind="section"
       orientation="horizontal"
-      :ui="{ container: 'lg:px-0', features: 'border-l border-(--ui-border) pl-4' }"
+      :ui="{ container: 'lg:px-0 mx-0 max-w-none md:mr-10', features: 'border-l border-(--ui-border) pl-4' }"
       reverse
     >
       <template #title>
@@ -52,12 +50,7 @@ const isDark = computed(() => useColorMode().value == 'dark')
       <img
         :src="section.images.desktop"
         :alt="section.title"
-        class="hidden lg:block xl:hidden lg:-left-16"
-      >
-      <img
-        :src="section.images.mobile"
-        :alt="section.title"
-        class="hidden xl:block"
+        class="hidden lg:block left-0 w-full max-w-2xl"
       >
       <img
         :src="section.images.mobile"
