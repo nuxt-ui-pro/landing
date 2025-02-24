@@ -29,7 +29,7 @@ useSeoMeta({
       <UColorModeImage
         light="/images/light/line-1.svg"
         dark="/images/dark/line-1.svg"
-        class="absolute -bottom-24 h-full"
+        class="absolute pointer-events-none left-10 top-0 h-full w-1/2"
       />
     </UPageHero>
 
@@ -202,18 +202,20 @@ useSeoMeta({
     <UPageCTA
       v-bind="page.cta"
       variant="naked"
-      class="overflow-hidden"
+      class="overflow-hidden @container"
     >
-      <UColorModeImage
-        light="/images/light/line-6.svg"
-        dark="/images/dark/line-6.svg"
-        class="absolute left-10 -top-10 sm:top-0 right-1/2 h-1/2"
-      />
-      <UColorModeImage
-        light="/images/light/line-7.svg"
-        dark="/images/dark/line-7.svg"
-        class="absolute right-0 bottom-0 h-full"
-      />
+      <div class="hidden @min-[1380px]:block">
+        <UColorModeImage
+          light="/images/light/line-6.svg"
+          dark="/images/dark/line-6.svg"
+          class="absolute left-10 -top-10 sm:top-0 h-full"
+        />
+        <UColorModeImage
+          light="/images/light/line-7.svg"
+          dark="/images/dark/line-7.svg"
+          class="absolute right-0 bottom-0 h-full"
+        />
+      </div>
       <template #title>
         <MDC :value="page.cta.title" />
       </template>
