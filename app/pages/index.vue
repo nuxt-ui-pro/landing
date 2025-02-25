@@ -75,20 +75,13 @@ useSeoMeta({
           :value="page.features.title"
           class="*:leading-9"
         />
-        <div class="hidden @min-[1070px]:flex flex-1">
+        <div class="hidden @min-[1020px]:block">
           <UColorModeImage
             light="/images/light/line-2.svg"
             dark="/images/dark/line-2.svg"
-            class="flex-1 right-0 transform translate-x-1/3"
+            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
           />
         </div>
-        <!--        <div class="hidden @min-[1070px]:block">
-          <UColorModeImage
-            light="/images/light/line-2.svg"
-            dark="/images/dark/line-2.svg"
-            class="absolute right-0 top-1/3 transform translate-y-1/2 translate-x-1/2 w-full"
-          />
-        </div> -->
       </template>
     </UPageSection>
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
@@ -102,7 +95,7 @@ useSeoMeta({
         <UColorModeImage
           light="/images/light/line-3.svg"
           dark="/images/dark/line-3.svg"
-          class="absolute -top-10 sm:top-0 right-1/2"
+          class="absolute -top-10 sm:top-0 right-1/2 h-24"
         />
       </template>
       <template #title>
@@ -137,9 +130,17 @@ useSeoMeta({
     <UPageSection
       id="pricing"
       v-bind="page.pricing"
+      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
       <template #title>
         <MDC :value="page.pricing.title" />
+        <div class="hidden @min-[1120px]:block">
+          <UColorModeImage
+            light="/images/light/line-4.svg"
+            dark="/images/dark/line-4.svg"
+            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
+          />
+        </div>
       </template>
 
       <UContainer>
@@ -173,7 +174,7 @@ useSeoMeta({
         <UColorModeImage
           light="/images/light/line-5.svg"
           dark="/images/dark/line-5.svg"
-          class="absolute -top-10 sm:top-0 right-1/2"
+          class="absolute -top-10 sm:top-0 right-1/2 h-24"
         />
       </template>
       <template #title>
