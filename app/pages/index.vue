@@ -13,11 +13,17 @@ useSeoMeta({
 
 <template>
   <div class="relative">
+    <div class="hidden lg:block">
+      <UColorModeImage
+        light="/images/light/line-1.svg"
+        dark="/images/dark/line-1.svg"
+        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[600px]"
+      />
+    </div>
     <UPageHero
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
-      class="relative"
       :ui="{ container: 'md:pt-18 lg:pt-24 @container' }"
     >
       <template #title>
@@ -26,13 +32,6 @@ useSeoMeta({
           class="*:leading-11 sm:*:leading-16"
         />
       </template>
-      <div class="hidden @min-[1070px]:block">
-        <UColorModeImage
-          light="/images/light/line-1.svg"
-          dark="/images/dark/line-1.svg"
-          class="absolute pointer-events-none left-0 top-0 object-fill size-full"
-        />
-      </div>
     </UPageHero>
 
     <UPageSection
