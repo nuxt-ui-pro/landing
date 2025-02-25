@@ -129,7 +129,7 @@ useSeoMeta({
 
     <UPageSection
       id="pricing"
-      class="mb-32"
+      class="mb-32 overflow-hidden"
       v-bind="page.pricing"
       :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
