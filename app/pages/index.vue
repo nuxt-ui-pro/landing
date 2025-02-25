@@ -18,7 +18,7 @@ useSeoMeta({
       :description="page.hero.description"
       :links="page.hero.links"
       class="relative"
-      :ui="{ container: 'md:pt-18 lg:pt-24' }"
+      :ui="{ container: 'md:pt-18 lg:pt-24 @container' }"
     >
       <template #title>
         <MDC
@@ -26,11 +26,11 @@ useSeoMeta({
           class="*:leading-11 sm:*:leading-16"
         />
       </template>
-      <div class="hidden md:block">
+      <div class="hidden @min-[1070px]:block">
         <UColorModeImage
           light="/images/light/line-1.svg"
           dark="/images/dark/line-1.svg"
-          class="absolute pointer-events-none left-0 top-0 object-cover size-full"
+          class="absolute pointer-events-none left-0 top-0 object-fill size-full"
         />
       </div>
     </UPageHero>
@@ -40,7 +40,7 @@ useSeoMeta({
       :key="index"
       v-bind="section"
       orientation="horizontal"
-      :ui="{ container: 'lg:px-0 mx-0 max-w-none md:mr-10', features: 'border-l border-(--ui-border) pl-4' }"
+      :ui="{ container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10', features: 'border-l border-(--ui-border) pl-4' }"
       reverse
     >
       <template #title>
@@ -52,12 +52,12 @@ useSeoMeta({
       <img
         :src="section.images.desktop"
         :alt="section.title"
-        class="hidden lg:block left-0 w-full max-w-2xl"
+        class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
       >
       <img
         :src="section.images.mobile"
         :alt="section.title"
-        class="block lg:hidden"
+        class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
       >
     </UPageSection>
 
@@ -129,6 +129,7 @@ useSeoMeta({
 
     <UPageSection
       id="pricing"
+      class="mb-32"
       v-bind="page.pricing"
       :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
@@ -144,10 +145,7 @@ useSeoMeta({
       </template>
 
       <UContainer>
-        <UPricingPlans
-          class="mb-16"
-          scale
-        >
+        <UPricingPlans scale>
           <UPricingPlan
             v-for="(plan, index) in page.pricing.plans"
             :key="index"

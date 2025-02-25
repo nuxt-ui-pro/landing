@@ -9,11 +9,11 @@ const items = computed(() => [{
 }, {
   label: 'Pricing',
   to: '#pricing',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('pricing')
 }, {
   label: 'Testimonials',
   to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
