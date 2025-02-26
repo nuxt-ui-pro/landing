@@ -1,7 +1,7 @@
 title: Nuxt UI Pro - Landing template
 description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
 hero:
-  title: Build your landing page with [Nuxt UI Pro]{.text-(--ui-primary)}
+  title: Build your landing with [Nuxt UI Pro]{.text-(--ui-primary)}
   description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
   links:
     - label: Getting Started
