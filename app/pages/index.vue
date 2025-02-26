@@ -24,7 +24,7 @@ useSeoMeta({
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
-      :ui="{ container: 'md:pt-18 lg:pt-20 @container' }"
+      :ui="{ container: 'md:pt-18 lg:pt-20' }"
     >
       <template #title>
         <MDC
