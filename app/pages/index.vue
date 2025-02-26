@@ -17,19 +17,19 @@ useSeoMeta({
       <UColorModeImage
         light="/images/light/line-1.svg"
         dark="/images/dark/line-1.svg"
-        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[600px]"
+        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]"
       />
     </div>
     <UPageHero
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
-      :ui="{ container: 'md:pt-18 lg:pt-24 @container' }"
+      :ui="{ container: 'md:pt-18 lg:pt-20 @container' }"
     >
       <template #title>
         <MDC
           :value="page.hero.title"
-          class="*:leading-11 sm:*:leading-16"
+          class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto"
         />
       </template>
     </UPageHero>
