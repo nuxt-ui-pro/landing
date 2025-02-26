@@ -39,7 +39,7 @@ useSeoMeta({
       :key="index"
       v-bind="section"
       orientation="horizontal"
-      :ui="{ container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10', features: 'border-l border-(--ui-border) pl-4' }"
+      :ui="{ container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10', features: 'gap-0' }"
       reverse
     >
       <template #title>
@@ -143,24 +143,22 @@ useSeoMeta({
         </div>
       </template>
 
-      <UContainer>
-        <UPricingPlans scale>
-          <UPricingPlan
-            v-for="(plan, index) in page.pricing.plans"
-            :key="index"
-            :title="plan.title"
-            :description="plan.description"
-            :price="plan.price"
-            :billing-period="plan.billing_period"
-            :billing-cycle="plan.billing_cycle"
-            :highlight="plan.highlight"
-            :scale="plan.highlight"
-            variant="soft"
-            :features="plan.features"
-            :button="plan.button"
-          />
-        </UPricingPlans>
-      </UContainer>
+      <UPricingPlans scale>
+        <UPricingPlan
+          v-for="(plan, index) in page.pricing.plans"
+          :key="index"
+          :title="plan.title"
+          :description="plan.description"
+          :price="plan.price"
+          :billing-period="plan.billing_period"
+          :billing-cycle="plan.billing_cycle"
+          :highlight="plan.highlight"
+          :scale="plan.highlight"
+          variant="soft"
+          :features="plan.features"
+          :button="plan.button"
+        />
+      </UPricingPlans>
     </UPageSection>
 
     <UPageSection
@@ -204,20 +202,20 @@ useSeoMeta({
       variant="naked"
       class="overflow-hidden @container"
     >
-      <div class="hidden @min-[1380px]:block">
-        <UColorModeImage
-          light="/images/light/line-6.svg"
-          dark="/images/dark/line-6.svg"
-          class="absolute left-10 -top-10 sm:top-0 h-full"
-        />
-        <UColorModeImage
-          light="/images/light/line-7.svg"
-          dark="/images/dark/line-7.svg"
-          class="absolute right-0 bottom-0 h-full"
-        />
-      </div>
       <template #title>
         <MDC :value="page.cta.title" />
+        <div class="@max-[1280px]:hidden">
+          <UColorModeImage
+            light="/images/light/line-6.svg"
+            dark="/images/dark/line-6.svg"
+            class="absolute left-10 -top-10 sm:top-0 h-full"
+          />
+          <UColorModeImage
+            light="/images/light/line-7.svg"
+            dark="/images/dark/line-7.svg"
+            class="absolute right-0 bottom-0 h-full"
+          />
+        </div>
       </template>
       <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
