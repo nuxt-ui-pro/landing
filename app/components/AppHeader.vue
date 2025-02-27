@@ -5,32 +5,22 @@ const { activeHeadings, updateHeadings } = useScrollspy()
 const items = computed(() => [{
   label: 'Features',
   to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('templates')
-}, {
-  label: 'Templates',
-  to: '#templates',
-  active: activeHeadings.value.includes('templates') && !activeHeadings.value.includes('pricing')
+  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
 }, {
   label: 'Pricing',
   to: '#pricing',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
+  active: activeHeadings.value.includes('pricing')
 }, {
   label: 'Testimonials',
   to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('faq')
-}, {
-  label: 'FAQ',
-  to: '#faq',
-  active: activeHeadings.value.includes('faq')
+  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
     document.querySelector('#features'),
-    document.querySelector('#templates'),
     document.querySelector('#pricing'),
-    document.querySelector('#testimonials'),
-    document.querySelector('#faq')
+    document.querySelector('#testimonials')
   ])
 })
 </script>
@@ -41,25 +31,24 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <NuxtLink to="/">
         <LogoPro class="w-auto h-6 shrink-0" />
       </NuxtLink>
+
       <TemplateMenu />
     </template>
 
-    <UNavigationMenu
-      :items="items"
-      variant="link"
-    />
-
     <template #right>
-      <UColorModeButton />
+      <UNavigationMenu
+        :items="items"
+        variant="link"
+        class="hidden lg:block"
+      />
 
       <UButton
-        to="https://github.com/nuxt-ui-pro/landing/tree/v3"
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
-        color="neutral"
-        variant="ghost"
+        label="Download App"
+        variant="subtle"
+        class="hidden lg:block"
       />
+
+      <UColorModeButton />
     </template>
 
     <template #body>
@@ -67,6 +56,12 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         :items="items"
         orientation="vertical"
         class="-mx-2.5"
+      />
+      <UButton
+        class="mt-4"
+        label="Download App"
+        variant="subtle"
+        block
       />
     </template>
   </UHeader>

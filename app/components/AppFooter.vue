@@ -76,7 +76,6 @@ function onSubmit() {
                     <UButton
                       type="submit"
                       size="xs"
-                      color="neutral"
                       label="Subscribe"
                     />
                   </template>
@@ -90,11 +89,27 @@ function onSubmit() {
 
     <template #left>
       <p class="text-sm text-(--ui-text-muted)">
-        Copyright © {{ new Date().getFullYear() }}
+        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
       </p>
     </template>
 
     <template #right>
+      <UButton
+        to="#"
+        target="_blank"
+        icon="i-simple-icons-discord"
+        aria-label="Discord"
+        color="neutral"
+        variant="ghost"
+      />
+      <UButton
+        to="#"
+        target="_blank"
+        icon="i-simple-icons-x"
+        aria-label="X"
+        color="neutral"
+        variant="ghost"
+      />
       <UButton
         to="https://github.com/nuxt-ui-pro/landing/tree/v3"
         target="_blank"
