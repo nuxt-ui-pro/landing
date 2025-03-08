@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('home', () => {
-  return queryCollection('content').first()
-})
+const { data: page } = await useAsyncData('index', () => queryCollection('content').path('/').first())
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
 
 useSeoMeta({
   title: page.value.title,
@@ -12,7 +13,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="relative">
+  <div
+    v-if="page"
+    class="relative"
+  >
     <div class="hidden lg:block">
       <UColorModeImage
         light="/images/light/line-1.svg"
@@ -20,6 +24,7 @@ useSeoMeta({
         class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]"
       />
     </div>
+
     <UPageHero
       :title="page.hero.title"
       :description="page.hero.description"
@@ -109,11 +114,13 @@ useSeoMeta({
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
         >
           <UColorModeImage
+            v-if="step.image"
             :light="step.image?.light"
             :dark="step.image?.dark"
             :alt="step.title"
             class="size-full"
           />
+
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
               {{ step.title }}
@@ -134,6 +141,7 @@ useSeoMeta({
     >
       <template #title>
         <MDC :value="page.pricing.title" />
+
         <div class="hidden @min-[1120px]:block">
           <UColorModeImage
             light="/images/light/line-4.svg"
@@ -175,6 +183,7 @@ useSeoMeta({
       <template #title>
         <MDC :value="page.testimonials.title" />
       </template>
+
       <UContainer>
         <UPageColumns class="xl:columns-3">
           <UPageCard
@@ -204,6 +213,7 @@ useSeoMeta({
     >
       <template #title>
         <MDC :value="page.cta.title" />
+
         <div class="@max-[1280px]:hidden">
           <UColorModeImage
             light="/images/light/line-6.svg"
@@ -217,6 +227,7 @@ useSeoMeta({
           />
         </div>
       </template>
+
       <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
       <StarsBg />
