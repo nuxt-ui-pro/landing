@@ -7,6 +7,16 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
 
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.API_BASE_URL || 'https://api.example.com'
+    }
+  },
+
+  plugins: [
+    '~/plugins/axios.ts'
+  ],
+
   devtools: {
     enabled: true
   },

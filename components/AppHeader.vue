@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { useApi } from '~/composables/useApi'
+
 const nuxtApp = useNuxtApp()
+const { $axios } = useNuxtApp()
+const { getData } = useApi()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
@@ -22,6 +26,40 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     document.querySelector('#pricing'),
     document.querySelector('#testimonials')
   ])
+})
+
+// Định nghĩa interface cho dữ liệu trả về từ API Test
+interface Post {
+  userId?: number
+  id?: number
+  title?: string
+  body?: string
+}
+
+const fetchData = async (): Promise<Post[]> => {
+  try {
+    const response = await $axios.get<Post[]>('/posts')
+    console.log('Dữ liệu nhận được:', response.data)
+    return response.data
+  } catch (error) {
+    console.error('Lỗi khi gọi API:', error)
+    throw error
+  }
+}
+
+const loadData = async () => {
+  try {
+    const data = await getData<Post[]>('/posts')
+    console.log('Dữ liệu từ API (composable):', data)
+  } catch (error) {
+    console.error('Lỗi:', error)
+  }
+}
+
+onMounted(() => {
+  // fetchPosts()
+  fetchData()
+  loadData()
 })
 </script>
 
