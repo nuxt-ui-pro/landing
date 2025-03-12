@@ -8,7 +8,7 @@ hero:
       icon: i-lucide-arrow-right
       trailing: true
       variant: subtle
-      to: https://ui3.nuxt.dev/getting-started/installation/pro/nuxt
+      to: https://ui.nuxt.com/getting-started/installation/pro/nuxt
       target: _blank
       size: xl
     - label: Clone on GitHub
@@ -16,7 +16,7 @@ hero:
       size: xl
       color: neutral
       variant: ghost
-      to: https://github.com/nuxt-ui-pro/landing/tree/v3
+      to: https://github.com/nuxt-ui-pro/landing
       target: _blank
 sections:
   - title: '[Revolutionize]{.text-(--ui-primary)} your coding experience'
@@ -154,7 +154,7 @@ cta:
       target: _blank
       icon: i-lucide-shopping-cart
     - label: License
-      to: 'https://ui3.nuxt.dev/getting-started/license'
+      to: 'https://ui.nuxt.com/getting-started/license'
       trailingIcon: i-lucide-circle-help
       target: _blank
       variant: subtle
