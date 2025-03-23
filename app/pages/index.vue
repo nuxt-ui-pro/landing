@@ -230,7 +230,7 @@ useSeoMeta({
 
       <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
-      <StarsBg />
+      <LazyStarsBg />
     </UPageCTA>
   </div>
 </template>
