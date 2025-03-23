@@ -19,15 +19,19 @@ export default defineNuxtConfig({
     }
   },
 
-  routeRules: {
-    '/': { prerender: true }
-  },
-
   future: {
     compatibilityVersion: 4
   },
 
   compatibilityDate: '2025-01-15',
+
+  nitro: {
+    prerender: {
+      routes: [
+        '/'
+      ]
+    }
+  },
 
   eslint: {
     config: {
