@@ -1,8 +1,9 @@
-title: Nuxt UI Pro - Landing template
+seo:
+  title: Nuxt UI Pro - Landing template
+  description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
+title: Build your landing with [Nuxt UI Pro]{.text-(--ui-primary)}
 description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
 hero:
-  title: Build your landing with [Nuxt UI Pro]{.text-(--ui-primary)}
-  description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
   links:
     - label: Getting Started
       icon: i-lucide-arrow-right
@@ -18,22 +19,22 @@ hero:
       variant: ghost
       to: https://github.com/nuxt-ui-pro/landing
       target: _blank
-sections:
-  - title: '[Revolutionize]{.text-(--ui-primary)} your coding experience'
-    description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
-    images:
-      mobile: '/images/macbook-mobile.svg'
-      desktop: '/images/macbook.svg'
-    features:
-      - title: Optimize your focus time
-        description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
-        class: border-l border-(--ui-primary) pl-4
-      - title: Track your best coding hours
-        description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
-        class: border-l border-(--ui-border) pt-4 pl-4
-      - title: Improve workflow efficiency
-        description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
-        class: border-l border-(--ui-border) pt-4 pl-4
+section:
+  title: '[Revolutionize]{.text-(--ui-primary)} your coding experience'
+  description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
+  images:
+    mobile: '/images/macbook-mobile.svg'
+    desktop: '/images/macbook.svg'
+  features:
+    - title: Optimize your focus time
+      description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
+      class: border-l border-(--ui-primary) pl-4
+    - title: Track your best coding hours
+      description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
+      class: border-l border-(--ui-border) pt-4 pl-4
+    - title: Improve workflow efficiency
+      description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
+      class: border-l border-(--ui-border) pt-4 pl-4
 features:
   title: Take control of your [productivity]{.text-(--ui-primary)}
   description: Make every coding session count with smart analytics and workflow optimization.

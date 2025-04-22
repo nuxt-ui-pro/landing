@@ -1,111 +1,92 @@
 import { defineCollection, z } from '@nuxt/content'
 
-const variantEnum = z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
-const colorEnum = z.enum(['primary', 'secondary', 'neutral', 'error', 'warning', 'success', 'info'])
-const sizeEnum = z.enum(['xs', 'sm', 'md', 'lg', 'xl'])
+const createEnum = (options: [string, ...string[]]) => z.enum(options)
 
-const baseSchema = {
+const createBaseSchema = () => z.object({
   title: z.string().nonempty(),
   description: z.string().nonempty()
-}
+})
 
-const linkSchema = z.object({
+const createLinkSchema = () => z.object({
   label: z.string().nonempty(),
   to: z.string().nonempty(),
   icon: z.string().optional(),
-  size: sizeEnum,
+  size: createEnum(['xs', 'sm', 'md', 'lg', 'xl']),
   trailing: z.boolean().optional(),
-  target: z.string().optional(),
-  color: colorEnum,
-  variant: variantEnum
+  target: createEnum(['_blank', '_self']),
+  color: createEnum(['primary', 'secondary', 'neutral', 'error', 'warning', 'success', 'info']),
+  variant: createEnum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
 })
 
-const imageSchema = z.object({
-  src: z.string().nonempty(),
-  alt: z.string().optional(),
-  loading: z.string().optional(),
-  srcset: z.string().optional()
-})
-
-const featureItemSchema = z.object({
-  ...baseSchema,
-  icon: z.string().nonempty(),
-  class: z.string().optional(),
-  image: z.object({
-    light: z.string().nonempty(),
-    dark: z.string().nonempty()
-  }).optional(),
+const createFeatureSchema = () => createBaseSchema().extend({
+  icon: z.string().editor({ input: 'icon' }),
   ui: z.object({
-    title: z.string().optional(),
-    description: z.string().optional(),
-    leadingIcon: z.string().optional(),
-    leading: z.string().optional()
+    leading: z.string().optional().editor({ hidden: true })
   })
-})
-
-const sectionSchema = z.object({
-  headline: z.string().optional(),
-  ...baseSchema,
-  features: z.array(featureItemSchema)
-})
-
-const userSchema = z.object({
-  name: z.string().nonempty(),
-  description: z.string().nonempty(),
-  to: z.string().nonempty(),
-  avatar: imageSchema
-})
-
-const sectionWithLinksSchema = sectionSchema.extend({
-  links: z.array(linkSchema)
-})
-
-const testimonialUserSchema = userSchema.extend({
-  target: z.string().nonempty()
 })
 
 export const collections = {
   content: defineCollection({
     source: 'index.yml',
-    type: 'data',
+    type: 'page',
     schema: z.object({
-      ...baseSchema,
-      hero: sectionWithLinksSchema,
-      sections: z.array(
-        sectionSchema.extend({
-          items: z.array(featureItemSchema),
-          links: z.array(linkSchema),
-          reverse: z.boolean().optional(),
-          images: z.object({
-            mobile: z.string().optional(),
-            desktop: z.string().optional()
+      hero: z.object({
+        links: z.array(createLinkSchema())
+      }),
+      section: createBaseSchema().extend({
+        headline: z.string().optional(),
+        images: z.object({
+          mobile: z.string().optional(),
+          desktop: z.string().optional()
+        }),
+        features: z.array(
+          createBaseSchema().extend({
+            icon: z.string().editor({ input: 'icon' })
           })
-        })
-      ),
-      features: sectionSchema.extend({
-        items: z.array(featureItemSchema)
+        )
       }),
-      steps: sectionSchema.extend({
-        items: z.array(featureItemSchema)
+      features: createBaseSchema().extend({
+        features: z.array(createFeatureSchema())
       }),
-      pricing: sectionSchema.extend({
-        plans: z.array(z.object({
-          ...baseSchema,
-          price: z.string().nonempty(),
-          billing_period: z.string().nonempty(),
-          billing_cycle: z.string().nonempty(),
-          button: linkSchema,
-          features: z.array(z.string().nonempty()),
-          highlight: z.boolean().optional()
+      steps: createBaseSchema().extend({
+        items: z.array(createFeatureSchema().extend({
+          image: z.object({
+            light: z.string().editor({ input: 'media' }),
+            dark: z.string().editor({ input: 'media' })
+          }).optional()
         }))
       }),
-      testimonials: sectionSchema.extend({
-        items: z.array(z.object({
-          quote: z.string().nonempty(),
-          user: testimonialUserSchema
-        }))
+      pricing: createBaseSchema().extend({
+        plans: z.array(
+          createBaseSchema().extend({
+            price: z.string().nonempty(),
+            button: createLinkSchema(),
+            features: z.array(z.string().nonempty()),
+            highlight: z.boolean().optional(),
+            billing_period: z.string().nonempty(),
+            billing_cycle: z.string().nonempty()
+          })
+        )
       }),
-      cta: sectionWithLinksSchema
+      testimonials: createBaseSchema().extend({
+        items: z.array(
+          z.object({
+            quote: z.string().nonempty(),
+            user: z.object({
+              name: z.string().nonempty(),
+              description: z.string().nonempty(),
+              to: z.string().nonempty(),
+              avatar: z.object({
+                src: z.string().editor({ input: 'media' }),
+                alt: z.string().optional()
+              }),
+              target: createEnum(['_blank', '_self'])
+            })
+          }))
+      }),
+      cta: createBaseSchema().extend({
+        links: z.array(createLinkSchema())
+      })
     })
   })
 }
