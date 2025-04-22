@@ -21,8 +21,8 @@ const createLinkSchema = () => z.object({
 const createFeatureSchema = () => createBaseSchema().extend({
   icon: z.string().editor({ input: 'icon' }),
   ui: z.object({
-    leading: z.string().optional().editor({ hidden: true })
-  })
+    leading: z.string().optional()
+  }).editor({ hidden: true })
 })
 
 export const collections = {
