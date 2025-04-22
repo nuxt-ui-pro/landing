@@ -5,10 +5,10 @@ if (!page.value) {
 }
 
 useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
+  title: page.value.seo?.title || page.value.title,
+  ogTitle: page.value.seo?.title || page.value.title,
+  description: page.value.seo?.description || page.value.description,
+  ogDescription: page.value.seo?.description || page.value.description
 })
 </script>
 
@@ -26,50 +26,56 @@ useSeoMeta({
     </div>
 
     <UPageHero
-      :title="page.hero.title"
-      :description="page.hero.description"
+      :description="page.description"
       :links="page.hero.links"
       :ui="{ container: 'md:pt-18 lg:pt-20' }"
     >
       <template #title>
         <MDC
-          :value="page.hero.title"
+          :value="page.title"
           class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto"
         />
       </template>
     </UPageHero>
 
     <UPageSection
-      v-for="(section, index) in page.sections"
-      :key="index"
-      v-bind="section"
+      :description="page.section.description"
+      :features="page.section.features"
       orientation="horizontal"
-      :ui="{ container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10', features: 'gap-0' }"
+      :ui="{
+        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
+        features: 'gap-0'
+      }"
       reverse
     >
       <template #title>
         <MDC
-          :value="section.title"
+          :value="page.section.title"
           class="sm:*:leading-11"
         />
       </template>
       <img
-        :src="section.images.desktop"
-        :alt="section.title"
+        :src="page.section.images.desktop"
+        :alt="page.section.title"
         class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
       >
       <img
-        :src="section.images.mobile"
-        :alt="section.title"
+        :src="page.section.images.mobile"
+        :alt="page.section.title"
         class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
       >
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
+
     <UPageSection
       id="features"
-      v-bind="page.features"
-      :ui="{ title: 'text-left @container relative flex', description: 'text-left' }"
+      :description="page.features.description"
+      :features="page.features.features"
+      :ui="{
+        title: 'text-left @container relative flex',
+        description: 'text-left'
+      }"
       class="relative overflow-hidden"
     >
       <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
@@ -88,11 +94,12 @@ useSeoMeta({
         </div>
       </template>
     </UPageSection>
+
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
 
     <UPageSection
       id="steps"
-      v-bind="page.steps"
+      :description="page.steps.description"
       class="relative overflow-hidden"
     >
       <template #headline>
@@ -136,7 +143,9 @@ useSeoMeta({
     <UPageSection
       id="pricing"
       class="mb-32 overflow-hidden"
-      v-bind="page.pricing"
+      :title="page.pricing.title"
+      :description="page.pricing.description"
+      :plans="page.pricing.plans"
       :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
       <template #title>
@@ -171,7 +180,9 @@ useSeoMeta({
 
     <UPageSection
       id="testimonials"
-      v-bind="page.testimonials"
+      :title="page.testimonials.title"
+      :description="page.testimonials.description"
+      :items="page.testimonials.items"
     >
       <template #headline>
         <UColorModeImage
