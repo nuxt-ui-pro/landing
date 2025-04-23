@@ -10,7 +10,7 @@ const createBaseSchema = () => z.object({
 const createLinkSchema = () => z.object({
   label: z.string().nonempty(),
   to: z.string().nonempty(),
-  icon: z.string().optional(),
+  icon: z.string().optional().editor({ input: 'icon' }),
   size: createEnum(['xs', 'sm', 'md', 'lg', 'xl']),
   trailing: z.boolean().optional(),
   target: createEnum(['_blank', '_self']),
