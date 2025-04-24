@@ -1,7 +1,7 @@
 seo:
   title: Nuxt UI Pro - Landing template
   description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
-title: Build your landing with [Nuxt UI Pro]{.text-(--ui-primary)}
+title: Build your landing with [Nuxt UI Pro]{.text-primary}
 description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
 hero:
   links:
@@ -20,7 +20,7 @@ hero:
       to: https://github.com/nuxt-ui-pro/landing
       target: _blank
 section:
-  title: '[Revolutionize]{.text-(--ui-primary)} your coding experience'
+  title: '[Revolutionize]{.text-primary} your coding experience'
   description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
   images:
     mobile: '/images/macbook-mobile.svg'
@@ -28,49 +28,49 @@ section:
   features:
     - title: Optimize your focus time
       description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
-      class: border-l border-(--ui-primary) pl-4
+      class: border-l border-primary pl-4
     - title: Track your best coding hours
       description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
-      class: border-l border-(--ui-border) pt-4 pl-4
+      class: border-l border-default pt-4 pl-4
     - title: Improve workflow efficiency
       description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
-      class: border-l border-(--ui-border) pt-4 pl-4
+      class: border-l border-default pt-4 pl-4
 features:
-  title: Take control of your [productivity]{.text-(--ui-primary)}
+  title: Take control of your [productivity]{.text-primary}
   description: Make every coding session count with smart analytics and workflow optimization.
   features:
     - title: AI-Powered Focus Tracking
       description: Discover your optimal coding hours with real-time AI analysis of your productivity patterns.
       icon: i-lucide-wand-sparkles
       ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Distraction Alerts
       description: Get notified when your focus drifts and bring your attention back.
       icon: i-lucide-bell-ring
       ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Smart Code Snippets
       description: Save and reuse frequently used code blocks for efficiency.
       icon: i-lucide-code-xml
       ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Deep Work Mode
       description: Block distractions and set structured coding sessions with built-in Pomodoro timers.
       icon: i-lucide-moon
       ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Collaborative Insights
       description: Sync your workflow with teammates and see when they are most productive.
       icon: i-lucide-mouse-pointer-2
       ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Performance Analytics
       description: Track your coding metrics and get insights to boost your speed and code quality.
       icon: i-lucide-chart-line
       ui:
-        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 steps:
-  title: Start coding smarter in [3 steps]{.text-(--ui-primary)}
+  title: Start coding smarter in [3 steps]{.text-primary}
   description: Transform your development workflow with our AI-powered assistant.
   items:
     - title: Connect Your IDE
@@ -89,7 +89,7 @@ steps:
         light: '/images/light/track.svg'
         dark: '/images/dark/track.svg'
 pricing:
-  title: Choose your [productivity]{.text-(--ui-primary)} path
+  title: Choose your [productivity]{.text-primary} path
   description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
   plans:
     - title: Pro Developer
@@ -122,7 +122,7 @@ pricing:
         variant: subtle
         to: '#'
 testimonials:
-  title: Join thousands of productive [developers]{.text-(--ui-primary)}
+  title: Join thousands of productive [developers]{.text-primary}
   description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
   items:
     - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
@@ -147,7 +147,7 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
 cta:
-  title: Build your landing page with [Nuxt UI Pro]{.text-(--ui-primary)}
+  title: Build your landing page with [Nuxt UI Pro]{.text-primary}
   description: Nuxt UI Pro is free in development, but you need a license to use it in production.
   links:
     - label: Buy now

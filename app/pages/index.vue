@@ -66,7 +66,7 @@ useSeoMeta({
       >
     </UPageSection>
 
-    <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
+    <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
       id="features"
@@ -78,8 +78,8 @@ useSeoMeta({
       }"
       class="relative overflow-hidden"
     >
-      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
-      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-(--ui-primary) opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC
           :value="page.features.title"
@@ -95,7 +95,7 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
+    <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
       id="steps"
@@ -132,7 +132,7 @@ useSeoMeta({
             <span class="text-lg font-semibold">
               {{ step.title }}
             </span>
-            <span class="text-sm text-(--ui-text-muted)">
+            <span class="text-sm text-muted">
               {{ step.description }}
             </span>
           </div>
@@ -239,7 +239,7 @@ useSeoMeta({
         </div>
       </template>
 
-      <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
+      <div class="absolute rounded-full dark:bg-primary blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
       <LazyStarsBg />
     </UPageCTA>

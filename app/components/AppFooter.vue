@@ -55,7 +55,7 @@ function onSubmit() {
     class="h-px"
   />
 
-  <UFooter :ui="{ top: 'border-b border-(--ui-border)' }">
+  <UFooter :ui="{ top: 'border-b border-default' }">
     <template #top>
       <UContainer>
         <UFooterColumns :columns="columns">
@@ -88,7 +88,7 @@ function onSubmit() {
     </template>
 
     <template #left>
-      <p class="text-sm text-(--ui-text-muted)">
+      <p class="text-sm text-muted">
         Copyright © {{ new Date().getFullYear() }}. All rights reserved.
       </p>
     </template>
