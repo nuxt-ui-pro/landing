@@ -3,23 +3,26 @@
     v-slot="{ open }"
     :modal="false"
     :items="[{
-      label: `Starter`,
+      label: 'Starter',
       to: 'https://ui-pro-starter.nuxt.dev/'
     }, {
-      label: `Landing`,
+      label: 'Landing',
       to: 'https://landing-template.nuxt.dev/',
       color: 'primary',
       checked: true,
       type: 'checkbox'
     }, {
-      label: `Docs`,
+      label: 'Docs',
       to: 'https://docs-template.nuxt.dev/'
     }, {
-      label: `SaaS`,
+      label: 'SaaS',
       to: 'https://saas-template.nuxt.dev/'
     }, {
-      label: `Dashboard`,
+      label: 'Dashboard',
       to: 'https://dashboard-template.nuxt.dev/'
+    }, {
+      label: 'Chat',
+      to: 'https://chat-template.nuxt.dev/'
     }]"
     :ui="{ content: 'w-(--reka-dropdown-menu-trigger-width) min-w-0' }"
     size="xs"
