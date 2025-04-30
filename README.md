@@ -10,9 +10,9 @@ This template lets you build a landing page with [Nuxt UI Pro](https://ui.nuxt.c
 
 <a href="https://landing-template.nuxt.dev/" target="_blank">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3VpLXByby1zdGFydGVyLm51eHQuZGV2IiwiaWF0IjoxNzM5NDYzMzk4fQ.XLzPkSW6nRbPW07QO1RkMwz_RAPA4KfeyrWrK3li9YI.jpg?theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3VpLXByby1zdGFydGVyLm51eHQuZGV2IiwiaWF0IjoxNzM5NDYzMzk4fQ.XLzPkSW6nRbPW07QO1RkMwz_RAPA4KfeyrWrK3li9YI.jpg?theme=light">
-    <img alt="Nuxt UI Pro Starter Template" src="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3VpLXByby1zdGFydGVyLm51eHQuZGV2IiwiaWF0IjoxNzM5NDYzMzk4fQ.XLzPkSW6nRbPW07QO1RkMwz_RAPA4KfeyrWrK3li9YI.jpg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2xhbmRpbmctdGVtcGxhdGUubnV4dC5kZXYiLCJpYXQiOjE3Mzk0NjMzNzV9.ja2nUDVOoIFvyaMmg9Jn51uNMoYYt4WA1KWUQBWwUPo.jpg?theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2xhbmRpbmctdGVtcGxhdGUubnV4dC5kZXYiLCJpYXQiOjE3Mzk0NjMzNzV9.ja2nUDVOoIFvyaMmg9Jn51uNMoYYt4WA1KWUQBWwUPo.jpg?theme=light">
+    <img alt="Nuxt UI Pro Starter Template" src="https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2xhbmRpbmctdGVtcGxhdGUubnV4dC5kZXYiLCJpYXQiOjE3Mzk0NjMzNzV9.ja2nUDVOoIFvyaMmg9Jn51uNMoYYt4WA1KWUQBWwUPo.jpg">
   </picture>
 </a>
 
