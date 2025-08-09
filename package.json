@@ -34,7 +34,8 @@
       "better-sqlite3"
     ],
     "ignoredBuiltDependencies": [
-      "vue-demi"
+      "vue-demi",
+      "sharp"
     ]
   },
   "packageManager": "pnpm@10.13.1"
