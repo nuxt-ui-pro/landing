@@ -151,7 +151,7 @@ cta:
   description: Nuxt UI is a free and open-source UI library for Nuxt.
   links:
     - label: Get started
-      to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt'
+      to: 'https://ui.nuxt.com/getting-started/installation/nuxt'
       target: _blank
       icon: i-lucide-arrow-right
     - label: Clone on GitHub
