@@ -1,7 +1,7 @@
 seo:
   title: Nuxt Landing Template
   description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
-title: Build your landing with [Nuxt UI Pro]{.text-primary}
+title: Build your landing with [Nuxt UI]{.text-primary}
 description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
 hero:
   links:
@@ -127,35 +127,35 @@ testimonials:
   items:
     - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
       user:
-        name: 'Sarah Doe'
-        description: 'Full Stack Developer'
+        name: 'Sarah Moriceau'
+        description: 'Brand Designer'
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
     - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
       user:
-        name: 'Sébastien Doe'
+        name: 'Sébastien Chopin'
         description:  'Lead Software Engineer'
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
     - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
       user:
-        name: 'Benjamin Doe'
+        name: 'Benjamin Canac'
         description:  'Senior Frontend Developer'
         target: _blank
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
 cta:
-  title: Build your landing page with [Nuxt UI Pro]{.text-primary}
-  description: Nuxt UI Pro is free in development, but you need a license to use it in production.
+  title: Build your landing page with [Nuxt UI]{.text-primary}
+  description: Nuxt UI is a free and open-source UI library for Nuxt.
   links:
-    - label: Buy now
-      to: 'https://ui.nuxt.com/pro/purchase'
+    - label: Get started
+      to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt'
       target: _blank
-      icon: i-lucide-shopping-cart
-    - label: License
-      to: 'https://ui.nuxt.com/getting-started/license'
-      trailingIcon: i-lucide-circle-help
+      icon: i-lucide-arrow-right
+    - label: Clone on GitHub
+      to: 'https://github.com/nuxt-ui-pro/landing'
       target: _blank
       variant: subtle
+      icon: i-simple-icons-github

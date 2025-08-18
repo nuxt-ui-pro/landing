@@ -1,9 +1,9 @@
 # Nuxt Landing Template
 
-[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com/pro)
+[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 [![Deploy to NuxtHub](https://img.shields.io/badge/Deploy%20to-NuxtHub-00DC82?logo=nuxt&labelColor=020420)](https://hub.nuxt.com/new?repo=nuxt-ui-pro/landing)
 
-This template lets you build a landing page with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
+This template lets you build a landing page with [Nuxt UI](https://ui.nuxt.com) quickly.
 
 - [Live demo](https://landing-template.nuxt.dev/)
 - [Documentation](https://ui.nuxt.com/getting-started/installation/pro/nuxt)
