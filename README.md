@@ -9,9 +9,9 @@ This template lets you build a landing page with [Nuxt UI](https://ui.nuxt.com) 
 
 <a href="https://landing-template.nuxt.dev/" target="_blank">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui4.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui4.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Landing Template" src="https://ui4.nuxt.com/assets/templates/nuxt/starter-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://ui4.nuxt.com/assets/templates/nuxt/landing-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://ui4.nuxt.com/assets/templates/nuxt/landing-light.png">
+    <img alt="Nuxt Landing Template" src="https://ui4.nuxt.com/assets/templates/nuxt/landing-light.png">
   </picture>
 </a>
 
