@@ -4,7 +4,7 @@
     :modal="false"
     :items="[{
       label: 'Starter',
-      to: 'https://ui-pro-starter.nuxt.dev/'
+      to: 'https://ui-starter-template.nuxt.dev/'
     }, {
       label: 'Landing',
       to: 'https://landing-template.nuxt.dev/',
