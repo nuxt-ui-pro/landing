@@ -17,7 +17,7 @@ hero:
       size: xl
       color: neutral
       variant: ghost
-      to: https://github.com/nuxt-ui-pro/landing
+      to: https://github.com/nuxt-ui-templates/landing
       target: _blank
 section:
   title: '[Revolutionize]{.text-primary} your coding experience'
@@ -155,7 +155,7 @@ cta:
       target: _blank
       icon: i-lucide-arrow-right
     - label: Clone on GitHub
-      to: 'https://github.com/nuxt-ui-pro/landing'
+      to: 'https://github.com/nuxt-ui-templates/landing'
       target: _blank
       variant: subtle
       icon: i-simple-icons-github

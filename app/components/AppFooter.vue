@@ -111,7 +111,7 @@ function onSubmit() {
         variant="ghost"
       />
       <UButton
-        to="https://github.com/nuxt-ui-pro/landing"
+        to="https://github.com/nuxt-ui-templates/landing"
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="GitHub"
