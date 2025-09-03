@@ -89,13 +89,13 @@ function onSubmit() {
 
     <template #left>
       <p class="text-sm text-muted">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        Built with Nuxt UI • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
     <template #right>
       <UButton
-        to="#"
+        to="https://go.nuxt.com/discord"
         target="_blank"
         icon="i-simple-icons-discord"
         aria-label="Discord"
@@ -103,7 +103,7 @@ function onSubmit() {
         variant="ghost"
       />
       <UButton
-        to="#"
+        to="https://go.nuxt.com/x"
         target="_blank"
         icon="i-simple-icons-x"
         aria-label="X"

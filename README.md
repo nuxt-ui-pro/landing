@@ -2,10 +2,10 @@
 
 [![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
-This template lets you build a landing page with [Nuxt UI](https://ui.nuxt.com) quickly.
+Use this template to build your own landing page with [Nuxt UI](https://ui.nuxt.com) quickly.
 
 - [Live demo](https://landing-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation/pro/nuxt)
+- [Documentation](https://ui.nuxt.com/getting-started/installation/nuxt)
 
 <a href="https://landing-template.nuxt.dev/" target="_blank">
   <picture>
