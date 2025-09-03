@@ -4,7 +4,7 @@
     :modal="false"
     :items="[{
       label: 'Starter',
-      to: 'https://ui-pro-starter.nuxt.dev/'
+      to: 'https://starter-template.nuxt.dev/'
     }, {
       label: 'Landing',
       to: 'https://landing-template.nuxt.dev/',
@@ -23,6 +23,9 @@
     }, {
       label: 'Chat',
       to: 'https://chat-template.nuxt.dev/'
+    }, {
+      label: 'Portfolio',
+      to: 'https://portfolio-template.nuxt.dev/'
     }]"
     :ui="{ content: 'w-(--reka-dropdown-menu-trigger-width) min-w-0' }"
     size="xs"
