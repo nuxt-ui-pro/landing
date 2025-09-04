@@ -28,7 +28,10 @@ useSeoMeta({
     <UPageHero
       :description="page.description"
       :links="page.hero.links"
-      :ui="{ container: 'md:pt-18 lg:pt-20' }"
+      :ui="{
+        container: 'md:pt-18 lg:pt-20',
+        title: 'max-w-3xl mx-auto'
+      }"
     >
       <template #top>
         <HeroBackground />
@@ -37,7 +40,7 @@ useSeoMeta({
       <template #title>
         <MDC
           :value="page.title"
-          class="*:leading-11 sm:*:leading-19 max-w-3xl mx-auto"
+          unwrap="p"
         />
       </template>
     </UPageHero>
