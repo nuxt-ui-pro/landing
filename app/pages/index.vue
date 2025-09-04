@@ -30,6 +30,10 @@ useSeoMeta({
       :links="page.hero.links"
       :ui="{ container: 'md:pt-18 lg:pt-20' }"
     >
+      <template #top>
+        <HeroBackground />
+      </template>
+
       <template #title>
         <MDC
           :value="page.title"
@@ -238,8 +242,6 @@ useSeoMeta({
           />
         </div>
       </template>
-
-      <div class="absolute rounded-full dark:bg-primary blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
       <LazyStarsBg />
     </UPageCTA>
