@@ -147,7 +147,7 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
 cta:
-  title: Ready to build your next Nuxt app?
+  title: Ready to build an amazing landing page?
   description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
   links:
     - label: Start building
