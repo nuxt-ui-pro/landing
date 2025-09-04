@@ -21,6 +21,10 @@ Use this template to build your own landing page with [Nuxt UI](https://ui.nuxt.
 npx nuxi init -t github:nuxt-ui-templates/landing
 ```
 
+## Deploy your own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Flanding)
+
 ## Setup
 
 Make sure to install the dependencies:
