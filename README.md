@@ -5,7 +5,7 @@
 Use this template to build your own landing page with [Nuxt UI](https://ui.nuxt.com) quickly.
 
 - [Live demo](https://landing-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation/nuxt)
+- [Documentation](https://ui4.nuxt.com/docs/getting-started/installation/nuxt)
 
 <a href="https://landing-template.nuxt.dev/" target="_blank">
   <picture>
