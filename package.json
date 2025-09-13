@@ -18,7 +18,7 @@
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^v4.0.0-alpha.1",
     "better-sqlite3": "^12.2.0",
-    "nuxt": "^4.0.3"
+    "nuxt": "^4.1.2"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
