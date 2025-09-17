@@ -18,7 +18,7 @@ Use this template to build your own landing page with [Nuxt UI](https://ui.nuxt.
 ## Quick Start
 
 ```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-templates/landing
+npm create nuxt@latest -- -t github:nuxt-ui-templates/landing
 ```
 
 ## Deploy your own
