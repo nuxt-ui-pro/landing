@@ -17,8 +17,8 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://ui4.nuxt.com/assets/templates/nuxt/landing-light.png',
-  twitterImage: 'https://ui4.nuxt.com/assets/templates/nuxt/landing-light.png',
+  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/landing-light.png',
+  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/landing-light.png',
   twitterCard: 'summary_large_image'
 })
 </script>
